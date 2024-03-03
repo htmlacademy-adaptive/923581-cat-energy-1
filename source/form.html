@@ -139,10 +139,44 @@
       </fieldset>
       <fieldset class="profile__comments comments">
         <legend class="comments__title title-string">Комментарий</legend>
-        <textarea class="comments__comment" name="comment" rows="5" cols="35" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        <div class="comments__container container">
+          <textarea class="comments__comment" name="comment" rows="5" cols="35" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </div>
       </fieldset>
+      <fieldset class="profile__additionally additionally">
+        <legend class="additionally__title title-string">Дополнительно</legend>
+        <div class="additionally__container container">
+          <ul class="additionally__list list-reset">
+            <li class="additionally__item">
+              <label class="additionally__label" for="sweetener">
+                <input class="additionally__input" id="sweetener" name="additionally" type="radio" value="sweetener" checked>
+                <span class="additionally__text">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__label" for="drinking-water">
+                <input class="additionally__input" id="drinking-water" name="additionally" type="radio" value="drinking-water">
+                <span class="additionally__text">питьевая вода</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__label" for="milk">
+                <input class="additionally__input" id="milk" name="additionally" type="radio" value="milk">
+                <span class="additionally__text">молоко</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__label" for="vitamins">
+                <input class="additionally__input" id="vitamins" name="additionally" type="radio" value="vitamins">
+                <span class="additionally__text">витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <button class="profile__cubmit button button--xl" type="submit">отправить заявку</button>
+      <p class="profile__required">* — Обязательные поля</p>
     </form>
-
     <!-- Раздел Partnership -->
     <section class="products__partnership partnership">
       <div class="partnership__container container">
