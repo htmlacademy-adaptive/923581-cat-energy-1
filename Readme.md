@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Батурин](https://up.htmlacademy.ru/adaptive-individual/1/user/923581).
-* Наставник: `Андрей Изосимов`.
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
 ---
 
