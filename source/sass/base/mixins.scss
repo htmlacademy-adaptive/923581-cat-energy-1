@@ -11,8 +11,9 @@
   }
 }
 
-//REM
-@function rem($px) {
-  $result: math.div($px, 16) + rem;
-  @return $result;
+// Обнуление списков (@include list-reset;)
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
