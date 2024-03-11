@@ -1,2 +1,5 @@
 // Подклчаем шрифты через миксин (mixins/scss)
-@include font("Lato-Regular", "Lato-Regular", "400", "normal");
+@include font("lato", "Lato-Regular", "400", "normal");
+@include font("oswald", "oswaldregular", "400", "normal");
+@include font("oswald", "oswaldmedium", "700", "normal");
+    
