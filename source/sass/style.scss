@@ -4,6 +4,8 @@
 @import "./base/variable.scss";
 // Подключение шрифтов
 @import "./base/fonts.scss";
+// Обнуление и общие параметры
+@import "./base/hull.scss";
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
 @import "./blocks/general/container.scss";

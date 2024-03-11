@@ -1,18 +1,2 @@
-
-@include font("icons", "icons", "400", "normal");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Подклчаем шрифты через миксин (mixins/scss)
+@include font("Lato-Regular", "Lato-Regular", "400", "normal");
