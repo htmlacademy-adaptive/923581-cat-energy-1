@@ -1,4 +1,20 @@
 .button {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $bg_main;
+  text-align: center;
+  text-decoration: none;
+  background-color: $bg_basic;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  word-wrap: break-word;
 }
 
 .button--xl {

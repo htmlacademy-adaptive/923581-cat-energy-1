@@ -1,29 +1,100 @@
 .description {
   // .description__container
   &__container {
+    padding-bottom: 50px;
   }
   // .description__title
   &__title {
+    font-family: $oswald;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $txt_basic;
+    margin: 0;
+    margin-bottom: 40px;
   }
   // .description__list
   &__list {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
   }
   // .description__item
   &__item {
+    position: relative;
+    padding: 0 0 0 80px;
   }
-  // .description__item--leaf
-  &__item--leaf {
-  }
+
   // .description__text
   &__text {
+    margin: 0;
   }
+
+  // .description__item--leaf
+  &__item--leaf {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/svg/icon_leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg_basic;
+    }
+  }
+
   // .description__item--bowl
   &__item--bowl {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/svg/icon-bowl.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg_basic;
+    }
   }
+
   // .description__item--eat
   &__item--eat {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/svg/icon_eat.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg_basic;
+    }
   }
+
   // .description__item--weigh
   &__item--weigh {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../../img/svg/icon-weigh.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      top: 0;
+      display: block;
+      background-color: $bg_basic;
+    }
   }
 }

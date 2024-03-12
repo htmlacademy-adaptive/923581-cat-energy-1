@@ -1,5 +1,14 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   // .copyright__text
   &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: $txt_main;
+  }
+  svg {
+
   }
 }

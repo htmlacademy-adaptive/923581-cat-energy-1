@@ -7,9 +7,12 @@
   }
   // .header__logo
   &__logo {
+    display: flex;
+    align-items: center;
   }
   // .header__logo-image
   &__logo-image {
+    margin-right: 56px;
   }
   // .header__logo-text
   &__logo-text {
