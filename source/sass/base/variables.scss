@@ -1,0 +1,44 @@
+// Цвет шрифта
+$txt_basic: #000000;
+$txt_contrast: #ffffff;
+$txt_fill: #666666;
+$txt_main: #444444;
+$txt_minor: #111111;
+$txt_light: #222222;
+
+// Цвет кнопок
+$btn-basic: #68b738;
+$btn-hover: #5eaa2f;
+$btn_light: #f2f2f2;
+$btn_light-hover: #ebebeb;
+
+// Цвет ошибки
+$status_error: #ff8282;
+
+// Цвета рамок полей и чекбоксов
+$brd_main: #cdcdcd;
+$brd_minor: #e7e7e7;
+
+// Цвета разделительных линий
+$line_main: #d9d9d9;
+$line_minor: #cdcdcd;
+$line_light: #ebebeb;
+// Показать больше +
+$line_more: #d3d3d3;
+
+// Цвет фона
+$bg_main: #ffffff;
+$bg_minor: #f2f2f2;
+$bg_minor-light: #eaeaea;
+$bg_basic: #68b738;
+$bg_basic-light: rgba(104, 183, 56, 0.85);
+
+// $main-color: @ffffff; переменная указана в файле button.scss
+// При подключении переменных в файл через
+// @use "./button.scss"; - здесь лежит переменная (подключать в каждый файл где будет использоваться переменная)
+//.block {
+//  color: button.$main-color; - указать адрес переменной перед именем переменной
+//}
+
+// Минимальная ширина страницы
+$minWidth: 320;

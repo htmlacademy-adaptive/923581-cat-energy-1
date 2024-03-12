@@ -1,0 +1,13 @@
+.page {
+  // .page__header
+  &__header {
+    padding: 13px 0;
+  }
+  // .page__main
+  &__main {
+    flex-grow: 1;
+  }
+  // .page__footer
+  &__footer {
+  }
+}

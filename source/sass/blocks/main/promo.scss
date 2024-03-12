@@ -1,0 +1,30 @@
+.promo {
+  background-image: url("../../../img/index-background-desktop.png");
+  box-shadow: inset 0 0 0 1000px $bg_basic-light;
+  // .promo__container
+  &__container {
+  }
+
+  // .promo__title
+  &__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: $bg_main;
+    padding: 0px 16px;
+  }
+
+  // .promo__subtitle
+  &__subtitle {
+  }
+
+  // .promo__banner
+  &__banner {
+  }
+
+  // .promo__button
+  &__button {
+  }
+}

@@ -1,3 +1,10 @@
+
+html,
+body {
+	height: 100%;
+	min-width: $minWidth + px;
+}
+
 body {
   margin: 0;
 }
@@ -28,7 +35,7 @@ a {
   box-sizing: border-box;
 }
 
-// Скрытые элементы 
+// Скрытые элементы
 .visually-hidden {
   position: absolute;
   width: 1px;
