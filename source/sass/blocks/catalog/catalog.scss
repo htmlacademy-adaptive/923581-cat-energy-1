@@ -1,13 +1,7 @@
 .catalog {
   // .catalog__products
   &__products {
-    &::before {
-      content: "";
-      border-top: 1px solid $line_main;
-      width: 100%;
-      height: 1px;
-      display: block;
-    }
+
   }
   // .catalog__complementary
   &__complementary {

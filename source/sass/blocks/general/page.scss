@@ -15,9 +15,23 @@
 
   // .page__catalog
   &__catalog {
+    &::before {
+      content: "";
+      border-top: 1px solid $line_main;
+      width: 100%;
+      height: 1px;
+      display: block;
+    }
   }
 
   // .page__form
   &__form {
+    &::before {
+      content: "";
+      border-top: 1px solid $line_main;
+      width: 100%;
+      height: 1px;
+      display: block;
+    }
   }
 }

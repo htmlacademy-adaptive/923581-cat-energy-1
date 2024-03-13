@@ -1,6 +1,9 @@
 .form-content {
+
+
   // .form-content__header
   &__header {
+    padding: 27px 0 39px;
   }
 
   // .form-content__container
@@ -9,10 +12,24 @@
 
   // .form-content__title
   &__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: $txt_basic;
+    margin: 0;
+    margin-bottom: 37px;
   }
 
   // .form-content__text
   &__text {
+    margin: 0;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $txt_basic;
+    text-transform: uppercase;
   }
 
   // .form-content__profile
@@ -21,5 +38,11 @@
 
   // .form-content__partnership
   &__partnership {
+    background-color: $bg_minor;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $txt_main;
   }
 }

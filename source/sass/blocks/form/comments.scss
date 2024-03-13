@@ -1,6 +1,7 @@
 .comments {
   // .comments__title
   &__title {
+ margin-bottom: 38px;
   }
 
   // .comments__container
@@ -9,5 +10,19 @@
 
   // .comments__comment
   &__comment {
+    width: 100%;
+    min-height: 150px;
+    padding: 14px;
+    margin: 0;
+    border: 1px solid $brd_minor;
+    &[placeholder] {
+      font-family: $oswald;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      text-align: center;
+      color: $txt_main;
+    }
   }
 }

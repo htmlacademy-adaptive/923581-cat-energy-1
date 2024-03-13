@@ -1,7 +1,13 @@
 .owner-contacts {
-
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $txt_main;
   // .owner-contacts__title
   &__title {
+    margin-bottom: 35px;
   }
 
   // .owner-contacts__container
@@ -16,15 +22,34 @@
   &__item {
   }
 
+  &__item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
   // .owner-contacts__label
   &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   // .owner-contacts__text
   &__text {
+    margin-right: 13px;
+    white-space: nowrap;
   }
- 
+
   // .owner-contacts__input
   &__input {
+    border: 1px solid $brd_main;
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    &[type="email"] {
+      background-image: url("../../../img/svg/email.svg");
+    }
+
+    &[type="tel"] {
+      background-image: url("../../../img/svg/tel.svg");
+    }
   }
 }
