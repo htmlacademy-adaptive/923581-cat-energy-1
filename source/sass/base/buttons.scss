@@ -15,7 +15,13 @@
   border: none;
   cursor: pointer;
   word-wrap: break-word;
-}
 
-.button--xl {
+  // .button--xl
+  &--xl {
+  }
+  // .button--light
+  &--light {
+    background-color: $btn_light;
+    color: $txt_main;
+  }
 }

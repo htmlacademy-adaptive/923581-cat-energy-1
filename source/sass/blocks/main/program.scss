@@ -2,6 +2,16 @@
   padding: 30px 20px 18px;
   background-color: $bg_minor;
   position: relative;
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    background-color: $bg_basic;
+    border-radius: 50%;
+  }
   // .program__title
   &__title {
     font-family: $oswald;
@@ -58,19 +68,26 @@
     &::before {
       content: "";
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 25px;
+      left: 25px;
       background-image: url(../../../img/svg/cat-slim.svg);
-      background-color: $bg_basic;
-      border-radius: 50%;
       background-repeat: no-repeat;
       display: block;
-      width: 50px;
-      height: 50px;
+      z-index: 5;
     }
   }
 
   // program--pro
   &--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      background-image: url(../../../img/svg/cat-pro.svg);
+      background-repeat: no-repeat;
+      display: block;
+      z-index: 5;
+    }
   }
 }
