@@ -1,0 +1,29 @@
+.promotion {
+  // .promotion__container
+  &__container {
+  }
+
+  // .promotion__subtitle
+  &__subtitle {
+    background-image: url("../../../img/catalog/image-1.jpg");
+    box-shadow: inset 0 302px 0 0 $bg_basic-light;
+    background-repeat: no-repeat;
+    padding: 59px 58px 43px;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $txt_contrast;
+    margin: 0;
+
+    &::before {
+      content: "";
+      background-image: url("../../../img/svg/icon_gift.svg");
+      display: block;
+      width: 78px;
+      height: 80px;
+      margin: 0 auto 48px;
+    }
+  }
+}

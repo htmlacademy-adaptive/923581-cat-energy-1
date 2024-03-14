@@ -1,0 +1,71 @@
+.example {
+  background-color: $bg_minor-light;
+  // .example__container
+  &__container {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  // .example__title
+  &__title {
+    font-family: $oswald;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $txt_basic;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  // .example__text
+  &__text {
+  }
+  // .example__list
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  // .example__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .example__term
+  &__term {
+    width: 124px;
+    padding: 15px 20px;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: $txt_basic;
+    border: 1px solid $brd_main;
+    border-radius: 3px;
+  }
+  // .example__defining
+  &__defining {
+    margin: 0;
+    width: 80px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    transform: translateY(-10px);
+    background-color: $bg_minor-light;
+  }
+  // .example__result
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $txt_basic;
+  }
+  // .example__slider
+  &__slider {
+  }
+}

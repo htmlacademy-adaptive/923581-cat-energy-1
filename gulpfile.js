@@ -26,6 +26,7 @@ const server = (done) => {
       baseDir: 'source'
     },
     cors: true,
+    browser: 'chrome',
     notify: false,
     ui: false,
   });

@@ -1,0 +1,8 @@
+// Подклчаем шрифты через миксин (mixins/scss)
+@include font("Lato", "lato", "Lato-Regular", "400", "normal");
+@include font("Oswald", "oswald", "oswaldregular", "400", "normal");
+@include font("Oswald", "oswald", "oswaldmedium", "500", "normal");
+
+// Шрифт по умолчанию
+$oswald: "Oswald", "Arial", sans-serif;
+$lato: "Lato", "Arial", sans-serif;

@@ -1,0 +1,16 @@
+.program-types {
+  // .program-types__container
+  &__container {
+    padding: 20px;
+  }
+
+  // .program-types__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  // .program-types__item
+  &__item {
+  }
+}

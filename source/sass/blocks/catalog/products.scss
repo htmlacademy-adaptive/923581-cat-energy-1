@@ -1,0 +1,24 @@
+.products {
+  // .products__container
+  &__container {
+    margin: 20px 0 25px;
+  }
+
+  // .products__title
+  &__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: $txt_basic;
+    margin: 27px 0 41px;
+  }
+
+  // .products__list
+  &__list {
+  }
+
+  // .products__item
+  &__item {
+  }
+}

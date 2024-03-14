@@ -1,0 +1,28 @@
+//Подключение шрифта
+@mixin font($font_name, $folder, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src:
+      url("../fonts/#{$folder}/#{$file_name}.woff2") format("woff2"),
+      url("../fonts/#{$folder}/#{$file_name}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// Обнуление списков (@include list-reset;)
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Характиристики основного шрифта
+@mixin fontMain {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $txt_main;
+}

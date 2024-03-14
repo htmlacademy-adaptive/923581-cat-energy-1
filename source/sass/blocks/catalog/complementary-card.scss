@@ -1,0 +1,48 @@
+.complementary-card {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $txt_main;
+  margin-bottom: 19px;
+
+  &::before {
+    content: "";
+    border-top: 1px solid $line_minor;
+    width: 100%;
+    height: 0%;
+    display: block;
+  }
+
+  // .complementary-card__title
+  &__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $txt_light;
+    margin: 0;
+    margin-top: 13px;
+  }
+
+  // .complementary-card__inform
+  &__inform {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0 15px;
+  }
+
+  // .complementary-card__quantity
+  &__quantity {
+  }
+
+  // .complementary-card__price
+  &__price {
+  }
+
+  // .complementary-card__button
+  &__button {
+    width: 100%;
+  }
+}

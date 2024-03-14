@@ -1,0 +1,42 @@
+.declaration {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $txt_main;
+
+  // .declaration__container
+  &__container {
+  }
+
+  // .declaration__list
+  &__list {
+  }
+
+  // .declaration__item
+  &__item {
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  // .declaration__label
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .declaration__text
+  &__text {
+    margin-right: 13px;
+    white-space: nowrap;
+  }
+
+  // .declaration__input
+  &__input {
+    border: 1px solid $brd_minor;
+  }
+}
