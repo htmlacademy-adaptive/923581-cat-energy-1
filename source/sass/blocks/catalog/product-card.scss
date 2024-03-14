@@ -31,19 +31,24 @@
       color: $txt_minor;
     }
   }
+
   // .product-card__inform
   &__inform {
   }
+
   // .product-card__term
   &__term {
   }
+
   // .product-card__defining
   &__defining {
   }
+
   // .product-card__button
   &__button {
     width: 100%;
   }
+
   // .product-card__more-products
   &__more-products {
     position: relative;
@@ -51,6 +56,7 @@
     height: 30px;
     display: inline-block;
     margin-bottom: 23px;
+
     &::before {
       content: "";
       position: absolute;
@@ -60,6 +66,7 @@
       height: 0%;
       display: block;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -71,10 +78,12 @@
       display: block;
     }
   }
+
   // .product-card__text
   &__text {
     margin: 8px 0 21px;
   }
+
   // .product-card--more
   &--more {
     text-align: center;

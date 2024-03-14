@@ -19,11 +19,13 @@ a {
 }
 
 .feedback {
-  color: black;
+  color: $txt_basic;
 }
+
 .feedback ul {
   list-style: none;
 }
+
 .feedback p {
   margin-bottom: 0;
 }
@@ -42,7 +44,6 @@ a {
   margin: -1px;
   padding: 0;
   border: 0;
-  white-space: nowrap;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);

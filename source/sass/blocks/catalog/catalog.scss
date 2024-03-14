@@ -1,8 +1,8 @@
 .catalog {
   // .catalog__products
   &__products {
-
   }
+
   // .catalog__complementary
   &__complementary {
     &::before {
@@ -13,9 +13,11 @@
       display: block;
     }
   }
+
   // .catalog__promotion
   &__promotion {
   }
+
   // .catalog__partnership
   &__partnership {
     background-color: $bg_minor;

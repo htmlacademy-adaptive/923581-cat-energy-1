@@ -2,6 +2,7 @@
   padding: 30px 20px 18px;
   background-color: $bg_minor;
   position: relative;
+
   &::after {
     content: "";
     width: 50px;
@@ -12,6 +13,7 @@
     background-color: $bg_basic;
     border-radius: 50%;
   }
+
   // .program__title
   &__title {
     font-family: $oswald;
@@ -24,10 +26,12 @@
     margin: 0;
     margin-bottom: 30px;
   }
+
   // .program__text
   &__text {
     margin: 0;
     margin-bottom: 15px;
+
     &::after {
       content: "";
       display: block;
@@ -37,11 +41,12 @@
       background-color: $line_main;
     }
   }
+
   // .program__link
   &__link {
     position: relative;
     min-height: 24px;
-    padding: 4px 0px;
+    padding: 4px 0;
     font-family: $oswald;
     font-weight: 400;
     font-size: 16px;
@@ -50,6 +55,7 @@
     text-align: center;
     cursor: pointer;
     color: $txt_basic;
+
     &::before {
       content: "";
       position: absolute;

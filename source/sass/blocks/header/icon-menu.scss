@@ -8,23 +8,27 @@
   border: none;
   background-color: transparent;
   margin-right: 1px;
+
   span,
   &::before,
   &::after {
     content: "";
     transition: all 0.3s ease 0s;
-    right: 0px;
+    right: 0;
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: $txt_basic;
   }
+
   &::before {
-    top: 0px;
+    top: 0;
   }
+
   &::after {
-    bottom: 0px;
+    bottom: 0;
   }
+
   span {
     top: calc(50% - 1px);
   }

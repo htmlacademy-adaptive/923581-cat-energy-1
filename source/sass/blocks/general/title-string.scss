@@ -8,13 +8,14 @@
   color: $txt_basic;
   text-transform: none;
   padding-left: 20px;
+
   &::after {
     content: "";
     width: 100%;
     margin-top: 18px;
     margin-left: 20px;
     border: 1px solid #68b738;
-    height: 0px;
+    height: 0;
     display: block;
   }
 }

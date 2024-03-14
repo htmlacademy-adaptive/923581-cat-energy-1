@@ -44,6 +44,7 @@
     border: 1px solid $brd_main;
     background-repeat: no-repeat;
     background-position: right 14px center;
+
     &[type="email"] {
       background-image: url("../../../img/svg/email.svg");
     }

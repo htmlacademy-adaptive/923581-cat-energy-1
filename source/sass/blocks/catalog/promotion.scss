@@ -8,7 +8,6 @@
     background-image: url("../../../img/catalog/image-1.jpg");
     box-shadow: inset 0 302px 0 0 $bg_basic-light;
     background-repeat: no-repeat;
-    color: $bg_main;
     padding: 59px 58px 43px;
     font-family: $lato;
     font-weight: 400;
@@ -17,6 +16,7 @@
     text-align: center;
     color: $txt_contrast;
     margin: 0;
+
     &::before {
       content: "";
       background-image: url("../../../img/svg/icon_gift.svg");
