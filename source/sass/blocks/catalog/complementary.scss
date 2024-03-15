@@ -2,7 +2,6 @@
 }
 // .complementary__title
 .complementary__title {
-  position: relative;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
@@ -12,15 +11,15 @@
   padding: 25px 0 36px 20px;
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 42px;
-    transform: translateY(-100%);
-    right: 0;
-    border: 1px solid $bg_basic;
-    width: 54px;
-    height: 0;
-    display: block;
+    // content: "";
+    // position: absolute;
+    // top: 42px;
+    // transform: translateY(-100%);
+    // right: 0;
+    // border: 1px solid $bg_basic;
+    // width: 54px;
+    // height: 0;
+    // display: block;
   }
 }
 
