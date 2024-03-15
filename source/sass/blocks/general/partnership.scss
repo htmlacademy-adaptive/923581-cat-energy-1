@@ -1,36 +1,36 @@
 .partnership {
 }
 
-  // .partnership__container
-  .partnership__container {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+// .partnership__partnership-wrapper
+.partnership__partnership-wrapper {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  // .partnership__title
-  .partnership__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $txt_minor;
-    margin: 0;
-  }
+// .partnership__title
+.partnership__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $txt_minor;
+  margin: 0;
+}
 
-  // .partnership__address
-  .partnership__address {
-    line-height: 20px;
-    font-style: normal;
-  }
+// .partnership__address
+.partnership__address {
+  line-height: 20px;
+  font-style: normal;
+}
 
-  // .partnership__map
-  .partnership__map {
-    background-image: url("../../../img/location.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 362px;
-    display: block;
-  }
+// .partnership__map
+.partnership__map {
+  background-image: url("../../../img/location.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 362px;
+  display: block;
+}

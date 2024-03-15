@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  svg {
+    color: $txt_fill;
+    fill: currentcolor;
+  }
 }
 // .copyright__text
 .copyright__text {
