@@ -4,7 +4,6 @@
   padding-bottom: 40px;
 }
 
-
 // .example__title
 .example__title {
   font-family: $oswald;
@@ -18,6 +17,7 @@
 
 // .example__text
 .example__text {
+  margin: 0 0 20px;
 }
 
 // .example__list
@@ -70,6 +70,12 @@
   text-transform: uppercase;
   text-align: center;
   color: $txt_basic;
+  padding: 10px 0 20px;
+  gap: 3px;
+
+  p {
+    margin: 0;
+  }
 }
 
 // .example__slider

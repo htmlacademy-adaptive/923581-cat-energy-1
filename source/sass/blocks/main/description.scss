@@ -16,7 +16,7 @@
 // .description__list
 .description__list {
   display: flex;
-  gap: 21px;
+  gap: 20px;
   flex-direction: column;
 }
 
@@ -97,4 +97,5 @@
 // .description__text
 .description__text {
   margin: 0;
+  padding: 2px 0 4px;
 }
