@@ -1,12 +1,15 @@
 .example {
   background-color: $bg_minor-light;
+}
+
   // .example__container
-  &__container {
+  .example__container {
     padding-top: 25px;
     padding-bottom: 40px;
   }
+
   // .example__title
-  &__title {
+  .example__title {
     font-family: $oswald;
     font-size: 36px;
     line-height: 40px;
@@ -15,22 +18,26 @@
     margin: 0;
     margin-bottom: 40px;
   }
+
   // .example__text
-  &__text {
+  .example__text {
   }
+
   // .example__list
-  &__list {
+  .example__list {
     display: flex;
     justify-content: space-between;
   }
-  // .example__wrapper
-  &__wrapper {
+
+  // .example__example-wrapper
+  .example__example-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   // .example__term
-  &__term {
+  .example__term {
     width: 124px;
     padding: 15px 20px;
     font-family: $oswald;
@@ -42,8 +49,9 @@
     border: 1px solid $brd_main;
     border-radius: 3px;
   }
+
   // .example__defining
-  &__defining {
+  .example__defining {
     margin: 0;
     width: 80px;
     font-size: 12px;
@@ -52,8 +60,9 @@
     transform: translateY(-10px);
     background-color: $bg_minor-light;
   }
+
   // .example__result
-  &__result {
+  .example__result {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +74,7 @@
     text-align: center;
     color: $txt_basic;
   }
+
   // .example__slider
-  &__slider {
+  .example__slider {
   }
-}

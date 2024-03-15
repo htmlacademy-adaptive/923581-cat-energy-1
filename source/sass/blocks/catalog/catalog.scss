@@ -1,26 +1,27 @@
 .catalog {
-  // .catalog__products
-  &__products {
-  }
+}
 
-  // .catalog__complementary
-  &__complementary {
-    &::before {
-      content: "";
-      border-top: 1px solid $line_light;
-      width: 100%;
-      height: 0%;
-      display: block;
-    }
-  }
+// .catalog__products
+.catalog__products {
+}
 
-  // .catalog__promotion
-  &__promotion {
+// .catalog__complementary
+.catalog__complementary {
+  &::before {
+    content: "";
+    border-top: 1px solid $line_light;
+    width: 100%;
+    height: 0%;
+    display: block;
   }
+}
 
-  // .catalog__partnership
-  &__partnership {
-    background-color: $bg_minor;
-    margin-top: 35px;
-  }
+// .catalog__promotion
+.catalog__promotion {
+}
+
+// .catalog__partnership
+.catalog__partnership {
+  background-color: $bg_minor;
+  margin-top: 35px;
 }

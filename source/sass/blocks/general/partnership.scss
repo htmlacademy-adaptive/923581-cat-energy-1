@@ -1,13 +1,16 @@
 .partnership {
+}
+
   // .partnership__container
-  &__container {
+  .partnership__container {
     padding-top: 26px;
     padding-bottom: 26px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   // .partnership__title
-  &__title {
+  .partnership__title {
     font-family: $oswald;
     font-weight: 400;
     font-size: 16px;
@@ -16,17 +19,18 @@
     color: $txt_minor;
     margin: 0;
   }
+
   // .partnership__address
-  &__address {
+  .partnership__address {
     line-height: 20px;
     font-style: normal;
   }
+
   // .partnership__map
-  &__map {
+  .partnership__map {
     background-image: url("../../../img/location.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 362px;
     display: block;
   }
-}

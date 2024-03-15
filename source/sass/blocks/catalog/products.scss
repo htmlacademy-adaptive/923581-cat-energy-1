@@ -1,11 +1,12 @@
 .products {
+}
   // .products__container
-  &__container {
+  .products__container {
     margin: 20px 0 25px;
   }
 
   // .products__title
-  &__title {
+  .products__title {
     font-family: $oswald;
     font-weight: 400;
     font-size: 36px;
@@ -15,10 +16,9 @@
   }
 
   // .products__list
-  &__list {
+  .products__list {
   }
 
   // .products__item
-  &__item {
+  .products__item {
   }
-}

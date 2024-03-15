@@ -14,61 +14,6 @@
     border-radius: 50%;
   }
 
-  // .program__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $txt_basic;
-    padding-left: 70px;
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
-  // .program__text
-  &__text {
-    margin: 0;
-    margin-bottom: 15px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      margin-top: 23px;
-      background-color: $line_main;
-    }
-  }
-
-  // .program__link
-  &__link {
-    position: relative;
-    min-height: 24px;
-    padding: 4px 0;
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    color: $txt_basic;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../../img/svg/icon_arrow.svg");
-      width: 32px;
-      height: 10px;
-      display: block;
-      right: -17px;
-      top: 10px;
-      transform: translateX(100%);
-    }
-  }
-
   //program--slim
   &--slim {
     &::before {
@@ -99,5 +44,60 @@
       display: block;
       z-index: 5;
     }
+  }
+}
+
+// .program__title
+.program__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $txt_basic;
+  padding-left: 70px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+// .program__text
+.program__text {
+  margin: 0;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 23px;
+    background-color: $line_main;
+  }
+}
+
+// .program__link
+.program__link {
+  position: relative;
+  min-height: 24px;
+  padding: 4px 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: $txt_basic;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../../img/svg/icon_arrow.svg");
+    width: 32px;
+    height: 10px;
+    display: block;
+    right: -17px;
+    top: 10px;
+    transform: translateX(100%);
   }
 }

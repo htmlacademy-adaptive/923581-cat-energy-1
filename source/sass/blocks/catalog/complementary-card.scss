@@ -13,36 +13,36 @@
     height: 0%;
     display: block;
   }
+}
 
-  // .complementary-card__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $txt_light;
-    margin: 0;
-    margin-top: 13px;
-  }
+// .complementary-card__title
+.complementary-card__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $txt_light;
+  margin: 0;
+  margin-top: 13px;
+}
 
-  // .complementary-card__inform
-  &__inform {
-    display: flex;
-    justify-content: space-between;
-    margin: 13px 0 15px;
-  }
+// .complementary-card__inform
+.complementary-card__inform {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0 15px;
+}
 
-  // .complementary-card__quantity
-  &__quantity {
-  }
+// .complementary-card__quantity
+.complementary-card__quantity {
+}
 
-  // .complementary-card__price
-  &__price {
-  }
+// .complementary-card__price
+.complementary-card__price {
+}
 
-  // .complementary-card__button
-  &__button {
-    width: 100%;
-  }
+// .complementary-card__button
+.complementary-card__button {
+  width: 100%;
 }

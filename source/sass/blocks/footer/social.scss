@@ -1,24 +1,22 @@
 .social {
   display: flex;
   justify-content: space-between;
+}
+// .social__item
+.social__item {
+}
 
-  // .social__item
-  &__item {
-  }
-
-  // .social__link
-  &__link {
-  }
-
+// .social__link
+.social__link {
   // .social__link--vk
-  &__link--vk {
+  &--vk {
   }
 
   // .social__link--ytb
-  &__link--ytb {
+  &--ytb {
   }
 
   // .social__link--tg
-  &__link--tg {
+  &--tg {
   }
 }

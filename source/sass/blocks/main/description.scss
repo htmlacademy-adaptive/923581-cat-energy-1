@@ -1,37 +1,36 @@
 .description {
-  // .description__container
-  &__container {
-    padding-bottom: 50px;
-  }
-  // .description__title
-  &__title {
-    font-family: $oswald;
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 400;
-    color: $txt_basic;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  // .description__list
-  &__list {
-    display: flex;
-    gap: 21px;
-    flex-direction: column;
-  }
-  // .description__item
-  &__item {
-    position: relative;
-    padding: 0 0 0 80px;
-  }
+}
 
-  // .description__text
-  &__text {
-    margin: 0;
-  }
+// .description__container
+.description__container {
+  padding-bottom: 50px;
+}
+
+// .description__title
+.description__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $txt_basic;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+// .description__list
+.description__list {
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+}
+
+// .description__item
+.description__item {
+  position: relative;
+  padding: 0 0 0 80px;
 
   // .description__item--leaf
-  &__item--leaf {
+  &--leaf {
     &::before {
       content: "";
       position: absolute;
@@ -48,7 +47,7 @@
   }
 
   // .description__item--bowl
-  &__item--bowl {
+  &--bowl {
     &::before {
       content: "";
       position: absolute;
@@ -65,7 +64,7 @@
   }
 
   // .description__item--eat
-  &__item--eat {
+  &--eat {
     &::before {
       content: "";
       position: absolute;
@@ -82,7 +81,7 @@
   }
 
   // .description__item--weigh
-  &__item--weigh {
+  &--weigh {
     &::before {
       content: "";
       position: absolute;
@@ -97,4 +96,9 @@
       background-color: $bg_basic;
     }
   }
+}
+
+// .description__text
+.description__text {
+  margin: 0;
 }

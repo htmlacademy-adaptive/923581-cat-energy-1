@@ -1,16 +1,18 @@
 .program-types {
+}
+
   // .program-types__container
-  &__container {
+  .program-types__container {
     padding: 20px;
   }
 
   // .program-types__list
-  &__list {
+  .program-types__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+  
   // .program-types__item
-  &__item {
+  .program-types__item {
   }
-}

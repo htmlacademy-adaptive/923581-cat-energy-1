@@ -1,8 +1,9 @@
 .profile {
   text-transform: uppercase;
+}
 
   // .profile__declaration
-  &__declaration {
+  .profile__declaration {
     border: none;
     padding: 0;
     margin: 0;
@@ -10,7 +11,7 @@
   }
 
   // .profile__nutrition
-  &__nutrition {
+  .profile__nutrition {
     border: none;
     padding: 0;
     margin: 0;
@@ -33,7 +34,7 @@
   }
 
   // .profile__owner-contacts
-  &__owner-contacts {
+  .profile__owner-contacts {
     border: none;
     padding: 0;
     margin: 0;
@@ -41,7 +42,7 @@
   }
 
   // .profile__comments
-  &__comments {
+  .profile__comments {
     border: none;
     padding: 0;
     margin: 0;
@@ -49,7 +50,7 @@
   }
 
   // .profile__additionally
-  &__additionally {
+  .profile__additionally {
     border: none;
     padding: 0;
     margin: 0;
@@ -58,16 +59,16 @@
   }
 
   // .profile__container
-  &__container {
+  .profile__container {
   }
 
   // .profile__cubmit
-  &__cubmit {
+  .profile__cubmit {
     width: 100%;
   }
 
   // .profile__required
-  &__required {
+  .profile__required {
     font-family: $lato;
     font-weight: 400;
     font-size: 14px;
@@ -77,4 +78,3 @@
     text-align: center;
     margin: 21px 0 32px;
   }
-}
