@@ -23,7 +23,7 @@
       height: 50px;
       top: 21px;
       left: 27px;
-      background-image: url("../../../img/svg/cat-slim.svg");
+      background-image: url("../img/svg/cat-slim.svg");
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
@@ -39,7 +39,7 @@
       height: 28px;
       top: 35px;
       left: 12px;
-      background-image: url("../../../img/svg/cat-pro.svg");
+      background-image: url("../img/svg/cat-pro.svg");
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
@@ -92,7 +92,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../../img/svg/icon_arrow.svg");
+    background-image: url("../img/svg/icon_arrow.svg");
     width: 32px;
     height: 10px;
     display: block;

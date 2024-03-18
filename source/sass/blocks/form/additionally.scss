@@ -43,7 +43,7 @@
 .additionally__input[type="radio"]:checked::after {
   position: absolute;
   content: "";
-  background-image: url("../../../img/svg/tick.svg");
+  background-image: url("../img/svg/tick.svg");
   width: 18px;
   height: 14px;
   top: 50%;
