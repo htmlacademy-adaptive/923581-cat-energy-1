@@ -12,6 +12,12 @@
     left: 20px;
     background-color: $bg_basic;
     border-radius: 50%;
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 445px;
+    }
   }
 
   //program--slim
@@ -23,10 +29,17 @@
       height: 50px;
       top: 21px;
       left: 27px;
-      background-image: url("../img/svg/cat-slim.svg");
+      background-image: url("../img/svg/cat-slim.svg#svgView(preserveAspectRatio(none))");
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 194px;
+        top: 81px;
+        left: 475px;
+      }
     }
   }
 
@@ -39,11 +52,21 @@
       height: 28px;
       top: 35px;
       left: 12px;
-      background-image: url("../img/svg/cat-pro.svg");
+      background-image: url("../img/svg/cat-pro.svg#svgView(preserveAspectRatio(none))");
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+        top: 135px;
+        left: 411px;
+      }
     }
+  }
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 53px;
   }
 }
 
@@ -58,6 +81,12 @@
   padding-left: 70px;
   margin: 0;
   margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 24px;
+  }
 }
 
 // .program__text
@@ -72,6 +101,13 @@
     height: 2px;
     margin-top: 23px;
     background-color: $line_main;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    padding-right: 253px;
+    margin-bottom: 48px;
   }
 }
 
@@ -99,5 +135,8 @@
     right: -17px;
     top: 10px;
     transform: translateX(100%);
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

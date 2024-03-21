@@ -2,11 +2,18 @@
 }
 
 // .menu__item
-.menu__item {
+.menu__item:not(:last-child) {
+  margin-right: 32px;
 }
 
 // .menu__link
 .menu__link {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $txt_basic;
 }
 
 // .menu__link--current

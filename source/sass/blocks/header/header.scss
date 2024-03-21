@@ -17,6 +17,9 @@
 // .header__logo-image
 .header__logo-image {
   margin-right: 56px;
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 // .header__logo-text
@@ -29,7 +32,10 @@
 
 // .header__menu
 .header__menu {
-  display: none;
+  display: block;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 // .header__menu-body
@@ -38,4 +44,6 @@
 
 // .header__menu-list
 .header__menu-list {
+  display: flex;
+  flex-wrap: nowrap;
 }

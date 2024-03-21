@@ -1,4 +1,8 @@
 .partnership {
+  background-color: $bg_minor;
+  @media (min-width: $tablet-width) {
+    background-color: $bg_main;
+  }
 }
 
 // .partnership__partnership-wrapper
@@ -7,6 +11,11 @@
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    padding: 60px 40px;
+    grid-template-columns: 163px 163px;
+    justify-content: space-between;
+  }
 }
 
 // .partnership__title
@@ -18,12 +27,19 @@
   text-transform: uppercase;
   color: $txt_minor;
   margin: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 // .partnership__address
 .partnership__address {
   line-height: 20px;
   font-style: normal;
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
 }
 
 // .partnership__map
@@ -31,7 +47,11 @@
   background-image: url("../img/location.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 362px;
   width: 100%;
   display: block;
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

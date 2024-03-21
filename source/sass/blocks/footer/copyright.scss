@@ -2,10 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   svg {
     color: $txt_fill;
     fill: currentcolor;
+  }
+  @media (min-width: $tablet-width) {
+    justify-content: end;
   }
 }
 // .copyright__text
@@ -13,4 +16,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $txt_main;
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }

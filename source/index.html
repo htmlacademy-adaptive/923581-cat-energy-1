@@ -12,7 +12,7 @@
 </head>
 
 <body class="page">
-<div class="wrapper">
+  <div class="wrapper">
     <header class="page__header header">
       <div class="header__header-wrapper container">
         <a class="header__logo" href="index.html" aria-current="page" aria-label="Интернет-магазин Cat Energy.">
@@ -43,7 +43,7 @@
         </button>
         <div class="header__menu menu">
           <nav class="header__menu-body" aria-label="Навигация по сайту.">
-            <ul class="header__menu-list">
+            <ul class="header__menu-list list-reset">
               <li class="menu__item">
                 <a class="menu__link menu__link--current" href="index.html" aria-current="page">главная</a>
               </li>
@@ -63,10 +63,12 @@
       <!-- Раздел Promo -->
       <section class="main__promo promo">
         <div class="container">
-          <h1 class="promo__title">Функциональное питание для котов</h1>
-          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <img class="promo__banner" src="./img/index-can-mobile-1.png" alt="Кошачий корм Cat Energy pro с курицей." width="280" height="270">
-          <a class="promo__button button button--xl" href="form.html">Подобрать программу</a>
+          <div class="promo__wrapper">
+            <h1 class="promo__title">Функциональное питание для котов</h1>
+            <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+            <img class="promo__banner" src="./img/index-can-mobile-1.png" alt="Кошачий корм Cat Energy pro с курицей." width="280" height="270">
+            <a class="promo__button button button--xl" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </section>
       <section class="main__programs program-types">
@@ -111,19 +113,21 @@
         <div class="container">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__list list-reset">
-            <div class="example__example-wrapper">
-              <dt class="example__term">5 КГ</dt>
-              <dd class="example__defining">снижение веса</dd>
-            </div>
-            <div class="example__example-wrapper">
-              <dt class="example__term">60 ДНЕЙ</dt>
-              <dd class="example__defining">затрачено времени</dd>
-            </div>
-          </dl>
           <div class="example__result">
-            <p>Затраты на питание:</p>
-            <p>15 000 Руб.</p>
+            <dl class="example__list list-reset">
+              <div class="example__example-wrapper">
+                <dt class="example__term">5 КГ</dt>
+                <dd class="example__defining">снижение веса</dd>
+              </div>
+              <div class="example__example-wrapper">
+                <dt class="example__term">60 ДНЕЙ</dt>
+                <dd class="example__defining">затрачено времени</dd>
+              </div>
+            </dl>
+            <div class="example__prise">
+              <p>Затраты на питание:</p>
+              <p>15 000 Руб.</p>
+            </div>
           </div>
           <!-- Слайдер -->
           <div class="example__slider comparison-slider">
@@ -136,7 +140,7 @@
         </div>
       </section>
       <!-- Раздел Partnership -->
-      <section class="catalog__partnership partnership">
+      <section class="main__partnership partnership">
         <div class="partnership__partnership-wrapper container">
           <h2 class="partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="partnership__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -196,12 +200,12 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer" aria-label="Перейти на сайт HTML Academy.">
           <span class="copyright__text">HTML Academy</span>
           <svg width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
-            </svg>
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+          </svg>
         </a>
       </div>
     </footer>
-</div>
+  </div>
 </body>
 
 </html>

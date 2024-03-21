@@ -1,6 +1,10 @@
 .page {
-
 }
+
+.page::-webkit-scrollbar {
+  width: 0;
+}
+
 // .page__header
 .page__header {
   padding: 13px 0;

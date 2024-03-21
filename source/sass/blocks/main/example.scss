@@ -13,6 +13,11 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 // .example__text
@@ -24,6 +29,10 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    gap: 40px;
+  }
 }
 
 // .example__example-wrapper
@@ -60,6 +69,14 @@
 
 // .example__result
 .example__result {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// .example__result
+.example__prise {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +92,11 @@
 
   p {
     margin: 0;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: end;
+    font-size: 20px;
   }
 }
 
