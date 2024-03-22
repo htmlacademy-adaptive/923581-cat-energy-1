@@ -1,5 +1,14 @@
 .complementary {
 }
+
+// .complementary__wrapper
+.complementary__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 // .complementary__title
 .complementary__title {
   font-family: $oswald;
@@ -25,8 +34,17 @@
 
 // .complementary__list
 .complementary__list {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
+// .complementary__promotion
+.complementary__promotion {
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
 // .complementary__item
 .complementary__item {
 }

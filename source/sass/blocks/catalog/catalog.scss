@@ -16,12 +16,9 @@
   }
 }
 
-// .catalog__promotion
-.catalog__promotion {
-
-}
-
 // .catalog__partnership
 .catalog__partnership {
-
+  @media (min-width: $desktop-width) {
+    margin-top: 87px;
+  }
 }
