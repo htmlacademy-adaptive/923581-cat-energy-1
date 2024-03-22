@@ -1,20 +1,32 @@
 .partnership {
+  position: relative;
   background-color: $bg_minor;
+
   @media (min-width: $tablet-width) {
     background-color: $bg_main;
   }
 }
 
 // .partnership__partnership-wrapper
-.partnership__partnership-wrapper {
+.partnership__partnership-content {
   padding-top: 26px;
   padding-bottom: 26px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   @media (min-width: $tablet-width) {
     padding: 60px 40px;
     grid-template-columns: 163px 163px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 565px;
+    background-color: $bg_main;
+    top: 95px;
+    left: 110px;
   }
 }
 
@@ -27,6 +39,7 @@
   text-transform: uppercase;
   color: $txt_minor;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
@@ -37,6 +50,7 @@
 .partnership__address {
   line-height: 20px;
   font-style: normal;
+
   @media (min-width: $tablet-width) {
     text-align: end;
   }
@@ -51,6 +65,7 @@
   height: 362px;
   width: 100%;
   display: block;
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }

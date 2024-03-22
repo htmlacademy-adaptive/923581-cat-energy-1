@@ -11,6 +11,7 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -23,11 +24,18 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 137px;
     padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 77px;
+    padding: 0;
   }
 }
 
@@ -47,6 +55,7 @@
     top: 0;
     display: block;
     background-color: $bg_basic;
+
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
@@ -81,9 +90,14 @@
       background-image: url("../../../img/svg/icon-weigh.svg");
     }
   }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
   }
 }
 

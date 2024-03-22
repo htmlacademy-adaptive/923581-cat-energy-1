@@ -12,11 +12,19 @@
     left: 20px;
     background-color: $bg_basic;
     border-radius: 50%;
+
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
       top: 92px;
       left: 445px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
     }
   }
 
@@ -34,11 +42,19 @@
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
+
       @media (min-width: $tablet-width) {
         width: 140px;
         height: 194px;
         top: 81px;
         left: 475px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 67px;
       }
     }
   }
@@ -57,16 +73,29 @@
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
+
       @media (min-width: $tablet-width) {
         width: 268px;
         height: 112px;
         top: 135px;
         left: 411px;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: 67px;
+        left: 33px;
+      }
     }
   }
+
   @media (min-width: $tablet-width) {
     padding: 77px 63px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 60px 55px 52px;
   }
 }
 
@@ -81,11 +110,17 @@
   padding-left: 70px;
   margin: 0;
   margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+    margin-bottom: 73px;
   }
 }
 
@@ -101,13 +136,19 @@
     height: 2px;
     margin-top: 23px;
     background-color: $line_main;
+
     @media (min-width: $tablet-width) {
       display: none;
     }
   }
+
   @media (min-width: $tablet-width) {
     padding-right: 253px;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -136,6 +177,7 @@
     top: 10px;
     transform: translateX(100%);
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }

@@ -2,6 +2,19 @@
   background-color: $bg_minor-light;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
+}
+
+// .example__content
+.example__content {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
 }
 
 // .example__title
@@ -13,6 +26,7 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -29,6 +43,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     justify-content: start;
     gap: 40px;
@@ -73,6 +88,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 // .example__result
@@ -93,13 +112,22 @@
   p {
     margin: 0;
   }
+
   @media (min-width: $tablet-width) {
     display: block;
     text-align: end;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 // .example__slider
 .example__slider {
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 2 / -1 / -1;
+  }
 }
