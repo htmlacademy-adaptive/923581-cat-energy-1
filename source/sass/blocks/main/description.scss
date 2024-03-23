@@ -1,5 +1,14 @@
 .description {
-  padding-bottom: 50px;
+  padding: 20px 0 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 47px;
+    border-bottom: 1px solid $line_light;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
 }
 
 // .description__title
@@ -11,6 +20,11 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 // .description__list
@@ -21,55 +35,86 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    gap: 37px 153px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0;
   }
 }
 
 // .description__item
 .description__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 40px;
+  }
 }
 
 //.description__icon
 .description__icon {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 60px;
   height: 60px;
   display: block;
   background-color: $bg_basic;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 
   // .description__icon--leaf
   &--leaf {
     &::after {
-      content: "";
-      position: absolute;
-      background-repeat: no-repeat;
-      width: 24px;
-      height: 28px;
-      background-size: 100% 100%;
-      background-position: center;
       background-image: url("../img/svg/icon_leaf.svg");
+      width: 30px;
+      height: 32px;
     }
   }
 
   // .description__icon--bowl
   &--bowl {
-    &::before {
+    &::after {
       background-image: url("../../../img/svg/icon-bowl.svg");
+      width: 27px;
+      height: 29px;
     }
   }
 
   // .description__icon--eat
   &--eat {
-    &::before {
+    &::after {
       background-image: url("../../../img/svg/icon_eat.svg");
+      width: 26px;
+      height: 30px;
     }
   }
 
   // .description__icon--weigh
   &--weigh {
-    &::before {
+    &::after {
       background-image: url("../../../img/svg/icon-weigh.svg");
+      width: 27px;
+      height: 31px;
     }
   }
 }
@@ -78,4 +123,8 @@
 .description__text {
   margin: 0;
   padding: 2px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 57px;
+  }
 }

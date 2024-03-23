@@ -4,14 +4,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $txt_main;
-
-  &::before {
-    content: "";
-    border-top: 1px solid $line_light;
-    width: 100%;
-    height: 0%;
-    display: block;
-  }
+  border-top: 1px solid $line_light;
 
   // .product-card--more
   &--more {

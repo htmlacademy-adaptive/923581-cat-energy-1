@@ -2,10 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   svg {
     color: $txt_fill;
     fill: currentcolor;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 23px;
   }
 }
 // .copyright__text

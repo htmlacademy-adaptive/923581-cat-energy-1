@@ -1,6 +1,7 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 // .social__item
 .social__item {
@@ -10,7 +11,7 @@
 .social__link {
   color: $txt_fill;
   fill: currentcolor;
-  
+
   // .social__link--vk
   &--vk {
   }
