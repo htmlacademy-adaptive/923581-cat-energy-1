@@ -7,6 +7,17 @@
 
 // .menu__link
 .menu__link {
+  font-family: $oswald;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $txt_basic;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    color: $txt_contrast;
+  }
 }
 
 // .menu__link--current

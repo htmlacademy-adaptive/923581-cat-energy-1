@@ -1,9 +1,12 @@
 .page {
-
 }
 // .page__header
 .page__header {
   padding: 13px 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }
 
 // .page__main
