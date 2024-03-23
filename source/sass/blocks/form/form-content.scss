@@ -6,7 +6,6 @@
   padding: 27px 0 39px;
 }
 
-
 // .form-content__title
 .form-content__title {
   font-family: $oswald;
@@ -31,6 +30,20 @@
 
 // .form-content__profile
 .form-content__profile {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile__cubmit-wrapper {
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 79px;
+    }
+  }
 }
 
 // .form-content__partnership

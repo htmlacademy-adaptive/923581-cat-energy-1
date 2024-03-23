@@ -8,6 +8,17 @@
   padding: 0;
   margin: 0;
   padding-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+
+  .container {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      width: 570px;
+    }
+  }
 }
 
 // .profile__nutrition
@@ -31,6 +42,17 @@
     height: 0%;
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+  }
+
+  .container {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      width: 570px;
+    }
+  }
 }
 
 // .profile__owner-contacts
@@ -39,6 +61,10 @@
   padding: 0;
   margin: 0;
   margin-top: 26px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 // .profile__comments
@@ -47,6 +73,10 @@
   padding: 0;
   margin: 0;
   margin-top: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 // .profile__additionally
@@ -56,11 +86,16 @@
   margin: 0;
   padding-bottom: 34px;
   margin-top: 23px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    padding-bottom: 60px;
+  }
 }
 
 // .profile__cubmit
 .profile__cubmit {
-  width: 100%;
+  width: 570px;
 }
 
 // .profile__required
@@ -73,4 +108,8 @@
   text-transform: none;
   text-align: center;
   margin: 21px 0 32px;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
