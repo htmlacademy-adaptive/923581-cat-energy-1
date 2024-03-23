@@ -15,81 +15,61 @@
 
 // .description__list
 .description__list {
-  display: flex;
+  display: grid;
   gap: 20px;
-  flex-direction: column;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 // .description__item
 .description__item {
-  position: relative;
-  padding: 0 0 0 80px;
+}
 
-  // .description__item--leaf
+//.description__icon
+.description__icon {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: $bg_basic;
+
+  // .description__icon--leaf
   &--leaf {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/svg/icon_leaf.svg");
       background-repeat: no-repeat;
+      width: 24px;
+      height: 28px;
+      background-size: 100% 100%;
       background-position: center;
-      width: 60px;
-      height: 60px;
-      left: 0;
-      top: 0;
-      display: block;
-      background-color: $bg_basic;
+      background-image: url("../img/svg/icon_leaf.svg");
     }
   }
 
-  // .description__item--bowl
+  // .description__icon--bowl
   &--bowl {
     &::before {
-      content: "";
-      position: absolute;
       background-image: url("../../../img/svg/icon-bowl.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 60px;
-      height: 60px;
-      left: 0;
-      top: 0;
-      display: block;
-      background-color: $bg_basic;
     }
   }
 
-  // .description__item--eat
+  // .description__icon--eat
   &--eat {
     &::before {
-      content: "";
-      position: absolute;
       background-image: url("../../../img/svg/icon_eat.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 60px;
-      height: 60px;
-      left: 0;
-      top: 0;
-      display: block;
-      background-color: $bg_basic;
     }
   }
 
-  // .description__item--weigh
+  // .description__icon--weigh
   &--weigh {
     &::before {
-      content: "";
-      position: absolute;
       background-image: url("../../../img/svg/icon-weigh.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 60px;
-      height: 60px;
-      left: 0;
-      top: 0;
-      display: block;
-      background-color: $bg_basic;
     }
   }
 }
