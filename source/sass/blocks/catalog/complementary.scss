@@ -29,4 +29,8 @@
 
 // .complementary__item
 .complementary__item {
+  border-top: 1px solid $line_minor;
+  &:last-child {
+    border-bottom: 1px solid $line_minor;
+  }
 }
