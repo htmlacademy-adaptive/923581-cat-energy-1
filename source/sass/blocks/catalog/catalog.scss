@@ -7,21 +7,17 @@
 
 // .catalog__complementary
 .catalog__complementary {
-  &::before {
-    content: "";
-    border-top: 1px solid $line_light;
-    width: 100%;
-    height: 0%;
-    display: block;
+  border-top: 1px solid $line_light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
 // .catalog__promotion
 .catalog__promotion {
-
 }
 
 // .catalog__partnership
 .catalog__partnership {
-
 }
