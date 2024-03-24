@@ -18,4 +18,8 @@
     height: 0;
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+  }
 }

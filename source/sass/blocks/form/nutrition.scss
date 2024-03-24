@@ -10,6 +10,15 @@
 // .nutrition__list
 .nutrition__list {
   padding: 22px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border: 1px solid $brd_minor;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0px 40px;
+  }
 }
 
 // .nutrition__item

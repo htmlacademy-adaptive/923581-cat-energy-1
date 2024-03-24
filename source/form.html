@@ -139,13 +139,13 @@
         </fieldset>
         <fieldset class="profile__comments comments">
           <legend class="comments__title title-string">Комментарий</legend>
-          <div class="container">
+          <div class="comments__text-area container">
             <textarea class="comments__comment" name="comment" rows="5" cols="35" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="profile__additionally additionally">
           <legend class="additionally__title title-string">Дополнительно</legend>
-          <div class="container">
+          <div class="additionally__content container">
             <ul class="additionally__list list-reset">
               <li class="additionally__item">
                 <label class="additionally__label" for="sweetener">
@@ -172,12 +172,11 @@
                 </label>
               </li>
             </ul>
+            <button class="profile__button button button--xl" type="submit">отправить заявку</button>
+            <p class="profile__required">* — Обязательные поля</p>
           </div>
         </fieldset>
-        <div class="container">
-          <button class="profile__cubmit button button--xl" type="submit">отправить заявку</button>
-          <p class="profile__required">* — Обязательные поля</p>
-        </div>
+
       </form>
       <!-- Раздел Partnership -->
       <section class="form-content__partnership partnership">

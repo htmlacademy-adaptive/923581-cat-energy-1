@@ -11,6 +11,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 326px 1fr 244px;
+  }
 }
 
 // .complementary-card__title
@@ -28,6 +33,9 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 // .complementary-card__inform
@@ -42,6 +50,12 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    justify-content: space-between;
+    padding-right: 40px;
   }
 }
 
@@ -61,5 +75,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: -2/-1;
   }
 }

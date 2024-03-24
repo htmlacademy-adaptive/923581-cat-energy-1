@@ -26,7 +26,7 @@
     text-align: center;
     color: $txt_contrast;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       margin: 0;
       text-align: left;
     }
@@ -50,5 +50,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 57px 77px 60px 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
