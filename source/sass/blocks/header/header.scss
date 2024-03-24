@@ -19,6 +19,14 @@
 // .header__logo-image
 .header__logo-image {
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
 }
 
 // .header__logo-text
