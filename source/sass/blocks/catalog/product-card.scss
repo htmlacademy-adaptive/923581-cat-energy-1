@@ -192,4 +192,8 @@
     line-height: 18px;
     min-height: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
