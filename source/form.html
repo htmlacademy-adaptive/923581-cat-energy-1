@@ -67,10 +67,10 @@
         </div>
       </header>
       <!-- Раздел Форма -->
-      <form class="form-content__profile profile" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="profile__declaration declaration">
-          <legend class="visually-hidden">Информация о питомце</legend>
-          <div class="container">
+      <div class="container">
+        <form class="form-content__profile profile" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="profile__declaration declaration">
+            <legend class="visually-hidden">Информация о питомце</legend>
             <ul class="declaration__list list-reset">
               <li class="declaration__item">
                 <label class="declaration__label" for="cat-name">
@@ -91,11 +91,9 @@
                 </label>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile__nutrition nutrition">
-          <legend class="visually-hidden">Программа питания</legend>
-          <div class="container">
+          </fieldset>
+          <fieldset class="profile__nutrition nutrition">
+            <legend class="visually-hidden">Программа питания</legend>
             <ul class="nutrition__list list-reset">
               <li class="nutrition__item">
                 <label class="nutrition__label" for="slimming">
@@ -116,11 +114,9 @@
                 </label>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile__owner-contacts owner-contacts">
-          <legend class="owner-contacts__title title-string">Контактные&nbsp;данные (владельца кота)</legend>
-          <div class="container">
+          </fieldset>
+          <fieldset class="profile__owner-contacts owner-contacts">
+            <legend class="owner-contacts__title title-string">Контактные&nbsp;данные (владельца кота)</legend>
             <ul class="owner-contacts__list list-reset">
               <li class="owner-contacts__item">
                 <label class="owner-contacts__label" for="email">
@@ -135,49 +131,48 @@
                 </label>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile__comments comments">
-          <legend class="comments__title title-string">Комментарий</legend>
-          <div class="comments__text-area container">
-            <textarea class="comments__comment" name="comment" rows="5" cols="35" placeholder="Расскажите обо всех повАдках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="profile__additionally additionally">
-          <legend class="additionally__title title-string">Дополнительно</legend>
-          <div class="additionally__content container">
-            <ul class="additionally__list list-reset">
-              <li class="additionally__item">
-                <label class="additionally__label" for="sweetener">
-                  <input class="additionally__input" id="sweetener" name="additionally" type="radio" value="sweetener" checked>
-                  <span class="additionally__text">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="drinking-water">
-                  <input class="additionally__input" id="drinking-water" name="additionally" type="radio" value="drinking-water">
-                  <span class="additionally__text">питьевая вода</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="milk">
-                  <input class="additionally__input" id="milk" name="additionally" type="radio" value="milk">
-                  <span class="additionally__text">молоко</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="vitamins">
-                  <input class="additionally__input" id="vitamins" name="additionally" type="radio" value="vitamins">
-                  <span class="additionally__text">витамины</span>
-                </label>
-              </li>
-            </ul>
-            <button class="profile__button button button--xl" type="submit">отправить заявку</button>
-            <p class="profile__required">* — Обязательные поля</p>
-          </div>
-        </fieldset>
-
-      </form>
+          </fieldset>
+          <fieldset class="profile__comments comments">
+            <legend class="comments__title title-string">Комментарий</legend>
+            <div class="comments__text-area">
+              <textarea class="comments__comment" name="comment" rows="5" cols="35" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="profile__additionally additionally">
+            <legend class="additionally__title title-string">Дополнительно</legend>
+            <div class="additionally__content">
+              <ul class="additionally__list list-reset">
+                <li class="additionally__item">
+                  <label class="additionally__label" for="sweetener">
+                    <input class="additionally__input" id="sweetener" name="additionally" type="radio" value="sweetener" checked>
+                    <span class="additionally__text">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="drinking-water">
+                    <input class="additionally__input" id="drinking-water" name="additionally" type="radio" value="drinking-water">
+                    <span class="additionally__text">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="milk">
+                    <input class="additionally__input" id="milk" name="additionally" type="radio" value="milk">
+                    <span class="additionally__text">молоко</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="vitamins">
+                    <input class="additionally__input" id="vitamins" name="additionally" type="radio" value="vitamins">
+                    <span class="additionally__text">витамины</span>
+                  </label>
+                </li>
+              </ul>
+              <button class="profile__button button button--xl" type="submit">отправить заявку</button>
+              <p class="profile__required">* — Обязательные поля</p>
+            </div>
+          </fieldset>
+        </form>
+      </div>
       <!-- Раздел Partnership -->
       <section class="form-content__partnership partnership">
         <div class="container">

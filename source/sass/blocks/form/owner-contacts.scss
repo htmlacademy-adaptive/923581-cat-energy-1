@@ -17,6 +17,12 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 0px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 // .owner-contacts__item

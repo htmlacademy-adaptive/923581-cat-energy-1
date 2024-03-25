@@ -6,7 +6,6 @@
   padding: 27px 0 39px;
 }
 
-
 // .form-content__title
 .form-content__title {
   font-family: $oswald;
@@ -16,6 +15,10 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
 }
 
 // .form-content__text
@@ -27,6 +30,10 @@
   line-height: 18px;
   color: $txt_basic;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
 }
 
 // .form-content__profile

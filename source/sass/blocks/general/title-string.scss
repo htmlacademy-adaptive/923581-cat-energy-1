@@ -7,7 +7,6 @@
   line-height: 26px;
   color: $txt_basic;
   text-transform: none;
-  padding-left: 20px;
 
   &::after {
     content: "";
@@ -21,5 +20,9 @@
 
   @media (min-width: $tablet-width) {
     white-space: nowrap;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
   }
 }

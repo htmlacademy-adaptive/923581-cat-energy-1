@@ -6,6 +6,10 @@
   text-transform: uppercase;
   color: $txt_main;
   padding: 0 0 32px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 80px;
+  }
 }
 // .additionally__title
 .additionally__title {
@@ -14,11 +18,16 @@
 
 // .additionally__content
 .additionally__content {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 0px 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    gap: 60px 80px;
   }
 }
 
@@ -34,10 +43,12 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    grid-column: 1/-1;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    grid-column: 1/-1;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
   }
 }
 
