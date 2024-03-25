@@ -15,6 +15,7 @@
 // .owner-contacts__list
 .owner-contacts__list {
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0px 40px;
   }
 
   @media (min-width: $desktop-width) {
