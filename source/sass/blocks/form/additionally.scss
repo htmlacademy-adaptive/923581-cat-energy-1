@@ -19,7 +19,7 @@
 // .additionally__content
 .additionally__content {
   @media (min-width: $tablet-width) {
-    padding: 0px 70px;
+    padding: 0 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px 60px;

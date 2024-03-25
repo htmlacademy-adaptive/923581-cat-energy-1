@@ -115,7 +115,7 @@
 .example__defining {
   margin: 0;
   max-width: 80px;
-  padding: 0px 7px;
+  padding: 0 7px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
@@ -125,7 +125,7 @@
   @media (min-width: $tablet-width) {
     white-space: nowrap;
     max-width: 125px;
-    padding: 0px 7px;
+    padding: 0 7px;
     font-size: 14px;
     line-height: 14px;
   }
