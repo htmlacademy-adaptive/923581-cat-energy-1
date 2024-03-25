@@ -199,6 +199,18 @@ body {
   }
 }
 
+.partnership__content {
+  height: 100%;
+}
+@media (min-width: 1440px) {
+  .partnership__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .partnership__partnership-wrapper {
   padding: 26px 0;
   display: grid;
