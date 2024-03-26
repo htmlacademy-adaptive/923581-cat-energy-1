@@ -13,8 +13,6 @@
   background-position: center 60%;
   background-image: url("../img/catalog/image-1.jpg");
   box-shadow: inset 0 302px 0 0 $bg_basic-light;
-  background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   margin: 35px 0;
   padding: 59px 0 43px;
@@ -46,7 +44,15 @@
     margin: 0 auto 48px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 80px;
+      height: 83px;
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 83px;
+      margin: 0 auto 46px;
     }
   }
 
@@ -54,7 +60,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 57px 77px 60px 125px;
+    padding: 57px 125px 60px 77px;
+    margin: 70px 0 75px;
   }
 
   @media (min-width: $desktop-width) {

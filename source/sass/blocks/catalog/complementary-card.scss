@@ -10,11 +10,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 26px 0 28px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 326px 1fr 244px;
+    padding: 15px 0 17px;
   }
 }
 
@@ -78,5 +80,8 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     grid-column: -2/-1;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

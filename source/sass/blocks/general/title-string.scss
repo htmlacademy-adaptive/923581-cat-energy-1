@@ -21,8 +21,4 @@
   @media (min-width: $tablet-width) {
     white-space: nowrap;
   }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding-left: 40px;
-  }
 }

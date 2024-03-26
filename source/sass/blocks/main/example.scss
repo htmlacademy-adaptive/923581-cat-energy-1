@@ -126,7 +126,7 @@
 
   @media (min-width: $tablet-width) {
     white-space: nowrap;
-    max-width: 125px;
+    max-width: 140px;
     padding: 0 7px;
     font-size: 14px;
     line-height: 14px;
@@ -144,15 +144,36 @@
     font-family: $oswald;
     margin: 0;
     text-transform: uppercase;
+    color: $txt_basic;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      
+      &:not(:last-child) {
+        margin-right: 63px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: start;
   }
 }
 
