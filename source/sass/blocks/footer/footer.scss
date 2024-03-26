@@ -22,12 +22,12 @@
 .footer__logo {
   margin: 0;
   margin-bottom: 20px;
-  width: 100%;
   text-align: center;
 
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $line_main;
     padding-bottom: 20px;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
