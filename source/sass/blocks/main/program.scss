@@ -100,6 +100,14 @@
       }
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 60px 55px 52px;
+  }
 }
 
 // .program__title
@@ -182,5 +190,9 @@
     height: 10px;
     display: block;
     margin-left: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

@@ -18,4 +18,8 @@
   font-size: 16px;
   line-height: 20px;
   color: $txt_main;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }

@@ -17,9 +17,9 @@
 // .footer__logo
 .footer__logo {
   margin: 0;
-  margin-bottom: 20px;
-  width: 100%;
   text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $line_main;

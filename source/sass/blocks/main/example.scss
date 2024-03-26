@@ -133,6 +133,18 @@
 
 // .example__result
 .example__result {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+// .example__result
+.example__prise {
   display: flex;
   align-items: center;
   justify-content: center;
