@@ -1,21 +1,28 @@
 .menu {
+  /* foo */
 }
 
 // .menu__item
-.menu__item:not(:last-child) {
-  margin-right: 32px;
+.menu__item {
+  /* foo */
 }
 
 // .menu__link
 .menu__link {
   font-family: $oswald;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  text-transform: uppercase;
+  font-weight: 400;
   color: $txt_basic;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 // .menu__link--current
 .menu__link--current {
+  /* foo */
 }

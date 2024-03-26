@@ -9,10 +9,14 @@
 
 // .declaration__list
 .declaration__list {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 // .declaration__item
 .declaration__item {
+  /* foo */
 }
 
 .declaration__item:not(:last-child) {

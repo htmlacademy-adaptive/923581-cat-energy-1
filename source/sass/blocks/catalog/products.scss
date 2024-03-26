@@ -1,4 +1,5 @@
 .products {
+  /* foo */
 }
 
 // .products__title
@@ -9,22 +10,28 @@
   line-height: 36px;
   color: $txt_basic;
   margin: 27px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 // .products__list
 .products__list {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
 // .products__item
 .products__item {
+  /* foo */
 }

@@ -1,5 +1,5 @@
 .form-content {
-  flex-grow: 1;
+  /* foo */
 }
 
 // .form-content__header
@@ -16,6 +16,10 @@
   color: $txt_basic;
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
 }
 
 // .form-content__text
@@ -27,24 +31,15 @@
   line-height: 18px;
   color: $txt_basic;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
+  }
 }
 
 // .form-content__profile
 .form-content__profile {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .profile__cubmit-wrapper {
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 79px;
-    }
-  }
+  /* foo */
 }
 
 // .form-content__partnership

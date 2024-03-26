@@ -1,5 +1,11 @@
 .profile {
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 // .profile__declaration
@@ -8,17 +14,6 @@
   padding: 0;
   margin: 0;
   padding-bottom: 24px;
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
-  }
-
-  .container {
-    @media (min-width: $desktop-width) {
-      padding: 0;
-      width: 570px;
-    }
-  }
 }
 
 // .profile__nutrition
@@ -26,32 +21,11 @@
   border: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid $line_main;
+  border-bottom: 1px solid $line_main;
 
-  &::before {
-    content: "";
-    border-top: 1px solid $line_main;
-    width: 100%;
-    height: 0%;
-    display: block;
-  }
-
-  &::after {
-    content: "";
-    border-top: 1px solid $line_main;
-    width: 100%;
-    height: 0%;
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / -1;
-  }
-
-  .container {
-    @media (min-width: $desktop-width) {
-      padding: 0;
-      width: 570px;
-    }
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
@@ -63,7 +37,7 @@
   margin-top: 26px;
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
   }
 }
 
@@ -75,27 +49,31 @@
   margin-top: 24px;
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
   }
 }
 
 // .profile__additionally
 .profile__additionally {
   border: none;
-  padding: 0;
   margin: 0;
-  padding-bottom: 34px;
   margin-top: 23px;
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
-    padding-bottom: 60px;
+    grid-column: 1/-1;
+    margin-top: 70px;
   }
 }
 
-// .profile__cubmit
-.profile__cubmit {
-  width: 570px;
+// .profile__button
+.profile__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 20px;
+  }
 }
 
 // .profile__required
@@ -107,9 +85,9 @@
   color: $txt_basic;
   text-transform: none;
   text-align: center;
-  margin: 21px 0 32px;
+  margin-top: 21px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     text-align: left;
   }
 }

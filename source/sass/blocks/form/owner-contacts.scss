@@ -14,10 +14,20 @@
 
 // .owner-contacts__list
 .owner-contacts__list {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 // .owner-contacts__item
 .owner-contacts__item {
+  /* foo */
 }
 
 .owner-contacts__item:not(:last-child) {

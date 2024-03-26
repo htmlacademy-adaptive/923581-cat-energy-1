@@ -1,4 +1,12 @@
 .comments {
+  /* foo */
+}
+
+// .comments__text-area
+.comments__text-area {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 // .comments__title
@@ -23,5 +31,9 @@
     text-transform: uppercase;
     text-align: center;
     color: $txt_main;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
   }
 }

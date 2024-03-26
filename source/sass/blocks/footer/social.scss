@@ -1,9 +1,11 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
 }
 // .social__item
 .social__item {
+  /* foo */
 }
 
 // .social__link
@@ -13,13 +15,16 @@
 
   // .social__link--vk
   &--vk {
+    /* foo */
   }
 
   // .social__link--ytb
   &--ytb {
+    /* foo */
   }
 
   // .social__link--tg
   &--tg {
+    /* foo */
   }
 }

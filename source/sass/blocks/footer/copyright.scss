@@ -5,7 +5,12 @@
 
   svg {
     color: $txt_fill;
-    fill: currentcolor;
+    fill: currentColor;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 23px;
   }
 
   @media (min-width: $tablet-width) {

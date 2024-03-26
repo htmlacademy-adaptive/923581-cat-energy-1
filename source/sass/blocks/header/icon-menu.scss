@@ -35,4 +35,8 @@
       top: calc(50% - 1px);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

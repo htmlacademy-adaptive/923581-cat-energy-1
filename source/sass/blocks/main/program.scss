@@ -2,90 +2,101 @@
   padding: 30px 20px 18px;
   background-color: $bg_minor;
   position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
 
-  &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 24px;
-    left: 20px;
-    background-color: $bg_basic;
-    border-radius: 50%;
-
-    @media (min-width: $tablet-width) {
-      width: 200px;
-      height: 200px;
-      top: 92px;
-      left: 445px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100px;
-      height: 100px;
-      top: 47px;
-      left: 52px;
-    }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-template-columns: 1fr 268px;
+    padding: 77px 29px 53px 52px;
+    column-gap: 19px;
   }
 
-  //program--slim
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 214px 1fr;
+    padding: 41px 61px 55px 52px;
+  }
+}
+//.program__icon
+.program__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $bg_basic;
+  border-radius: 50%;
+  display: block;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-area: 1 / 2/ 4 / 3;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+  }
+
+  //program__icon--slim
   &--slim {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 36px;
       height: 50px;
-      top: 21px;
-      left: 27px;
-      background-image: url("../img/svg/cat-slim.svg#svgView(preserveAspectRatio(none))");
+      bottom: 3px;
+      left: 7px;
+      background-image: url("../img/svg/cat-slim.svg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         width: 140px;
         height: 194px;
-        top: 81px;
-        left: 475px;
+        bottom: 17px;
+        left: 30px;
       }
 
       @media (min-width: $desktop-width) {
         width: 70px;
         height: 97px;
-        top: 41px;
-        left: 67px;
+        bottom: 9px;
+        left: 15px;
       }
     }
   }
 
-  // program--pro
+  // program__icon--pro
   &--pro {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 67px;
       height: 28px;
-      top: 35px;
-      left: 12px;
-      background-image: url("../img/svg/cat-pro.svg#svgView(preserveAspectRatio(none))");
+      top: 11px;
+      left: -9px;
+      background-image: url("../img/svg/cat-pro.svg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       display: block;
       z-index: 5;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
         width: 268px;
         height: 112px;
-        top: 135px;
-        left: 411px;
+        top: 44px;
+        left: -34px;
       }
 
       @media (min-width: $desktop-width) {
         width: 134px;
         height: 56px;
-        top: 67px;
-        left: 33px;
+        top: 20px;
+        left: -19px;
       }
     }
   }
@@ -107,75 +118,79 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $txt_basic;
-  padding-left: 70px;
   margin: 0;
-  margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-area: 1 / 1 / 2 / 2;
     font-size: 36px;
     line-height: 36px;
-    padding: 0;
-    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
-    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 // .program__text
 .program__text {
   margin: 0;
-  margin-bottom: 15px;
+  padding: 22px 0 15px;
+  grid-column: 1 / -1;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin-top: 23px;
-    background-color: $line_main;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-right: 253px;
-    margin-bottom: 48px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1 / 2;
+    padding: 24px 0 48px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 39px 0 23px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 // .program__link
 .program__link {
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
   min-height: 24px;
-  padding: 4px 0;
+  padding-top: 15px;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   color: $txt_basic;
+  grid-column: 1 / -1;
+
+  @media (max-width: $tablet-width) {
+    border-top: 2px solid $line_main;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1 / 2;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 
   &::before {
     content: "";
-    position: absolute;
     background-image: url("../img/svg/icon_arrow.svg");
     width: 32px;
     height: 10px;
     display: block;
-    right: -17px;
-    top: 10px;
-    transform: translateX(100%);
+    margin-left: 15px;
+    
   }
 
   @media (min-width: $tablet-width) {

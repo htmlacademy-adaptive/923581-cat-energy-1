@@ -15,17 +15,24 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
 // .footer__logo
 .footer__logo {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $line_main;
+    padding-bottom: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -37,8 +44,13 @@
 
 // .footer__social-list
 .footer__social-list {
-  width: 132px;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $line_main;
+    padding-bottom: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
