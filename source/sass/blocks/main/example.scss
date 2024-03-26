@@ -19,6 +19,8 @@
 
 // .example__wrapper
 .example__content {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: grid;
     grid-template-columns: 367px 1fr;
@@ -133,6 +135,17 @@
 
 // .example__result
 .example__result {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  p {
+    line-height: 20px;
+    font-family: $oswald;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

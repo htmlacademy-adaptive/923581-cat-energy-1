@@ -57,7 +57,7 @@
 
   @media (max-width: $tablet-width) {
     color: $txt_contrast;
-    padding-top: 27px;
+    padding: 27px 0 20px;
     text-align: center;
   }
 
@@ -141,6 +141,7 @@
 .promo__button {
   @media (max-width: $tablet-width) {
     margin-top: 302px;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
