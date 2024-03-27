@@ -55,8 +55,15 @@
 
 // .header__menu-list
 .header__menu-list {
+  max-width: 450px;
+
   @media (min-width: $mobile-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
   }
 }
