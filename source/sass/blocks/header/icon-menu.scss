@@ -1,5 +1,6 @@
 .icon-menu {
   display: none;
+
   @media (max-width: $tablet-width) {
     display: block;
     position: relative;
