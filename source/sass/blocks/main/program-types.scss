@@ -5,6 +5,7 @@
 // .program-types__list
 .program-types__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
 
@@ -16,5 +17,7 @@
 
 // .program-types__item
 .program-types__item {
-  /* foo */
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
 }
