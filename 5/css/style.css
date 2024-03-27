@@ -959,16 +959,6 @@ body {
     left: -19px;
   }
 }
-@media (min-width: 768px) {
-  .program__icon {
-    padding: 77px 63px 53px 53px;
-  }
-}
-@media (min-width: 1440px) {
-  .program__icon {
-    padding: 77px 60px 55px 52px;
-  }
-}
 
 .program__title {
   font-family: "Oswald", "Arial", sans-serif;
