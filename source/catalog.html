@@ -36,19 +36,19 @@
             </defs>
           </svg>
         </a>
-        <!-- бургер -->
-        <button class="header__icon icon-menu" type="button" aria-label="Открыть меню.">
-          <!-- для рисования бургера -->
-          <span></span>
-        </button>
-        <div class="header__menu menu">
+        <div class="header__menu menu menu--closed menu--nojs">
+          <!-- бургер -->
+          <button class="header__icon icon-menu" type="button" aria-label="Открыть меню.">
+            <!-- для рисования бургера -->
+            <span></span>
+          </button>
           <nav class="menu__body" aria-label="Навигация по сайту.">
             <ul class="menu__list list-reset">
               <li class="menu__item">
-                <a class="menu__link menu__link--current" href="index.html" aria-current="page">главная</a>
+                <a class="menu__link" href="index.html">главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="catalog.html">каталог продукции</a>
+                <a class="menu__link menu__link--current" href="catalog.html" aria-current="page">каталог продукции</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="form.html">подбор программы</a>
@@ -333,6 +333,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
