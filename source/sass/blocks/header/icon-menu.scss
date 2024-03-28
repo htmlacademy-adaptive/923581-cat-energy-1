@@ -1,6 +1,4 @@
 .icon-menu {
-  display: none;
-
   @media (max-width: $tablet-width) {
     display: block;
     position: relative;
@@ -39,5 +37,19 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  .menu-open & {
+    span {
+      transform: scale(0);
+    }
+    &::before {
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
+    &::after {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px);
+    }
   }
 }

@@ -22,48 +22,38 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
+    width: 60px;
+    height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 14px;
+    width: 70px;
+    height: 59px;
   }
 }
 
 // .header__logo-text
 .header__logo-text {
-  /* foo */
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 // .header__icon
 .header__icon {
-  /* foo */
 }
 
 // .header__menu
 .header__menu {
-  display: none;
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    background-color: $bg_main;
+  }
 
   @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-// .header__menu-body
-.header__menu-body {
-  /* foo */
-}
-
-// .header__menu-list
-.header__menu-list {
-  max-width: 450px;
-
-  @media (min-width: $mobile-width) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 900px;
   }
 }
