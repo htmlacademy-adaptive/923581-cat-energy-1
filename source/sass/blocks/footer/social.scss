@@ -1,24 +1,30 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
+}
+// .social__item
+.social__item {
+  /* foo */
+}
 
-  // .social__item
-  &__item {
-  }
-
-  // .social__link
-  &__link {
-  }
+// .social__link
+.social__link {
+  color: $txt_fill;
+  fill: currentColor;
 
   // .social__link--vk
-  &__link--vk {
+  &--vk {
+    /* foo */
   }
 
   // .social__link--ytb
-  &__link--ytb {
+  &--ytb {
+    /* foo */
   }
 
   // .social__link--tg
-  &__link--tg {
+  &--tg {
+    /* foo */
   }
 }

@@ -1,32 +1,88 @@
 .partnership {
-  // .partnership__container
-  &__container {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  background-color: $bg_minor;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg_minor;
   }
-  // .partnership__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
+}
+
+// .partnership__content
+.partnership__content {
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// .partnership__partnership-wrapper
+.partnership__partnership-wrapper {
+  padding: 26px 0;
+  display: grid;
+  grid-template-columns: 140px 140px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 40px 61px;
+    grid-template-columns: 163px 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: $bg_main;
+    padding: 60px 80px;
+    gap: 87px;
+  }
+}
+
+// .partnership__title
+.partnership__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $txt_minor;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+// .partnership__address
+.partnership__address {
+  line-height: 20px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
     font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $txt_minor;
-    margin: 0;
   }
-  // .partnership__address
-  &__address {
-    line-height: 20px;
-    font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
-  // .partnership__map
-  &__map {
-    background-image: url("../../../img/location.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 362px;
-    display: block;
+}
+
+// .partnership__map
+.partnership__map {
+  background-image: url("../img/location.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 362px;
+  width: 100%;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
   }
 }

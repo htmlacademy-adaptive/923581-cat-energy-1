@@ -1,29 +1,39 @@
 .comments {
-  // .comments__title
-  &__title {
-    margin-bottom: 38px;
+  /* foo */
+}
+
+// .comments__text-area
+.comments__text-area {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
   }
+}
 
-  // .comments__container
-  &__container {
-  }
+// .comments__title
+.comments__title {
+  margin-bottom: 38px;
+}
 
-  // .comments__comment
-  &__comment {
-    width: 100%;
-    min-height: 150px;
-    padding: 14px;
-    margin: 0;
-    border: 1px solid $brd_minor;
+// .comments__comment
+.comments__comment {
+  width: 100%;
+  min-height: 150px;
+  padding: 14px;
+  margin: 0;
+  border: 1px solid $brd_minor;
+  resize: none;
 
-    &[placeholder] {
-      font-family: $oswald;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 18px;
-      text-transform: uppercase;
-      text-align: center;
-      color: $txt_main;
+  &[placeholder] {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $txt_main;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
     }
   }
 }

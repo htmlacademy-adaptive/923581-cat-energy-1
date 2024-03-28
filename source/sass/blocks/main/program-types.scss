@@ -1,16 +1,23 @@
 .program-types {
-  // .program-types__container
-  &__container {
-    padding: 20px;
-  }
+  /* foo */
+}
 
-  // .program-types__list
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+// .program-types__list
+.program-types__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
   }
-  // .program-types__item
-  &__item {
+}
+
+// .program-types__item
+.program-types__item {
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
   }
 }

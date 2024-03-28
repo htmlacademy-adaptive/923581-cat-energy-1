@@ -1,35 +1,55 @@
 .icon-menu {
-  display: block;
-  position: relative;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-  z-index: 5;
-  border: none;
-  background-color: transparent;
-  margin-right: 1px;
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    border: none;
+    background-color: transparent;
+    margin-right: 1px;
 
-  span,
-  &::before,
-  &::after {
-    content: "";
-    transition: all 0.3s ease 0s;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $txt_basic;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $txt_basic;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: calc(50% - 1px);
+    }
   }
 
-  &::before {
-    top: 0;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 
-  &::after {
-    bottom: 0;
-  }
-
-  span {
-    top: calc(50% - 1px);
+  .menu-open & {
+    span {
+      transform: scale(0);
+    }
+    &::before {
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
+    &::after {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px);
+    }
   }
 }
