@@ -1,6 +1,8 @@
 .header {
+  display: flex;
   position: relative;
   z-index: 10;
+  min-height: 66px;
 }
 
 // .header__header-wrapper
@@ -43,17 +45,10 @@
 
 // .header__icon
 .header__icon {
+    /* foo */
 }
 
 // .header__menu
 .header__menu {
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 66px;
-    left: 0;
-    background-color: $bg_main;
-  }
-
-  @media (min-width: $tablet-width) {
-  }
+    /* foo */
 }

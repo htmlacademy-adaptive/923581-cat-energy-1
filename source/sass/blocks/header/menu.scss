@@ -1,6 +1,22 @@
 .menu {
+  &--opened {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    
+  }
+
+  &--closed {
+    display: none;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
+    background-color: $bg_main;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0px 4px;
   }
 }
 
@@ -33,7 +49,6 @@
 // .menu__item
 .menu__item {
   @media (max-width: $tablet-width) {
-    padding: 22px 0 24px;
     text-align: center;
     border-bottom: 1px solid $line_main;
   }
@@ -42,15 +57,23 @@
 // .menu__link
 .menu__link {
   font-family: $oswald;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 400;
   color: $txt_basic;
   text-transform: uppercase;
+  padding: 22px 0 23px;
+  display: block;
+  min-height: 65px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 39px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 72px;
   }
 }
 

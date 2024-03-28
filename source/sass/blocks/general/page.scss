@@ -14,15 +14,6 @@
 
 // .page__header
 .page__header {
-  padding: 13px 0 15px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 55px;
-  }
 }
 
 // .page__main
