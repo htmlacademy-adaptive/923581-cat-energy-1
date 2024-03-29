@@ -35,17 +35,4 @@
     top: calc(50% - 1px);
   }
 
-  .menu--opened {
-    span {
-      transform: scale(0);
-    }
-    &::before {
-      transform: rotate(-45deg);
-      top: calc(50% - 1px);
-    }
-    &::after {
-      transform: rotate(45deg);
-      bottom: calc(50% - 1px);
-    }
-  }
 }
