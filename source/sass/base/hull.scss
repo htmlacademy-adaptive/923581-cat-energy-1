@@ -48,6 +48,8 @@ a {
   margin: -1px;
   padding: 0;
   border: 0;
+  // предотвратить нежелательный коллапс пробелов для некоторых программ чтения с экрана
+  white-space: nowrap;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
