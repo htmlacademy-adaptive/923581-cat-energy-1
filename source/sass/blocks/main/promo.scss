@@ -113,6 +113,9 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {

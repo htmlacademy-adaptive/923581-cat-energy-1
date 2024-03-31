@@ -5,11 +5,55 @@
   min-height: 66px;
 }
 
+//
+.header--nojs {
+  @media (max-width: $tablet-width) {
+    .header__header-wrapper {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+    .menu {
+      width: 100%;
+    }
+
+    .menu__body {
+      display: block;
+      position: static;
+    }
+
+    .icon-menu {
+      display: none;
+    }
+
+    .header__logo {
+      min-height: 66px;
+      width: 320px;
+      padding: 0px 20px;
+    }
+  }
+}
+
 // .header__header-wrapper
 .header__header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 320px;
+  margin: 0px auto;
+  padding: 0px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 30px;
+
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    width: 1440px;
+  }
 }
 
 // .header__logo
@@ -24,14 +68,14 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
-    width: 60px;
-    height: 50px;
+    // width: 60px;
+    // height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 14px;
-    width: 70px;
-    height: 59px;
+    // width: 70px;
+    // height: 59px;
   }
 }
 
@@ -45,10 +89,10 @@
 
 // .header__icon
 .header__icon {
-    /* foo */
+  /* foo */
 }
 
 // .header__menu
 .header__menu {
-    /* foo */
+  /* foo */
 }

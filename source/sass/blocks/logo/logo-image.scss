@@ -1,3 +1,19 @@
 .logo-image {
-  /* foo */
+  background-image: url("../img/logo-image.png");
+  width: 33px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo-image-tablet.png");
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/logo-image-desktop.png");
+    width: 70px;
+    height: 59px;
+  }
 }

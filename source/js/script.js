@@ -1,9 +1,9 @@
 //==== Модуь работы с меню (бургер)
 
 let iconMenu = document.querySelector('.icon-menu');
-let navMain = document.querySelector('.menu');
+let navMain = document.querySelector('.header');
 
-navMain.classList.remove('menu--nojs');
+navMain.classList.remove('header--nojs');
 
 iconMenu.addEventListener('click', function () {
   if (navMain.classList.contains('menu--closed')) {
