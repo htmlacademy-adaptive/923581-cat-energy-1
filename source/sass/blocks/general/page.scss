@@ -10,6 +10,12 @@
       color: $txt_contrast;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .menu__link--current {
+      border-bottom: 2px solid $bg_main;
+    }
+  }
 }
 
 // .page__header
@@ -30,11 +36,9 @@
 // .page__catalog
 .page__catalog {
   flex-grow: 1;
-  border-top: 1px solid $line_main;
 }
 
 // .page__form
 .page__form {
   flex-grow: 1;
-  border-top: 1px solid $line_main;
 }

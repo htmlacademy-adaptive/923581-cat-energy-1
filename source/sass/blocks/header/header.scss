@@ -3,6 +3,10 @@
   position: relative;
   z-index: 10;
   min-height: 66px;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $line_main;
+  }
 }
 
 //
@@ -60,6 +64,14 @@
 .header__logo {
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 // .header__logo-image

@@ -89,6 +89,14 @@
   display: block;
   min-height: 65px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -102,5 +110,5 @@
 
 // .menu__link--current
 .menu__link--current {
-  /* foo */
+  border-bottom: 2px solid $bg_basic;
 }
