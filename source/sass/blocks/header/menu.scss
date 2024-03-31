@@ -1,5 +1,10 @@
 .menu {
   display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 4px 2px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -39,7 +44,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0px 4px;
+    // padding: 14px 4px 2px;
   }
 }
 
@@ -85,9 +90,11 @@
   font-weight: 400;
   color: $txt_basic;
   text-transform: uppercase;
-  padding: 22px 0 23px;
   display: block;
-  min-height: 65px;
+
+  @media (max-width: $tablet-width) {
+    padding: 22px 0 23px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -100,15 +107,16 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding: 39px 0 40px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 72px;
   }
 }
 
 // .menu__link--current
 .menu__link--current {
-  border-bottom: 2px solid $bg_basic;
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $bg_basic;
+  }
 }

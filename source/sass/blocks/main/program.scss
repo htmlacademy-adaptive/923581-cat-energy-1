@@ -1,5 +1,5 @@
 .program {
-  padding: 30px 20px 18px;
+  padding: 30px 20px 3px;
   background-color: $bg_minor;
   position: relative;
   display: grid;
@@ -8,13 +8,13 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-template-columns: 1fr 268px;
-    padding: 77px 29px 53px 52px;
+    padding: 77px 29px 38px 52px;
     column-gap: 19px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 214px 1fr;
-    padding: 41px 61px 55px 52px;
+    padding: 41px 61px 40px 52px;
   }
 }
 //.program__icon
@@ -148,7 +148,7 @@
   justify-content: start;
   align-items: center;
   min-height: 24px;
-  padding-top: 15px;
+  padding: 15px 20px 15px 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -158,6 +158,7 @@
   cursor: pointer;
   color: $txt_basic;
   grid-column: 1 / -1;
+  margin-right: auto;
 
   @media (max-width: $tablet-width) {
     border-top: 2px solid $line_main;
@@ -166,22 +167,30 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / 2;
     font-size: 20px;
+    cursor: pointer;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+    cursor: pointer;
   }
 
   &::before {
     content: "";
     background-image: url("../img/svg/icon_arrow.svg");
-    width: 32px;
-    height: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 12px;
     display: block;
     margin-left: 15px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,6 +1,7 @@
 // Цвет шрифта
 $txt_basic: #000000;
 $txt_contrast: #ffffff;
+$txt_contrastHv: rgba(255, 255, 255, 0.3);
 $txt_fill: #666666;
 $txt_main: #444444;
 $txt_minor: #111111;
@@ -18,6 +19,7 @@ $status_error: #ff8282;
 // Цвета рамок полей и чекбоксов
 $brd_main: #cdcdcd;
 $brd_minor: #e7e7e7;
+$brd_hover: #bababa;
 
 // Цвета разделительных линий
 $line_main: #d9d9d9;

@@ -45,6 +45,10 @@
   appearance: none;
   margin: 0;
   padding: 0;
+
+  &:hover {
+    border-color: $brd_hover;
+  }
 }
 
 .nutrition__input[type="radio"]:checked::after {

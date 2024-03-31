@@ -10,16 +10,32 @@
   color: $bg_main;
   text-align: center;
   text-decoration: none;
-  background-color: $bg_basic;
+  background-color: $btn-basic;
   border-radius: 0;
   border: none;
   cursor: pointer;
   word-wrap: break-word;
 
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  &:active {
+    color: $txt_contrastHv;
+  }
+
   // .button--light
   &--light {
     background-color: $btn_light;
     color: $txt_main;
+
+    &:hover {
+      background-color: $btn_light-hover;
+    }
+
+    &:active {
+      color: inherit;
+    }
   }
 
   @media (min-width: $tablet-width) {
