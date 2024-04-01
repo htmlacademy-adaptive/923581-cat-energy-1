@@ -11,3 +11,50 @@
   border: none;
   text-transform: uppercase;
 }
+
+.field:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px $txt_main;
+}
+
+@supports not selector(:focus-visible) {
+  .field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $txt_main;
+    z-index: 5;
+    position: relative;
+  }
+}
+
+.field:focus-visible:not(:placeholder-shown) {
+  box-shadow: 0 0 0 2px $txt_main;
+}
+
+.field:invalid {
+  border: 2px solid $status_error;
+
+  .owner-contacts__icon {
+    stroke: $status_error;
+  }
+}
+
+.field:disabled,
+.field-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* =========== отключить стрелки при вводе чисел ============ */
+/* для браузера Chrome: */
+.field[type="number"]::-webkit-outer-spin-button,
+.field[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* для браузера Firefox: */
+.field[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}

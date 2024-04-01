@@ -49,6 +49,13 @@
   &:hover {
     border-color: $brd_hover;
   }
+
+  // для отключенного инпута
+  &:disabled,
+  &:disabled + .nutrition__text {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .nutrition__input[type="radio"]:checked::after {
@@ -67,3 +74,5 @@
 .nutrition__text {
   padding-left: 15px;
 }
+
+

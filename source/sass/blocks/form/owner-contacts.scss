@@ -39,6 +39,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
+  &:hover {
+    .owner-contacts__icon {
+      stroke: $bg_basic;
+    }
+  }
+
+  .field:invalid + .owner-contacts__icon {
+    stroke: $status_error;
+  }
 }
 
 // .owner-contacts__text
@@ -47,17 +58,25 @@
   white-space: nowrap;
 }
 
+// .owner-contacts__icon
+.owner-contacts__icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  stroke: $txt_basic;
+}
+
 // .owner-contacts__input
 .owner-contacts__input {
   border: 1px solid $brd_main;
   background-repeat: no-repeat;
   background-position: right 14px center;
 
-  &[type="email"] {
-    background-image: url("../img/svg/email.svg");
-  }
-
-  &[type="tel"] {
-    background-image: url("../img/svg/tel.svg");
+  &:hover {
+    border: 1px solid $brd_main;
   }
 }
