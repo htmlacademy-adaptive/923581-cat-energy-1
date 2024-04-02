@@ -18,11 +18,34 @@
 
 // .profile__nutrition
 .profile__nutrition {
+  position: relative;
   border: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid $line_main;
-  border-bottom: 1px solid $line_main;
+
+  &::before {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      top: 0;
+      background-color: $line_main;
+    }
+  }
+
+  &::after {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      bottom: 0;
+      background-color: $line_main;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     border: none;

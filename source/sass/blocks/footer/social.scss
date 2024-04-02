@@ -10,8 +10,34 @@
 
 // .social__link
 .social__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $txt_fill;
   fill: currentColor;
+  width: 28px;
+  height: 22px;
+
+  &:hover {
+    color: $bg_basic;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $bg_basic;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: $bg_basic;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   // .social__link--vk
   &--vk {

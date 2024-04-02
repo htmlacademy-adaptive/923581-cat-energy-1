@@ -17,18 +17,37 @@
 // .footer__logo
 .footer__logo {
   margin: 0;
-  text-align: center;
   width: 100%;
+  text-align: center;
   margin-bottom: 20px;
-
-  @media (max-width: $tablet-width) {
-    border-bottom: 1px solid $line_main;
-    padding-bottom: 20px;
-  }
+  margin-right: auto;
+  fill: currentColor;
+  color: $txt_minor;
 
   @media (min-width: $tablet-width) {
+    max-width: 130px;
     margin: 0;
     text-align: left;
+  }
+
+  &:hover {
+    color: $txt_hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $txt_hover;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: $txt_hover;
+    }
+  }
+
+  &:active {
+    color: $txt_active;
   }
 }
 
@@ -42,10 +61,34 @@
 .footer__social-list {
   width: 100%;
   margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      top: 0;
+      background-color: $line_main;
+    }
+  }
+
+  &::after {
+    @media (max-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      bottom: 0;
+      background-color: $line_main;
+    }
+  }
 
   @media (max-width: $tablet-width) {
-    border-bottom: 1px solid $line_main;
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -56,4 +99,8 @@
 // .footer__copyright
 .footer__copyright {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+  }
 }

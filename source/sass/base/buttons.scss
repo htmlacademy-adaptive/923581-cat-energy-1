@@ -20,6 +20,18 @@
     background-color: $btn-hover;
   }
 
+  &:focus-visible {
+    outline: none;
+    background-color: $btn-hover;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      background-color: $btn-hover;
+    }
+  }
+
   &:active {
     color: $txt_contrastHv;
   }
@@ -31,6 +43,18 @@
 
     &:hover {
       background-color: $btn_light-hover;
+    }
+
+    &:focus-visible {
+      outline: none;
+      background-color: $btn_light-hover;
+    }
+
+    @supports not selector(:focus-visible) {
+      &:focus {
+        outline: none;
+        background-color: $btn_light-hover;
+      }
     }
 
     &:active {

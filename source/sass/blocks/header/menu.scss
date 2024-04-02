@@ -100,6 +100,18 @@
     opacity: 0.6;
   }
 
+  &:focus-visible {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      opacity: 0.6;
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }

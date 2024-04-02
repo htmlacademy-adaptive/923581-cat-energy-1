@@ -12,6 +12,18 @@
   text-transform: uppercase;
 }
 
+.field:invalid {
+  border: 2px solid $status_error;
+
+  .owner-contacts__icon {
+    stroke: $status_error;
+  }
+}
+
+.field:hover {
+  border: 1px solid $brd_main;
+}
+
 .field:focus-visible {
   outline: none;
   box-shadow: 0 0 0 2px $txt_main;
@@ -28,22 +40,6 @@
 
 .field:focus-visible:not(:placeholder-shown) {
   box-shadow: 0 0 0 2px $txt_main;
-}
-
-.field:invalid {
-  border: 2px solid $status_error;
-
-  .owner-contacts__icon {
-    stroke: $status_error;
-  }
-}
-
-.field:invalid + .owner-contacts__icon {
-  stroke: $status_error;
-}
-
-.field:hover {
-  border: 1px solid $brd_main;
 }
 
 .field:disabled,
