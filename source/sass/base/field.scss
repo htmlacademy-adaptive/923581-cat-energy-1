@@ -38,6 +38,14 @@
   }
 }
 
+.field:invalid + .owner-contacts__icon {
+  stroke: $status_error;
+}
+
+.field:hover {
+  border: 1px solid $brd_main;
+}
+
 .field:disabled,
 .field-disabled {
   opacity: 0.3;

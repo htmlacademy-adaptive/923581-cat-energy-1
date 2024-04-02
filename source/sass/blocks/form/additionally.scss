@@ -79,6 +79,10 @@
     height: 40px;
   }
 
+  &:hover {
+    border-color: $brd_hover;
+  }
+
   // для отключенного инпута
   &:disabled,
   &:disabled + .additionally__text {

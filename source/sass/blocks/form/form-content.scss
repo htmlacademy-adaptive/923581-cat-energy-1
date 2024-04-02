@@ -20,6 +20,11 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding-left: 40px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 // .form-content__text

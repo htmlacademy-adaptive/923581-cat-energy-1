@@ -41,14 +41,14 @@
   align-items: center;
   position: relative;
 
-  &:hover {
-    .owner-contacts__icon {
-      stroke: $bg_basic;
-    }
-  }
-
   .field:invalid + .owner-contacts__icon {
     stroke: $status_error;
+  }
+
+  &:hover {
+    .field + .owner-contacts__icon {
+      stroke: $bg_basic;
+    }
   }
 }
 
