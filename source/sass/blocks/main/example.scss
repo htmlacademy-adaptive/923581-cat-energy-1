@@ -3,8 +3,13 @@
   padding-top: 25px;
   padding-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 -462px 0 0 $bg_minor-light;
+    background-color: inherit;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 75px;
+    padding: 0 0 75px;
   }
 }
 
@@ -130,6 +135,11 @@
     padding: 0 7px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $bg_main;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg_minor-light;
   }
 }
 

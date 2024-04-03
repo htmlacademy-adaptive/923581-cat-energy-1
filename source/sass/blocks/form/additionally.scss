@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_main;
+  color: $txt_basic;
   padding: 0 0 32px;
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 // .additionally__content
 .additionally__content {
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px 60px;
@@ -42,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 32px 60px;
     grid-column: 1/-1;
   }
 

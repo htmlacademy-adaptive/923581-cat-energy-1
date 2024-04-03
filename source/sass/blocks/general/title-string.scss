@@ -6,7 +6,7 @@
   line-height: 26px;
   color: $txt_basic;
   background-color: $bg_main;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   text-transform: none;
 
   &::after {
@@ -21,12 +21,16 @@
 
     @media (min-width: $tablet-width) {
       margin-left: -100vw;
+      top: 22px;
+      padding: 0px 20px;
     }
   }
 
   @media (min-width: $tablet-width) {
     white-space: nowrap;
     padding: 0px 40px;
+    font-size: 36px;
+    line-height: 36px;
 
     br {
       display: none;

@@ -10,6 +10,10 @@
 // .owner-contacts__title
 .owner-contacts__title {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
 }
 
 // .owner-contacts__list
@@ -32,6 +36,10 @@
 
 .owner-contacts__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 // .owner-contacts__label

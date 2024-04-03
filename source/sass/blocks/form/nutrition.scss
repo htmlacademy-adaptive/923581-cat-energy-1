@@ -4,7 +4,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_main;
+  color: $txt_light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 // .nutrition__list
@@ -46,6 +51,11 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   &:hover {
     border-color: $brd_hover;
   }
@@ -68,11 +78,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 // .nutrition__text
 .nutrition__text {
   padding-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
-
-

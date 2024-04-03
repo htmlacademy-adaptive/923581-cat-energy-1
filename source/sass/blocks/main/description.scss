@@ -1,7 +1,7 @@
 .description {
   padding: 20px 0 50px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     padding: 45px 0 47px;
     border-bottom: 1px solid $line_light;
   }
