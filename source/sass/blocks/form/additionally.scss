@@ -7,6 +7,10 @@
   color: $txt_basic;
   padding: 0 0 32px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 0 80px;
   }
@@ -14,6 +18,10 @@
 // .additionally__title
 .additionally__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 // .additionally__content

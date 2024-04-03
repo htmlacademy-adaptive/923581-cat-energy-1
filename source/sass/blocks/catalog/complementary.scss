@@ -1,10 +1,13 @@
 .complementary {
-  padding-top: 25px;
 }
 
 //.complementary__wrapper
 .complementary__wrapper {
   padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;

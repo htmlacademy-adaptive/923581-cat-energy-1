@@ -1,6 +1,10 @@
 .footer {
   background-color: $bg_minor;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
 }
 
 // .footer__footer-wrapper

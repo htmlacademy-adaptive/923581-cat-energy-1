@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding: 65px 0 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 // .form-content__title

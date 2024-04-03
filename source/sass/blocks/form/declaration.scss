@@ -5,6 +5,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $txt_main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 // .declaration__list

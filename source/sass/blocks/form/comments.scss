@@ -20,12 +20,21 @@
 
 // .comments__comment
 .comments__comment {
+  display: block;
   width: 100%;
   min-height: 150px;
   padding: 14px;
   margin: 0;
   border: 1px solid $brd_minor;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
+  }
 
   &[placeholder] {
     font-family: $oswald;
@@ -38,6 +47,8 @@
 
     @media (min-width: $tablet-width) {
       text-align: left;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
