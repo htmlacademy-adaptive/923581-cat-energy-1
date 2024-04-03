@@ -77,7 +77,9 @@
       height: 28px;
       top: 11px;
       left: -9px;
-      background-image: url("../img/svg/cat-pro.svg");
+      // закомментировал, кошка с обрубленным хвостом
+      // background-image: url("../img/svg/cat-pro.svg");
+      background-image: url("../img/svg/kot.svg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       z-index: 5;
@@ -143,6 +145,7 @@
 
 // .program__link
 .program__link {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
@@ -177,17 +180,36 @@
 
   &::before {
     content: "";
-    background-image: url("../img/svg/icon_arrow.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 12px;
+    width: 18px;
+    height: 2px;
+    background-color: $txt_basic;
     display: block;
     margin-left: 15px;
+    transition: 0.2s linear;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &:hover {
+    &::before {
+      width: 25px;
+    }
   }
 
   &:active {

@@ -37,6 +37,11 @@
 
 // .promo__wrapper
 .promo__wrapper {
+  @media (max-width: $tablet-width) {
+    padding: 27px 0 20px;
+    position: relative;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 65px;
   }
@@ -54,7 +59,6 @@
 
   @media (max-width: $tablet-width) {
     color: $txt_contrast;
-    padding: 27px 0 20px;
     text-align: center;
   }
 
@@ -77,7 +81,7 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {

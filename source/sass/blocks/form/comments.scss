@@ -51,4 +51,18 @@
       line-height: 30px;
     }
   }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $txt_main;
+    margin: -1px;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      border: 2px solid $txt_main;
+      margin: -1px;
+    }
+  }
 }

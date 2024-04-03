@@ -64,6 +64,18 @@
     border-color: $brd_hover;
   }
 
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $txt_main;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      border: 2px solid $txt_main;
+    }
+  }
+
   // для отключенного инпута
   &:disabled,
   &:disabled + .nutrition__text {
