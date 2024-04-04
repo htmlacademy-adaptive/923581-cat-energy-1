@@ -57,13 +57,13 @@
 /* для браузера Chrome: */
 .field[type="number"]::-webkit-outer-spin-button,
 .field[type="number"]::-webkit-inner-spin-button {
-  // -webkit-appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 
 /* для браузера Firefox: */
 .field[type="number"] {
-  // -moz-appearance: textfield;
-  // -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
