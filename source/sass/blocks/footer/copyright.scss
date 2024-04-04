@@ -14,24 +14,6 @@
     }
   }
 
-  &:focus-visible {
-    outline: none;
-
-    svg {
-      color: $bg_basic;
-    }
-  }
-
-  @supports not selector(:focus-visible) {
-    &:focus {
-      outline: none;
-
-      svg {
-        color: $bg_basic;
-      }
-    }
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -49,5 +31,23 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.copyright:focus-visible {
+  outline: none;
+
+  svg {
+    color: $bg_basic;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .copyright:focus {
+    outline: none;
+
+    svg {
+      color: $bg_basic;
+    }
   }
 }
