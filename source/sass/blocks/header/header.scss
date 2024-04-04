@@ -21,12 +21,14 @@
 .header--nojs {
   padding: 0;
   border: none;
+
   @media (max-width: $tablet-width) {
     .header__header-wrapper {
       flex-direction: column;
       width: 100%;
       padding: 0;
     }
+
     .menu {
       width: 100%;
     }
@@ -43,7 +45,7 @@
     .header__logo {
       min-height: 66px;
       width: 320px;
-      padding: 0px 20px;
+      padding: 0 20px;
     }
   }
 }
@@ -54,8 +56,8 @@
   justify-content: space-between;
   align-items: center;
   width: 320px;
-  margin: 0px auto;
-  padding: 0px 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

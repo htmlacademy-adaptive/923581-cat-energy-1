@@ -13,14 +13,17 @@
     .menu__body {
       display: block;
     }
+
     .icon-menu {
       span {
         transform: scale(0);
       }
+
       &::before {
         transform: rotate(-45deg);
         top: calc(50% - 1px);
       }
+
       &::after {
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
@@ -36,15 +39,10 @@
     display: none;
     top: 65px;
     left: 0;
-    // border-top: 1px solid $line_main;
     width: 100%;
     background-color: $bg_main;
     transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
     transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-  }
-
-  @media (min-width: $tablet-width) {
-    // padding: 14px 4px 2px;
   }
 }
 
@@ -57,7 +55,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -120,9 +117,6 @@
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 8px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
