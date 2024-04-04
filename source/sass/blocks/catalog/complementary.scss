@@ -22,15 +22,10 @@
 // .complementary__title
 .complementary__title {
   line-height: 24px;
-  margin: 0;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
     line-height: 36px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -40px;
   }
 }
 

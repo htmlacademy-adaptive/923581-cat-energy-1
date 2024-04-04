@@ -6,8 +6,13 @@
   line-height: 26px;
   color: $txt_basic;
   background-color: $bg_main;
+  margin: 0;
   padding: 0 20px 0 0;
   text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
 
   &::after {
     content: "";
