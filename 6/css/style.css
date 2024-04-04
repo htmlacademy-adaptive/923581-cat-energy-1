@@ -179,15 +179,13 @@ a {
 
 .field:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #444444;
+  border: 2px solid #444444;
 }
 
 @supports not selector(:focus-visible) {
   .field:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #444444;
-    z-index: 5;
-    position: relative;
+    border: 2px solid #444444;
   }
 }
 .field:focus-visible:not(:placeholder-shown) {
