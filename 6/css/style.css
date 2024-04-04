@@ -394,8 +394,14 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  margin: 0;
   padding: 0 20px 0 0;
   text-transform: none;
+}
+@media (min-width: 1440px) {
+  .title-string {
+    margin-left: -40px;
+  }
 }
 .title-string::after {
   content: "";
@@ -1693,17 +1699,11 @@ body {
 
 .complementary__title {
   line-height: 24px;
-  margin: 0;
   display: inline-block;
 }
 @media (min-width: 768px) {
   .complementary__title {
     line-height: 36px;
-  }
-}
-@media (min-width: 1440px) {
-  .complementary__title {
-    margin-left: -40px;
   }
 }
 
