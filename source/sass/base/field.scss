@@ -33,15 +33,13 @@
 
 .field:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px $txt_main;
+  border: 2px solid $txt_main;
 }
 
 @supports not selector(:focus-visible) {
   .field:focus {
     outline: none;
-    box-shadow: 0 0 0 2px $txt_main;
-    z-index: 5;
-    position: relative;
+    border: 2px solid $txt_main;
   }
 }
 
