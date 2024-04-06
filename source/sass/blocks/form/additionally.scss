@@ -111,7 +111,7 @@
   }
 }
 
-.additionally__input[type="radio"]:checked::after {
+.additionally__input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
   background-image: url("../img/svg/tick.svg");
