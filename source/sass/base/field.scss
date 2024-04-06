@@ -24,7 +24,7 @@
 }
 
 .field:user-valid {
-  background-color: $bg_main;
+  border: 1px solid $brd_minor;
 }
 
 .field:user-invalid {
