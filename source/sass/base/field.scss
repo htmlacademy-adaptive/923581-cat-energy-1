@@ -8,7 +8,7 @@
   font-weight: 400;
   color: $txt_main;
   background-color: $bg_main;
-  border: none;
+  border: 1px solid $brd_minor;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -19,16 +19,20 @@
   }
 }
 
-.field:invalid {
-  border: 2px solid $status_error;
-
-  .owner-contacts__icon {
-    stroke: $status_error;
-  }
-}
-
 .field:hover {
   border: 1px solid $brd_main;
+}
+
+.field:user-valid {
+  background-color: $bg_main;
+}
+
+.field:user-invalid {
+  border: 2px solid $status_error;
+}
+
+.field:user-invalid + .owner-contacts__icon {
+  stroke: $status_error;
 }
 
 .field:focus-visible {
@@ -36,10 +40,20 @@
   border: 2px solid $txt_main;
 }
 
+.field:focus-visible + .owner-contacts__icon {
+  stroke: $bg_basic;
+}
+
 @supports not selector(:focus-visible) {
   .field:focus {
     outline: none;
     border: 2px solid $txt_main;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .field:focus + .owner-contacts__icon {
+    stroke: $bg_basic;
   }
 }
 

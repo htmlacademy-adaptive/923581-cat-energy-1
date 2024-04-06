@@ -127,6 +127,10 @@
   padding: 22px 0 15px;
   grid-column: 1 / -1;
 
+  @media (max-width: $tablet-width) {
+    border-bottom: 2px solid $line_main;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / 2;
     padding: 24px 0 48px;
@@ -160,10 +164,6 @@
   color: $txt_basic;
   grid-column: 1 / -1;
   margin-right: auto;
-
-  @media (max-width: $tablet-width) {
-    border-top: 2px solid $line_main;
-  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / 2;
