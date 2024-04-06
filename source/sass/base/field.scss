@@ -33,20 +33,25 @@
 
 .field:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px $txt_main;
+  border: 2px solid $txt_main;
 }
 
 @supports not selector(:focus-visible) {
   .field:focus {
     outline: none;
-    box-shadow: 0 0 0 2px $txt_main;
-    z-index: 5;
-    position: relative;
+    border: 2px solid $txt_main;
   }
 }
 
 .field:focus-visible:not(:placeholder-shown) {
-  box-shadow: 0 0 0 2px $txt_main;
+  border: 2px solid $txt_main;
+}
+
+// отменяет браузерные стили фона на полях почты и телефона
+.field:autofill,
+.field:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 100px $bg_main;
+  box-shadow: inset 0 0 0 100px $bg_main;
 }
 
 .field:disabled,
@@ -55,15 +60,15 @@
   pointer-events: none;
 }
 
-/* =========== отключить стрелки при вводе чисел ============ */
-/* для браузера Chrome: */
+// отключить стрелки при вводе чисел
+//  для браузера Chrome:
 .field[type="number"]::-webkit-outer-spin-button,
 .field[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* для браузера Firefox: */
+//  для браузера Firefox:
 .field[type="number"] {
   -moz-appearance: textfield;
   -webkit-appearance: textfield;

@@ -36,35 +36,35 @@
     color: $txt_contrastHv;
   }
 
-  // .button--light
-  &--light {
-    background-color: $btn_light;
-    color: $txt_main;
-
-    &:hover {
-      background-color: $btn_light-hover;
-    }
-
-    &:focus-visible {
-      outline: none;
-      background-color: $btn_light-hover;
-    }
-
-    @supports not selector(:focus-visible) {
-      &:focus {
-        outline: none;
-        background-color: $btn_light-hover;
-      }
-    }
-
-    &:active {
-      color: inherit;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
     padding: 14px 26px;
+  }
+}
+
+// .button--light
+.button--light {
+  background-color: $btn_light;
+  color: $txt_main;
+
+  &:hover {
+    background-color: $btn_light-hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $btn_light-hover;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      background-color: $btn_light-hover;
+    }
+  }
+
+  &:active {
+    color: inherit;
   }
 }
