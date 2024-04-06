@@ -4,7 +4,9 @@
 
 // .main__promo
 .main__promo {
-  /* foo */
+  @media (min-width: $desktop-width) {
+    min-height: 580px;
+  }
 }
 
 // .main__programs

@@ -33,19 +33,21 @@
       display: block;
     }
   }
-
-  @media (max-width: $desktop-width) {
-    position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 82px;
-  }
 }
 
 // .promo__wrapper
 .promo__wrapper {
+  @media (max-width: $tablet-width) {
+    padding: 27px 0 20px;
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding: 110px 0 82px;
     position: relative;
   }
 }
@@ -57,18 +59,16 @@
 
   @media (max-width: $tablet-width) {
     color: $txt_contrast;
-    padding: 27px 0 20px;
     text-align: center;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 0 90px;
-    width: 515px;
+    padding-left: 90px;
     color: $txt_basic;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 110px 0 0 80px;
+    padding-left: 80px;
   }
 }
 
@@ -81,13 +81,14 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
+    max-width: 515px;
   }
 }
 
@@ -99,9 +100,10 @@
   text-transform: uppercase;
   margin: 0;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -113,15 +115,18 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    position: absolute;
-    top: 266px;
+    margin-top: -83px;
 
     img {
       width: 709px;
       height: 609px;
+      display: block;
     }
   }
 
@@ -145,12 +150,10 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin: 50px 0 526px;
     padding: 14px 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 52px 0 184px;
     font-size: 20px;
     line-height: 26px;
     min-width: 244px;

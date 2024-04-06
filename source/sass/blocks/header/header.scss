@@ -1,6 +1,53 @@
 .header {
+  display: flex;
   position: relative;
   z-index: 10;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 1px solid $line_main;
+    padding: 13px 0 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+// при не работающем JS
+.header--nojs {
+  padding: 0;
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    .header__header-wrapper {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+
+    .menu {
+      width: 100%;
+    }
+
+    .menu__body {
+      display: block;
+      position: static;
+    }
+
+    .icon-menu {
+      display: none;
+    }
+
+    .header__logo {
+      min-height: 66px;
+      width: 320px;
+      padding: 0 20px;
+    }
+  }
 }
 
 // .header__header-wrapper
@@ -8,12 +55,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    width: 1440px;
+  }
 }
 
 // .header__logo
 .header__logo {
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 // .header__logo-image
@@ -22,14 +103,14 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
-    width: 60px;
-    height: 50px;
+    // width: 60px;
+    // height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 14px;
-    width: 70px;
-    height: 59px;
+    // width: 70px;
+    // height: 59px;
   }
 }
 
@@ -43,17 +124,10 @@
 
 // .header__icon
 .header__icon {
+  /* foo */
 }
 
 // .header__menu
 .header__menu {
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    top: 66px;
-    left: 0;
-    background-color: $bg_main;
-  }
-
-  @media (min-width: $tablet-width) {
-  }
+  /* foo */
 }

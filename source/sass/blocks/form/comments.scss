@@ -12,16 +12,29 @@
 // .comments__title
 .comments__title {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
 }
 
 // .comments__comment
 .comments__comment {
+  display: block;
   width: 100%;
   min-height: 150px;
   padding: 14px;
   margin: 0;
   border: 1px solid $brd_minor;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px;
+  }
 
   &[placeholder] {
     font-family: $oswald;
@@ -34,6 +47,26 @@
 
     @media (min-width: $tablet-width) {
       text-align: left;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $brd_main;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $txt_main;
+    margin: -1px;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      border: 2px solid $txt_main;
+      margin: -1px;
     }
   }
 }

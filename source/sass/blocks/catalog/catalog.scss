@@ -1,15 +1,16 @@
 .catalog {
-  // catalog
+  /* foo */
 }
 
 // .catalog__products
 .catalog__products {
-  // products
+  /* foo */
 }
 
 // .catalog__complementary
 .catalog__complementary {
   border-top: 1px solid $line_light;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -18,7 +19,7 @@
 
 // .catalog__promotion
 .catalog__promotion {
-  // promotion
+  /* foo */
 }
 
 // .catalog__partnership

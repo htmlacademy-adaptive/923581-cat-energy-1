@@ -8,18 +8,47 @@
     fill: currentColor;
   }
 
+  &:hover {
+    svg {
+      color: $bg_basic;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: end;
     gap: 23px;
   }
 }
+
 // .copyright__text
 .copyright__text {
   font-size: 16px;
   line-height: 20px;
   color: $txt_main;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 23px;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright:focus-visible {
+  outline: none;
+
+  svg {
+    color: $bg_basic;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .copyright:focus {
+    outline: none;
+
+    svg {
+      color: $bg_basic;
+    }
   }
 }

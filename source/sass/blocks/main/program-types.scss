@@ -1,5 +1,7 @@
 .program-types {
-  /* foo */
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
 }
 
 // .program-types__list

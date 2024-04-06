@@ -4,8 +4,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_main;
+  color: $txt_basic;
   padding: 0 0 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 80px;
@@ -14,12 +18,16 @@
 // .additionally__title
 .additionally__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 // .additionally__content
 .additionally__content {
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px 60px;
@@ -42,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 32px 60px;
     grid-column: 1/-1;
   }
 
@@ -78,9 +86,32 @@
     width: 40px;
     height: 40px;
   }
+
+  &:hover {
+    border-color: $brd_hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $txt_main;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      border: 2px solid $txt_main;
+    }
+  }
+
+  // для отключенного инпута
+  &:disabled,
+  &:disabled + .additionally__text {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
-.additionally__input[type="radio"]:checked::after {
+.additionally__input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
   background-image: url("../img/svg/tick.svg");
