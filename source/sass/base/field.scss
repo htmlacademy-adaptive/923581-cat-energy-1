@@ -23,11 +23,11 @@
   border: 1px solid $brd_main;
 }
 
-.field:user-invalid {
+.field:user-invalid:required {
   border: 2px solid $status_error;
 }
 
-.field:user-invalid + .owner-contacts__icon {
+.field:user-invalid:required + .owner-contacts__icon {
   stroke: $status_error;
 }
 
