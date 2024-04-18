@@ -4,16 +4,30 @@
 
 // promotion__gift
 .promotion__gift {
-  /* foo */
+  background-size: cover;
+  background-position: center 60%;
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/cat-case.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/cat-case@2x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/cat-case-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/cat-case-table@2x.jpg");
+    }
+  }
 }
 
 // .promotion__subtitle
 .promotion__subtitle {
-  background-size: cover;
-  background-position: center 60%;
-  background-image: url("../img/catalog/image-1.jpg");
-  box-shadow: inset 0 302px 0 0 $bg_basic-light;
-  background-repeat: no-repeat;
   margin: 35px 0;
   padding: 59px 0 43px;
 

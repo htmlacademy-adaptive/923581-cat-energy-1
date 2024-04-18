@@ -8,12 +8,16 @@
     width: 320px;
     height: 302px;
     background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-      url("../img/index-background-mobile.png");
-    // box-shadow: inset 0 302px 0 0 $bg_basic-light;
+      url("../img/index-background-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 320px auto;
     display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
+        url("../img/index-background-mobile@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: none;
@@ -31,6 +35,11 @@
       background-position: center;
       background-size: cover;
       display: block;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
+          url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

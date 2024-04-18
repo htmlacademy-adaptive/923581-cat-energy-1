@@ -74,7 +74,7 @@
 
 // .partnership__map
 .partnership__map {
-  background-image: url("../img/location.png");
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,7 +82,24 @@
   width: 100%;
   display: block;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 400px;
+    background-image: url("../img/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-mobile@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
   }
 }
