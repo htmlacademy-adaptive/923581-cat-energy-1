@@ -1,19 +1,33 @@
 .logo-image {
-  background-image: url("../img/logo-image.png");
+  background-image: url("../img/retina/logo-mobile.png");
   width: 33px;
   height: 38px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 33px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/retina/logo-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/logo-image-tablet.png");
+    background-image: url("../img/retina/logo-tablet.png");
     width: 60px;
     height: 50px;
+    background-size: 60px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/logo-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/logo-image-desktop.png");
+    background-image: url("../img/retina/logo-desktop.png");
     width: 70px;
     height: 59px;
+    background-size: 70px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/logo-desktop@2x.png");
+    }
   }
 }
