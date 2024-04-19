@@ -146,17 +146,17 @@
             </div>
             <!-- Слайдер -->
             <div class="example__slider comparison-slider">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/tablet-after.png 1x, img/tablet-after@2x.png 2x" width="560" height="512">
-                <img src="./img/mobile-after.png" alt="Кот после применения программы" srcset="./img/mobile-after@2x.png 2x" width="280" height="256">
-              </picture>
-              <div class="comparison-slider__resize resize">
-                <picture>
+              <label for="slider">
+                <picture class="comparison-slider__cat-after cat-image">
+                  <source media="(min-width: 768px)" srcset="img/tablet-after.png 1x, img/tablet-after@2x.png 2x" width="560" height="512">
+                  <img src="./img/mobile-after.png" alt="Кот после применения программы" srcset="./img/mobile-after@2x.png 2x" width="280" height="256">
+                </picture>
+                <picture class="comparison-slider__cat-before cat-image" id="my-img">
                   <source media="(min-width: 768px)" srcset="img/tablet-before.png 1x, img/mobile-before@2x.png 2x" width="560" height="512">
                   <img src="./img/mobile-before.png" alt="Кот до применения программы" srcset="./img/mobile-before@2x.png 2x" width="280" height="256">
                 </picture>
-              </div>
-              <span class="divider"></span>
+                <input class="divider" id="slider" type="range" value="50" min="0" max="100" oninput="slide()">
+              </label>
             </div>
           </div>
         </div>
