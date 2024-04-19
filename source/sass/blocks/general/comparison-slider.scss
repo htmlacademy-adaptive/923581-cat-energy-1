@@ -33,6 +33,7 @@
 #my-img {
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
+
 #slider {
   position: relative;
   -webkit-appearance: none;
@@ -42,6 +43,7 @@
   background-color: transparent;
   outline: none;
 }
+
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 256px;
