@@ -419,6 +419,10 @@ body {
   }
 }
 
+.partnership__map {
+  /* foo */
+}
+
 .title-string {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
