@@ -836,13 +836,17 @@ body {
   height: 256px;
   position: relative;
   overflow: hidden;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .comparison-slider {
     width: 560px;
     height: 512px;
   }
+}
+.comparison-slider__cat-before {
+  -webkit-clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 .comparison-slider .cat-image {
   position: absolute;
@@ -862,14 +866,6 @@ body {
 
 .divider {
   margin: 0;
-}
-
-#my-img {
-  -webkit-clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-          clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-}
-
-#slider {
   position: relative;
   -webkit-appearance: none;
   width: calc(100% + 40px);
@@ -879,7 +875,7 @@ body {
   outline: none;
 }
 
-#slider::-webkit-slider-thumb {
+.divider::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 256px;
   width: 40px;
@@ -889,18 +885,18 @@ body {
   cursor: pointer;
 }
 @media (min-resolution: 2dppx) {
-  #slider::-webkit-slider-thumb {
+  .divider::-webkit-slider-thumb {
     background-image: url("../img/curtain-256@2x.png");
   }
 }
 @media (min-width: 768px) {
-  #slider::-webkit-slider-thumb {
+  .divider::-webkit-slider-thumb {
     height: 512px;
     background-image: url("../img/curtain-512.png");
   }
 }
 @media (min-width: 768px) and (min-resolution: 2dppx) {
-  #slider::-webkit-slider-thumb {
+  .divider::-webkit-slider-thumb {
     background-image: url("../img/curtain-512@2x.png");
   }
 }
