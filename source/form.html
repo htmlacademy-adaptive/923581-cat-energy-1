@@ -21,7 +21,11 @@
       <div class="header__header-wrapper">
         <a class="header__logo" href="index.html" aria-current="page" aria-label="Интернет-магазин Cat Energy.">
           <div class="header__logo-image logo-image">
-            <!-- <img src="img/logo-image.png" alt="Схематичный рисунок кота в образе супер-героя в плаще на фоне желтого круга." width="33" height="38"> -->
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.png 1x, img/logo/logo-tablet@2x.png 2x" width="60" height="50">
+              <img src="./img/logo/logo-mobile.png" alt="Схематичный рисунок кота в образе супер-героя в плаще на фоне желтого круга." srcset="./img/logo/logo-mobile@2x.png 2x" width="33" height="38">
+            </picture>
           </div>
           <svg class="header__logo-text logo-text" aria-hidden="true" focusable="false" width="118" height="21" viewBox="0 0 118 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.42351 19.2159C0.391283 17.7277 -0.102273 15.9474 0.0207226 14.156V6.84405C-0.109487 5.03944 0.376607 3.24353 1.40346 1.73542C2.33197 0.572011 3.91845 -0.00644536 6.16291 5.41628e-05C8.40736 0.00655368 9.92704 0.516766 10.722 1.53069C11.6912 2.78717 12.1642 4.3407 12.0546 5.90812V7.62399H7.90636V5.76188C7.90077 5.27192 7.85723 4.78307 7.77611 4.29949C7.72595 3.9494 7.56075 3.6245 7.30517 3.3733C7.1474 3.24166 6.96423 3.14195 6.76637 3.08001C6.56852 3.01807 6.35995 2.99515 6.15288 3.01258C5.8555 2.9694 5.55167 3.01643 5.28273 3.14726C5.0138 3.2781 4.79283 3.48638 4.6499 3.74378C4.38644 4.42844 4.27049 5.15851 4.30923 5.88862V15.1699C4.26352 15.9049 4.39743 16.6399 4.7 17.3148C4.84457 17.5582 5.05909 17.7553 5.31721 17.8817C5.57533 18.0082 5.86578 18.0585 6.15288 18.0265C6.435 18.0653 6.72251 18.0164 6.97441 17.8869C7.22631 17.7573 7.42973 17.5537 7.55567 17.305C7.79804 16.6191 7.90347 15.8944 7.86628 15.1699V13.2201H12.0145V14.9067C12.1366 16.4972 11.7023 18.0812 10.7821 19.4011C9.90032 20.4735 8.3773 21 6.21301 21C4.04871 21 2.35536 20.415 1.42351 19.2159Z" fill="#111111" />
@@ -45,13 +49,13 @@
           <nav class="menu__body" aria-label="Навигация по сайту.">
             <ul class="menu__list list-reset">
               <li class="menu__item">
-                <a class="menu__link" href="index.html">главная</a>
+                <a class="menu__link menu__link--current" href="index.html" aria-current="page">главная</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="catalog.html">каталог продукции</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link menu__link--current" href="form.html" aria-current="page">подбор программы</a>
+                <a class="menu__link" href="form.html">подбор программы</a>
               </li>
             </ul>
           </nav>
