@@ -68,10 +68,22 @@
   top: 50%;
   transform: translateY(-50%);
   right: 15px;
-  stroke: $txt_light;
+  // stroke: $txt_light;
 }
 
 // .owner-contacts__input
-.owner-contacts__input {
-  /* foo */
+.owner-contacts__input[type="tel"] + .owner-contacts__icon {
+  background-image: url("../img/svg/tel.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  stroke: $txt_light;
+}
+
+.owner-contacts__input[type="email"] + .owner-contacts__icon {
+  background-image: url("../img/svg/email.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  stroke: $txt_light;
 }
