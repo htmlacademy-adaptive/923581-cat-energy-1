@@ -3,34 +3,22 @@
   justify-content: center;
 
   &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 302px;
-    background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-      url("../img/index-background-mobile.png");
-    // box-shadow: inset 0 302px 0 0 $bg_basic-light;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: block;
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
+    @media (max-width: $tablet-width) {
       content: "";
+      position: absolute;
+      width: 320px;
+      height: 302px;
       background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-        url("../img/index-background-desktop.jpg");
-      width: 720px;
-      height: 694px;
-      top: 0;
-      left: 50%;
+        url("../img/index-background-mobile.jpg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: 320px auto;
       display: block;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
+          url("../img/index-background-mobile@2x.jpg");
+      }
     }
   }
 }

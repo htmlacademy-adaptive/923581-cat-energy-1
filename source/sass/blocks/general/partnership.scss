@@ -3,7 +3,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background-color: $bg_minor;
+    background-color: $bg_main;
   }
 }
 
@@ -74,15 +74,5 @@
 
 // .partnership__map
 .partnership__map {
-  background-image: url("../img/location.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 362px;
-  width: 100%;
-  display: block;
-
-  @media (min-width: $desktop-width) {
-    min-height: 400px;
-  }
+  /* foo */
 }
