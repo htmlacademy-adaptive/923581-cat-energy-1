@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,12 +133,12 @@
 // .promo__button
 .promo__button {
   @media (max-width: $tablet-width) {
-    margin-top: 302px;
+    margin-top: 301px;
     width: 100%;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 14px 26px;
+    padding: 14px 28px;
   }
 
   @media (min-width: $desktop-width) {

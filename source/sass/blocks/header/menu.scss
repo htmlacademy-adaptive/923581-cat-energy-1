@@ -3,7 +3,10 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 4px 2px;
+    padding: 8px 4px 2px 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 1px;
   }
 }
 
@@ -57,11 +60,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 34px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 900px;
+    gap: 33px;
   }
 }
 
