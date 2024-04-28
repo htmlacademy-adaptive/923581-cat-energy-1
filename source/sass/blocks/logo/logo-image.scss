@@ -1,2 +1,11 @@
 .logo-image {
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }

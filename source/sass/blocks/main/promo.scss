@@ -7,7 +7,7 @@
       content: "";
       position: absolute;
       width: 320px;
-      height: 301px;
+      height: 302px;
       background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
         url("../img/index-background-mobile.jpg");
       background-repeat: no-repeat;
@@ -31,11 +31,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 59px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 104px 0 0;
+    padding: 110px 0 0;
     position: relative;
   }
 }
@@ -94,7 +94,7 @@
     margin-bottom: 50px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 52px;
   }
 }
@@ -124,7 +124,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 23px;
+    top: 30px;
     left: 447px;
 
     img {
@@ -137,7 +137,7 @@
 // .promo__button
 .promo__button {
   @media (max-width: $tablet-width) {
-    margin-top: 301px;
+    margin-top: 302px;
     width: 100%;
   }
 

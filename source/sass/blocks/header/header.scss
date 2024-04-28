@@ -5,7 +5,7 @@
 
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $line_main;
-    padding: 11px 0;
+    padding: 13px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -117,7 +117,7 @@
 // .header__logo-text
 .header__logo-text {
   @media (min-width: $tablet-width) {
-    margin-bottom: 4px;
+    // margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
