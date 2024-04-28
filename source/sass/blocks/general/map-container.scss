@@ -11,12 +11,12 @@
     background-image: url("../img/map-mobile@2x.png");
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     min-height: 400px;
     background-image: url("../img/map-tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map-mobile@2x.png");
+      background-image: url("../img/map-tablet@2x.png");
     }
   }
 

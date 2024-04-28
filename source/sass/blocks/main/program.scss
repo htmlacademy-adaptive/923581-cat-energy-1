@@ -1,5 +1,5 @@
 .program {
-  padding: 23px 20px 7px;
+  padding: 24px 20px 18px;
   background-color: $bg_minor;
   position: relative;
   display: grid;
@@ -8,13 +8,13 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-template-columns: 1fr 268px;
-    padding: 77px 29px 38px 52px;
+    padding: 77px 29px 60px 52px;
     column-gap: 19px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 214px 1fr;
-    padding: 41px 61px 40px 52px;
+    padding: 47px 61px 62px 52px;
   }
 }
 //.program__icon
@@ -30,7 +30,7 @@
     justify-self: center;
     width: 200px;
     height: 200px;
-    margin-top: 15px;
+    margin-top: -7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,8 +75,8 @@
       position: absolute;
       width: 67px;
       height: 28px;
-      top: 11px;
-      left: -9px;
+      top: 12px;
+      left: -8px;
       background-image: url("../img/svg/cat-pro2.svg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -118,13 +118,15 @@
   @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: -53px;
+    margin-top: -4px;
   }
 }
 
 // .program__text
 .program__text {
   margin: 0;
-  padding: 22px 0 23px;
+  padding: 22px 0 22px;
   grid-column: 1 / -1;
 
   @media (max-width: $tablet-width) {
@@ -153,7 +155,7 @@
   justify-content: start;
   align-items: center;
   min-height: 24px;
-  padding: 18px 20px 15px 0;
+  padding: 0 20px 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -164,6 +166,7 @@
   color: $txt_basic;
   grid-column: 1 / -1;
   margin-right: auto;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -174,6 +177,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     cursor: pointer;
+    margin-top: 7px;
   }
 
   &::before {
@@ -184,6 +188,14 @@
     display: block;
     margin-left: 17px;
     transition: 0.2s linear;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+    }
   }
 
   &::after {
@@ -194,8 +206,8 @@
     background-size: cover;
     width: 7px;
     height: 12px;
-    top: 20px;
-    right: 13px;
+    top: 6px;
+    right: 14px;
     display: block;
   }
 
