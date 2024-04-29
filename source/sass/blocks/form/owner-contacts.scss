@@ -40,9 +40,11 @@
 }
 
 .owner-contacts__item:not(:last-child) {
-  margin-bottom: 14px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin-bottom: 20px;
   }
 }

@@ -186,6 +186,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 26px;
+      padding: 0;
     }
   }
 }
@@ -196,6 +197,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -210,6 +215,14 @@
 
     &:not(:last-child) {
       margin-bottom: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
     }
   }
 }
