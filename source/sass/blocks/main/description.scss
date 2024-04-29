@@ -80,6 +80,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 40px;
+
     &:first-child::before {
       right: 7px;
     }
