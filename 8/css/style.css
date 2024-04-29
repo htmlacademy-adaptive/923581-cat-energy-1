@@ -2099,7 +2099,7 @@ body {
 @media (min-width: 768px) {
   .product-card__title--more {
     margin-bottom: 23px;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
 }
 @media (min-width: 1440px) {
