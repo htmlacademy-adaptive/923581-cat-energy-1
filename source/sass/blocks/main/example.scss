@@ -4,13 +4,12 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    box-shadow: inset 0 -471px 0 0 $bg_minor-light;
+    box-shadow: inset 0 -462px 0 0 $bg_minor-light;
     background-color: inherit;
     padding: 45px 0 103px 0;
   }
 
   @media (min-width: $desktop-width) {
-    box-shadow: inset 0 -468px 0 0 $bg_minor-light;
     padding: 0 0 75px;
   }
 }
