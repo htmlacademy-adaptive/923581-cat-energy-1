@@ -5,7 +5,7 @@
 
   @media (max-width: $tablet-width) {
     border-bottom: 1px solid $line_main;
-    padding: 13px 0 14px;
+    padding: 13px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -116,6 +116,10 @@
 
 // .header__logo-text
 .header__logo-text {
+  @media (min-width: $tablet-width) {
+    // margin-bottom: 4px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
@@ -129,5 +133,5 @@
 
 // .header__menu
 .header__menu {
-  /* foo */
+  // margin-right: 1px;
 }

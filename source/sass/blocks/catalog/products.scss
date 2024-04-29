@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 77px;
+  }
 }
 
 // .products__title
@@ -11,12 +15,16 @@
   font-size: 36px;
   line-height: 36px;
   color: $txt_basic;
-  margin: 27px 0 41px;
+  margin: 28px 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 65px 0 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
   }
 }
 
@@ -36,5 +44,7 @@
 
 // .products__item
 .products__item {
-  /* foo */
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
 }

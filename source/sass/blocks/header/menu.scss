@@ -3,7 +3,12 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 4px 2px;
+    padding-right: 4px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 1px;
   }
 }
 
@@ -44,6 +49,10 @@
     transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
     transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
   }
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 // .menu__list
@@ -56,12 +65,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    height: 100%;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 34px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 900px;
+    gap: 33px;
   }
 }
 
@@ -70,6 +81,14 @@
   @media (max-width: $tablet-width) {
     text-align: center;
     border-bottom: 1px solid $line_main;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 }
 
@@ -116,7 +135,15 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 8px;
+    height: 100%;
+    padding-top: 14px;
+    // padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 21px;
   }
 }
 

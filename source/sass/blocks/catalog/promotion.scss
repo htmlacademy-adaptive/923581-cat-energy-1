@@ -28,7 +28,7 @@
 
 // .promotion__subtitle
 .promotion__subtitle {
-  margin: 35px 0;
+  margin: 34px 0 35px;
   padding: 59px 0 43px;
 
   p {
@@ -75,10 +75,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 57px 125px 60px 77px;
-    margin: 70px 0 75px;
+    margin: 69px 0 75px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 56px;
   }
 }

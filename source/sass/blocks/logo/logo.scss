@@ -1,3 +1,7 @@
 .logo {
-  /* foo */
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+  }
 }

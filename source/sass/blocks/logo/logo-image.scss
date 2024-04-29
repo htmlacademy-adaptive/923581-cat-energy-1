@@ -1,33 +1,11 @@
-// .logo-image {
-//   // background-image: url("../img/logo/logo-mobile.png");
-//   width: 33px;
-//   height: 38px;
-//   background-repeat: no-repeat;
-//   background-size: 33px auto;
+.logo-image {
+  height: 38px;
 
-//   // @media (min-resolution: 2dppx) {
-//   //   background-image: url("../../../img/logo/logo-mobile@2x.png");
-//   // }
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
 
-//   @media (min-width: $tablet-width) {
-//     // background-image: url("../img/logo/logo-tablet.png");
-//     width: 60px;
-//     height: 50px;
-//     background-size: 60px auto;
-
-//     // @media (min-resolution: 2dppx) {
-//     //   background-image: url("../img/logo/logo-tablet@2x.png");
-//     // }
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     // background-image: url("../img/logo/logo-desktop.png");
-//     width: 70px;
-//     height: 59px;
-//     background-size: 70px auto;
-
-//     // @media (min-resolution: 2dppx) {
-//     //   background-image: url("../img/logo/logo-desktop@2x.png");
-//     // }
-//   }
-// }
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}

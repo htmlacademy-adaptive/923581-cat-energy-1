@@ -4,10 +4,10 @@
 
 //.complementary__wrapper
 .complementary__wrapper {
-  padding-top: 36px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    padding-top: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,7 +15,7 @@
     grid-template-columns: 1fr 245px;
     gap: 80px;
     margin-bottom: 87px;
-    padding-top: 80px;
+    padding-top: 75px;
   }
 }
 
@@ -31,7 +31,10 @@
 
 // .complementary__list
 .complementary__list {
-  /* foo */
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border-right: 1px solid $line_minor;
+    border-left: 1px solid $line_minor;
+  }
 }
 
 // .complementary__item
