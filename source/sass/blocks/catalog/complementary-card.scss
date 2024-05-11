@@ -4,45 +4,101 @@
   font-size: 14px;
   line-height: 14px;
   color: $txt_main;
-  margin-bottom: 19px;
+  padding: 13px 0 18px;
 
-  &::before {
-    content: "";
-    border-top: 1px solid $line_minor;
-    width: 100%;
-    height: 0%;
-    display: block;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 26px 37px 28px;
   }
 
-  // .complementary-card__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $txt_light;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 326px 1fr 244px;
+    padding: 14px 0 17px;
+  }
+}
+
+// .complementary-card__title
+.complementary-card__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $txt_light;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// .complementary-card__inform
+.complementary-card__inform {
+  display: flex;
+  justify-content: space-between;
+  margin: 13px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    grid-column: 2/-1;
     margin: 0;
-    margin-top: 13px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
-  // .complementary-card__inform
-  &__inform {
-    display: flex;
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
     justify-content: space-between;
-    margin: 13px 0 15px;
+    align-self: stretch;
+    padding-top: 12px;
+    line-height: 20px;
+  }
+}
+
+// .complementary-card__quantity
+.complementary-card__quantity {
+  // quantity
+}
+
+// .complementary-card__price
+.complementary-card__price {
+  text-align: right;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 94px;
+    padding-right: 3px;
   }
 
-  // .complementary-card__quantity
-  &__quantity {
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    padding: 0;
+    min-width: 83px;
+  }
+}
+
+// .complementary-card__button
+.complementary-card__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
   }
 
-  // .complementary-card__price
-  &__price {
-  }
-
-  // .complementary-card__button
-  &__button {
-    width: 100%;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: -2/-1;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

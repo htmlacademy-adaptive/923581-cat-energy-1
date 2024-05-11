@@ -1,13 +1,15 @@
 .icon-menu {
-  display: block;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   position: relative;
   width: 24px;
-  height: 18px;
+  height: 24px;
   cursor: pointer;
   z-index: 5;
   border: none;
   background-color: transparent;
-  margin-right: 1px;
 
   span,
   &::before,
@@ -22,14 +24,14 @@
   }
 
   &::before {
-    top: 0;
+    top: 2px;
   }
 
   &::after {
-    bottom: 0;
+    bottom: 4px;
   }
 
   span {
-    top: calc(50% - 1px);
+    top: calc(50% - 2px);
   }
 }

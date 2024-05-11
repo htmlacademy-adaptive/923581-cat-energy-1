@@ -2,29 +2,97 @@
   background-color: $bg_minor;
   padding: 40px 0;
 
-  // .footer__container
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @media (min-width: $tablet-width) {
+    padding: 55px 0 55px;
   }
-  // .footer__logo
-  &__logo {
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0 66px;
+  }
+}
+
+// .footer__footer-wrapper
+.footer__footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+  }
+}
+
+// .footer__logo
+.footer__logo {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  fill: currentColor;
+  color: $txt_minor;
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
     margin: 0;
-    margin-bottom: 40px;
+    text-align: left;
   }
-  // .footer__logo-text
-  &__logo-text {
-    width: 128px;
-    height: 24px;
+
+  &:hover {
+    color: $txt_hover;
   }
-  // .footer__social-list
-  &__social-list {
-    width: 132px;
-    margin-bottom: 40px;
+
+  &:focus-visible {
+    outline: none;
+    color: $txt_hover;
   }
-  // .footer__copyright
-  &__copyright {
-    width: 100%;
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      color: $txt_hover;
+    }
+  }
+
+  &:active {
+    color: $txt_active;
+  }
+}
+
+// .footer__logo-text
+.footer__logo-text {
+  width: 128px;
+  height: 24px;
+  display: inline-block;
+}
+
+// .footer__social-list
+.footer__social-list {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 0 19px;
+    border-top: 1px solid $line_main;
+    border-bottom: 1px solid $line_main;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+}
+
+// .footer__copyright
+.footer__copyright {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
   }
 }

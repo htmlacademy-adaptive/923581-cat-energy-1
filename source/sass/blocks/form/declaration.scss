@@ -6,37 +6,46 @@
   text-transform: uppercase;
   color: $txt_main;
 
-  // .declaration__container
-  &__container {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
+}
 
-  // .declaration__list
-  &__list {
+// .declaration__list
+.declaration__list {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
   }
+}
 
-  // .declaration__item
-  &__item {
-  }
+// .declaration__item
+.declaration__item {
+  /* foo */
+}
 
-  &__item:not(:last-child) {
-    margin-bottom: 14px;
-  }
+.declaration__item:not(:last-child) {
+  margin-bottom: 14px;
 
-  // .declaration__label
-  &__label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
+}
 
-  // .declaration__text
-  &__text {
-    margin-right: 13px;
-    white-space: nowrap;
-  }
+// .declaration__label
+.declaration__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  // .declaration__input
-  &__input {
-    border: 1px solid $brd_minor;
-  }
+// .declaration__text
+.declaration__text {
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
+// .declaration__input
+.declaration__input {
+  /* foo */
 }

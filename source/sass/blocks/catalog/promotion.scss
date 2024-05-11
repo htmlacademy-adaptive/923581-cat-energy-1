@@ -1,29 +1,85 @@
 .promotion {
-  // .promotion__container
-  &__container {
+  /* foo */
+}
+
+// promotion__gift
+.promotion__gift {
+  background-size: cover;
+  background-position: center 60%;
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/cat-case.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/cat-case@2x.jpg");
   }
 
-  // .promotion__subtitle
-  &__subtitle {
-    background-image: url("../../../img/catalog/image-1.jpg");
-    box-shadow: inset 0 302px 0 0 $bg_basic-light;
-    background-repeat: no-repeat;
-    padding: 59px 58px 43px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/cat-case-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/cat-case-tablet@2x.jpg");
+    }
+  }
+}
+
+// .promotion__subtitle
+.promotion__subtitle {
+  margin: 34px 0 35px;
+  padding: 59px 0 43px;
+
+  p {
+    display: block;
+    width: 161px;
+    margin: 0 auto;
     font-family: $lato;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: $txt_contrast;
-    margin: 0;
 
-    &::before {
-      content: "";
-      background-image: url("../../../img/svg/icon_gift.svg");
-      display: block;
-      width: 78px;
-      height: 80px;
-      margin: 0 auto 48px;
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      margin: 0;
+      text-align: left;
     }
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../img/svg/icon_gift.svg");
+    background-size: 100% 100%;
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto 48px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 80px;
+      height: 83px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 83px;
+      margin: 0 auto 46px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 57px 125px 60px 77px;
+    margin: 69px 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 56px;
   }
 }

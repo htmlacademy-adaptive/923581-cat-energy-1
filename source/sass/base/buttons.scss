@@ -10,20 +10,61 @@
   color: $bg_main;
   text-align: center;
   text-decoration: none;
-  background-color: $bg_basic;
+  background-color: $btn-basic;
   border-radius: 0;
   border: none;
   cursor: pointer;
   word-wrap: break-word;
 
-  // .button--xl
-  &--xl {
-    width: 100%;
+  &:hover {
+    background-color: $btn-hover;
   }
 
-  // .button--light
-  &--light {
-    background-color: $btn_light;
-    color: $txt_main;
+  &:focus-visible {
+    outline: none;
+    background-color: $btn-hover;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      background-color: $btn-hover;
+    }
+  }
+
+  &:active {
+    color: $txt_contrastHv;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+  }
+}
+
+// .button--light
+.button--light {
+  background-color: $btn_light;
+  color: $txt_main;
+
+  &:hover {
+    background-color: $btn_light-hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $btn_light-hover;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      background-color: $btn_light-hover;
+    }
+  }
+
+  &:active {
+    color: inherit;
   }
 }

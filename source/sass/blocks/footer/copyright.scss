@@ -2,13 +2,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // .copyright__text
-  &__text {
-    font-size: 16px;
-    line-height: 20px;
-    color: $txt_main;
-  }
 
   svg {
+    color: $txt_fill;
+    fill: currentColor;
+  }
+
+  &:hover {
+    svg {
+      color: $bg_basic;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 23px;
+  }
+}
+
+// .copyright__text
+.copyright__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $txt_main;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright:focus-visible {
+  outline: none;
+
+  svg {
+    color: $bg_basic;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .copyright:focus {
+    outline: none;
+
+    svg {
+      color: $bg_basic;
+    }
   }
 }

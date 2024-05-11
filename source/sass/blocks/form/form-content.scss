@@ -1,48 +1,72 @@
 .form-content {
+  /* foo */
+}
 
+// .form-content__header
+.form-content__header {
+  padding: 28px 0 39px;
 
-  // .form-content__header
-  &__header {
-    padding: 27px 0 39px;
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 66px;
   }
 
-  // .form-content__container
-  &__container {
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
+}
+
+// .form-content__title
+.form-content__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $txt_basic;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
   }
 
-  // .form-content__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    color: $txt_basic;
-    margin: 0;
-    margin-bottom: 37px;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+}
+
+// .form-content__text
+.form-content__text {
+  margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $txt_basic;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 40px;
   }
 
-  // .form-content__text
-  &__text {
-    margin: 0;
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: $txt_basic;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
+}
 
-  // .form-content__profile
-  &__profile {
-  }
+// .form-content__profile
+.form-content__profile {
+  /* foo */
+}
 
-  // .form-content__partnership
-  &__partnership {
-    background-color: $bg_minor;
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: $txt_main;
-  }
+// .form-content__partnership
+.form-content__partnership {
+  background-color: $bg_minor;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $txt_main;
 }

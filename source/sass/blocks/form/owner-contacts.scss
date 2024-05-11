@@ -5,52 +5,70 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $txt_main;
-  // .owner-contacts__title
-  &__title {
-    margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// .owner-contacts__title
+.owner-contacts__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+}
+
+// .owner-contacts__list
+.owner-contacts__list {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 0 40px;
   }
 
-  // .owner-contacts__container
-  &__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
+}
 
-  // .owner-contacts__list
-  &__list {
-  }
+// .owner-contacts__item
+.owner-contacts__item {
+  /* foo */
+}
 
-  // .owner-contacts__item
-  &__item {
-  }
-
-  &__item:not(:last-child) {
+.owner-contacts__item:not(:last-child) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 14px;
   }
 
-  // .owner-contacts__label
-  &__label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 20px;
   }
+}
 
-  // .owner-contacts__text
-  &__text {
-    margin-right: 13px;
-    white-space: nowrap;
-  }
+// .owner-contacts__label
+.owner-contacts__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
-  // .owner-contacts__input
-  &__input {
-    border: 1px solid $brd_main;
-    background-repeat: no-repeat;
-    background-position: right 14px center;
+// .owner-contacts__text
+.owner-contacts__text {
+  margin-right: 13px;
+  white-space: nowrap;
+}
 
-    &[type="email"] {
-      background-image: url("../../../img/svg/email.svg");
-    }
-
-    &[type="tel"] {
-      background-image: url("../../../img/svg/tel.svg");
-    }
-  }
+// .owner-contacts__icon
+.owner-contacts__icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  stroke: $txt_light;
 }

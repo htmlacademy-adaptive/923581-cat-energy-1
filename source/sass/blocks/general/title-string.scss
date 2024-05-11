@@ -1,21 +1,48 @@
 .title-string {
-  display: flex;
-  width: 100%;
+  position: relative;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $txt_basic;
+  background-color: $bg_main;
+  margin: 0;
+  padding: 0 20px 0 0;
   text-transform: none;
-  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
 
   &::after {
     content: "";
-    width: 100%;
-    margin-top: 18px;
-    margin-left: 20px;
+    position: absolute;
+    width: 1000vw;
+    top: 15px;
     border: 1px solid #68b738;
     height: 0;
     display: block;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -100vw;
+      top: 22px;
+      padding: 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
   }
 }

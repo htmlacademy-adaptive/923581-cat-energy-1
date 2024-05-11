@@ -1,80 +1,139 @@
 .profile {
   text-transform: uppercase;
 
-  // .profile__declaration
-  &__declaration {
-    border: none;
-    padding: 0;
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+// .profile__declaration
+.profile__declaration {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
     padding-bottom: 24px;
   }
 
-  // .profile__nutrition
-  &__nutrition {
-    border: none;
-    padding: 0;
-    margin: 0;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
+}
 
-    &::before {
+// .profile__nutrition
+.profile__nutrition {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &::before {
+    @media (max-width: $tablet-width) {
       content: "";
-      border-top: 1px solid $line_main;
-      width: 100%;
-      height: 0%;
-      display: block;
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      top: 0;
+      background-color: $line_main;
     }
+  }
 
-    &::after {
+  &::after {
+    @media (max-width: $tablet-width) {
       content: "";
-      border-top: 1px solid $line_main;
-      width: 100%;
-      height: 0%;
-      display: block;
+      position: absolute;
+      height: 1px;
+      width: 1000vw;
+      margin-left: -100vw;
+      bottom: 0;
+      background-color: $line_main;
     }
   }
 
-  // .profile__owner-contacts
-  &__owner-contacts {
+  @media (min-width: $tablet-width) {
     border: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 26px;
+  }
+}
+
+// .profile__owner-contacts
+.profile__owner-contacts {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
   }
 
-  // .profile__comments
-  &__comments {
-    border: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 24px;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin-top: 70px;
+  }
+}
+
+// .profile__comments
+.profile__comments {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
   }
 
-  // .profile__additionally
-  &__additionally {
-    border: none;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 34px;
-    margin-top: 23px;
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin-top: 70px;
+  }
+}
+
+// .profile__additionally
+.profile__additionally {
+  border: none;
+  margin: 0;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
   }
 
-  // .profile__container
-  &__container {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin-top: 70px;
   }
+}
 
-  // .profile__cubmit
-  &__cubmit {
-    width: 100%;
+// .profile__button
+.profile__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 20px;
   }
+}
 
-  // .profile__required
-  &__required {
-    font-family: $lato;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: $txt_basic;
-    text-transform: none;
-    text-align: center;
-    margin: 21px 0 32px;
+// .profile__required
+.profile__required {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $txt_basic;
+  text-transform: none;
+  text-align: center;
+  margin: 21px 0 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 17px;
   }
 }

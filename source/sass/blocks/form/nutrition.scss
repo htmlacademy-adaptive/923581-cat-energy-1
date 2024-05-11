@@ -4,57 +4,108 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_main;
+  color: $txt_light;
 
-  // .nutrition__containert
-  &__container {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// .nutrition__list
+.nutrition__list {
+  padding: 22px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border: 1px solid $brd_minor;
   }
 
-  // .nutrition__list
-  &__list {
-    padding: 22px 0 19px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0 40px;
   }
 
-  // .nutrition__item
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 13px;
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px;
+  }
+}
+
+// .nutrition__item
+.nutrition__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+// .nutrition__label
+.nutrition__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+// .nutrition__input
+.nutrition__input {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $brd_main;
+  border-radius: 50%;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border-color: $brd_hover;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $txt_main;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      border: 2px solid $txt_main;
     }
   }
 
-  // .nutrition__label
-  &__label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  // для отключенного инпута
+  &:disabled,
+  &:disabled + .nutrition__text {
+    opacity: 0.3;
+    pointer-events: none;
   }
+}
 
-  // .nutrition__input
-  &__input {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border: 1px solid $brd_main;
-    border-radius: 50%;
-    appearance: none;
-    margin: 0;
-    padding: 0;
+.nutrition__input[type="radio"]:checked::after {
+  position: absolute;
+  content: "";
+  background-color: $bg_basic;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
   }
+}
 
-  &__input[type="radio"]:checked::after {
-    position: absolute;
-    content: "";
-    background-color: $bg_basic;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+// .nutrition__text
+.nutrition__text {
+  padding-left: 15px;
 
-  // .nutrition__text
-  &__text {
-    padding-left: 15px;
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
   }
 }

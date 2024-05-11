@@ -1,103 +1,227 @@
 .program {
-  padding: 30px 20px 18px;
+  padding: 24px 20px 18px;
   background-color: $bg_minor;
   position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
 
-  &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 24px;
-    left: 20px;
-    background-color: $bg_basic;
-    border-radius: 50%;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-template-columns: 1fr 268px;
+    padding: 77px 29px 60px 52px;
+    column-gap: 19px;
   }
 
-  // .program__title
-  &__title {
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    color: $txt_basic;
-    padding-left: 70px;
-    margin: 0;
-    margin-bottom: 30px;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 214px 1fr;
+    padding: 47px 61px 62px 52px;
+  }
+}
+//.program__icon
+.program__icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $bg_basic;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-area: 1 / 2/ 4 / 3;
+    justify-self: center;
+    width: 200px;
+    height: 200px;
+    margin-top: -7px;
   }
 
-  // .program__text
-  &__text {
-    margin: 0;
-    margin-bottom: 15px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      margin-top: 23px;
-      background-color: $line_main;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
   }
 
-  // .program__link
-  &__link {
-    position: relative;
-    min-height: 24px;
-    padding: 4px 0;
-    font-family: $oswald;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    color: $txt_basic;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../../img/svg/icon_arrow.svg");
-      width: 32px;
-      height: 10px;
-      display: block;
-      right: -17px;
-      top: 10px;
-      transform: translateX(100%);
-    }
-  }
-
-  //program--slim
+  //program__icon--slim
   &--slim {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 36px;
       height: 50px;
-      top: 21px;
-      left: 27px;
-      background-image: url("../../../img/svg/cat-slim.svg");
+      bottom: 3px;
+      left: 7px;
+      background-image: url("../img/svg/cat-slim.svg");
+      background-size: 100% 100%;
       background-repeat: no-repeat;
-      display: block;
       z-index: 5;
+
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 140px;
+        height: 194px;
+        bottom: 17px;
+        left: 30px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        bottom: 9px;
+        left: 15px;
+      }
     }
   }
 
-  // program--pro
+  // program__icon--pro
   &--pro {
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 67px;
       height: 28px;
-      top: 35px;
-      left: 12px;
-      background-image: url("../../../img/svg/cat-pro.svg");
+      top: 12px;
+      left: -8px;
+      background-image: url("../img/svg/cat-pro2.svg");
+      background-size: 100% 100%;
       background-repeat: no-repeat;
-      display: block;
       z-index: 5;
+
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 268px;
+        height: 112px;
+        top: 44px;
+        left: -34px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: 20px;
+        left: -19px;
+      }
     }
+  }
+}
+
+// .program__title
+.program__title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $txt_basic;
+  margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -53px;
+    margin-top: -4px;
+  }
+}
+
+// .program__text
+.program__text {
+  margin: 0;
+  padding: 22px 0 22px;
+  grid-column: 1 / -1;
+
+  @media (max-width: $tablet-width) {
+    border-bottom: 2px solid $line_main;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1 / 2;
+    padding: 24px 0 41px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 0 23px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+// .program__link
+.program__link {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 20px 0 0;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+  color: $txt_basic;
+  grid-column: 1 / -1;
+  margin-right: auto;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1 / 2;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $txt_basic;
+    display: block;
+    margin-left: 17px;
+    transition: 0.2s linear;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/polygon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7px;
+    height: 12px;
+    top: 6px;
+    right: 13px;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  &:hover {
+    &::before {
+      width: 25px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
