@@ -37,64 +37,64 @@
     width: 100px;
     height: 100px;
   }
+}
 
-  //program__icon--slim
-  &--slim {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 36px;
-      height: 50px;
-      bottom: 3px;
-      left: 7px;
-      background-image: url("../img/svg/cat-slim.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      z-index: 5;
+//program__icon--slim
+.program__icon--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    bottom: 3px;
+    left: 7px;
+    background-image: url("../img/svg/stack.svg#cat-slim");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
 
-      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        width: 140px;
-        height: 194px;
-        bottom: 17px;
-        left: 30px;
-      }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 140px;
+      height: 194px;
+      bottom: 17px;
+      left: 30px;
+    }
 
-      @media (min-width: $desktop-width) {
-        width: 70px;
-        height: 97px;
-        bottom: 9px;
-        left: 15px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      bottom: 9px;
+      left: 15px;
     }
   }
+}
 
-  // program__icon--pro
-  &--pro {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 67px;
-      height: 28px;
-      top: 12px;
-      left: -8px;
-      background-image: url("../img/svg/cat-pro2.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      z-index: 5;
+// program__icon--pro
+.program__icon--pro {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 12px;
+    left: -8px;
+    background-image: url("../img/svg/stack.svg#cat-pro");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
 
-      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        width: 268px;
-        height: 112px;
-        top: 44px;
-        left: -34px;
-      }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 268px;
+      height: 112px;
+      top: 44px;
+      left: -34px;
+    }
 
-      @media (min-width: $desktop-width) {
-        width: 134px;
-        height: 56px;
-        top: 20px;
-        left: -19px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 20px;
+      left: -19px;
     }
   }
 }
@@ -200,7 +200,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../img/svg/polygon.svg");
+    background-image: url("../img/svg/stack.svg#polygon");
     background-repeat: no-repeat;
     background-size: cover;
     width: 7px;

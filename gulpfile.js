@@ -1,8 +1,6 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
-// import ttf_2_woff from 'gulp-ttf2woff';
-// import ttf_2_woff_2 from 'gulp-ttf2woff2';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
@@ -11,24 +9,10 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import { stacksvg } from "gulp-stacksvg";
 import del from 'del';
 import browser from 'browser-sync';
 
-// Fonts
-
-// export const fontsTTF2WOFF = (done) => {
-//   ttf2woff()
-//   ttf2woff2()
-//   done()
-// }
-
-// function ttf2woff() {
-//   return gulp.src('source/fonts/**/*.ttf').pipe(ttf_2_woff()).pipe(gulp.dest('build/fonts'))
-// }
-
-// function ttf2woff2() {
-//   return gulp.src('source/fonts/**/*.ttf').pipe(ttf_2_woff_2()).pipe(gulp.dest('build/fonts'))
-// }
 
 // Styles
 
@@ -91,13 +75,21 @@ const svg = () =>
     .pipe(gulp.dest('build/img/svg'));
 
 const sprite = () => {
-  return gulp.src('source/img/svg/*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/svg'));
+}
+
+//stack-svg
+
+const createStack = () => {
+  return gulp.src(['source/img/svg/*.svg', '!source/img/icons/*.svg'])
+    .pipe(stacksvg())
+    .pipe(gulp.dest('build/img/svg'))
 }
 
 // Copy
@@ -106,6 +98,8 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
+    'source/favicon/*',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -156,11 +150,11 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-    // fontsTTF2WOFF,
     styles,
     html,
     scripts,
     svg,
+    createStack,
     sprite,
     createWebp
   ),
@@ -173,11 +167,11 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    // fontsTTF2WOFF,
     styles,
     html,
     scripts,
     svg,
+    createStack,
     sprite,
     createWebp
   ),
