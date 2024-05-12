@@ -70,7 +70,7 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/svg/*.svg', '!source/img/icons/*.svg'])
+  gulp.src('source/img/svg/logo/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img/svg'));
 
