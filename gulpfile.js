@@ -1,8 +1,8 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
-import ttf_2_woff from 'gulp-ttf2woff';
-import ttf_2_woff_2 from 'gulp-ttf2woff2';
+// import ttf_2_woff from 'gulp-ttf2woff';
+// import ttf_2_woff_2 from 'gulp-ttf2woff2';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
