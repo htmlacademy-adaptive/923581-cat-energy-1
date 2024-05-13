@@ -124,6 +124,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/svg/stack.svg#tick-tablet");
+    width: 24px;
+    height: 18px;
+  }
 }
 
 // .additionally__text

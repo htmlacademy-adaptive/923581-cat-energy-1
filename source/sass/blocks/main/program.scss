@@ -221,6 +221,24 @@
     }
   }
 
+  &:focus-visible {
+    outline: none;
+    opacity: 0.3;
+    &::before {
+      width: 25px;
+    }
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      outline: none;
+      opacity: 0.3;
+      &::before {
+        width: 25px;
+      }
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }
