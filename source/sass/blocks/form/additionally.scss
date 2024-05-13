@@ -118,7 +118,7 @@
 .additionally__input[type="checkbox"]:checked::after {
   position: absolute;
   content: "";
-  background-image: url("../img/svg/sprite/stack.svg#tick");
+  background-image: url("../img/stack.svg#tick");
   width: 18px;
   height: 14px;
   top: 50%;
@@ -126,7 +126,7 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/svg/sprite/stack.svg#tick-tablet");
+    background-image: url("../img/stack.svg#tick-tablet");
     width: 24px;
     height: 18px;
   }
