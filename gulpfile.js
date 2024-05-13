@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -33,6 +34,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -107,18 +109,6 @@ const copy = (done) => {
   done();
 }
 
-// Copy sprite
-
-// const copySprite = (done) => {
-//   gulp.src([
-//     'source/img/svg/sprite/*.svg',
-//   ], {
-//     base: 'source'
-//   })
-//     .pipe(gulp.dest('build'))
-//   done();
-// }
-
 // Clean
 
 const clean = () => {
@@ -165,11 +155,10 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
+    createWebp,
     svg,
-    createStack,
     sprite,
-    // copySprite,
-    createWebp
+    createStack,
   ),
 );
 
@@ -183,11 +172,10 @@ export default gulp.series(
     styles,
     html,
     scripts,
+    createWebp,
     svg,
-    createStack,
     sprite,
-    // copySprite,
-    createWebp
+    createStack,
   ),
   gulp.series(
     server,
