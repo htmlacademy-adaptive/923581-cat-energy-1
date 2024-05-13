@@ -84,6 +84,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     grid-column: 1/2;

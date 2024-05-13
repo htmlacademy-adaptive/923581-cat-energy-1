@@ -187,6 +187,7 @@
     height: 12px;
     top: 50%;
     margin-left: 27px;
+    transition: all 0.2s ease;
   }
 
   @media (min-width: $tablet-width) {
@@ -199,7 +200,6 @@
   &::after {
     background-image: url("../img/stack.svg#arrow-right-hover");
     width: 32px;
-    transition: all 0.2s ease;
   }
 }
 
