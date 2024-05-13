@@ -107,7 +107,7 @@ const copy = (done) => {
   done();
 }
 
-// // Copy sprite
+// Copy sprite
 
 // const copySprite = (done) => {
 //   gulp.src([
