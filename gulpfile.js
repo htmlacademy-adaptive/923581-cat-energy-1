@@ -81,7 +81,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img/svg'));
+    .pipe(gulp.dest('source/img/svg/sprite'));
 }
 
 //stack-svg
@@ -89,7 +89,7 @@ const sprite = () => {
 const createStack = () => {
   return gulp.src(['source/img/svg/*.svg', '!source/img/icons/*.svg'])
     .pipe(stacksvg())
-    .pipe(gulp.dest('build/img/svg'))
+    .pipe(gulp.dest('source/img/svg/sprite'))
 }
 
 // Copy
@@ -100,6 +100,18 @@ const copy = (done) => {
     'source/*.ico',
     'source/favicon/*',
     'source/*.webmanifest',
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
+}
+
+// Copy sprite
+
+const copySprite = (done) => {
+  gulp.src([
+    'source/img/svg/sprite/*.svg',
   ], {
     base: 'source'
   })
@@ -156,6 +168,7 @@ export const build = gulp.series(
     svg,
     createStack,
     sprite,
+    copySprite,
     createWebp
   ),
 );
@@ -173,6 +186,7 @@ export default gulp.series(
     svg,
     createStack,
     sprite,
+    copySprite,
     createWebp
   ),
   gulp.series(

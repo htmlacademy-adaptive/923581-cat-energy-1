@@ -48,7 +48,7 @@
     height: 50px;
     bottom: 3px;
     left: 7px;
-    background-image: url("../img/svg/stack.svg#cat-slim");
+    background-image: url("../img/svg/sprite/stack.svg#cat-slim");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 5;
@@ -78,7 +78,7 @@
     height: 28px;
     top: 12px;
     left: -8px;
-    background-image: url("../img/svg/stack.svg#cat-pro");
+    background-image: url("../img/svg/sprite/stack.svg#cat-pro");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 5;
@@ -180,7 +180,7 @@
 
   &::after {
     content: "";
-    background-image: url("../img/svg/stack.svg#arrow-right");
+    background-image: url("../img/svg/sprite/stack.svg#arrow-right");
     background-repeat: no-repeat;
     background-size: cover;
     width: 24px;
@@ -197,7 +197,7 @@
 // .program__link:hover
 .program__link:hover {
   &::after {
-    background-image: url("../img/svg/stack.svg#arrow-right-hover");
+    background-image: url("../img/svg/sprite/stack.svg#arrow-right-hover");
     width: 32px;
     transition: all 0.2s ease;
   }
@@ -208,7 +208,7 @@
   opacity: 0.3;
 
   &::after {
-    background-image: url("../img/svg/stack.svg#arrow-right-hover");
+    background-image: url("../img/svg/sprite/stack.svg#arrow-right-hover");
     width: 32px;
     transition: all 0.2s ease;
   }
@@ -220,7 +220,7 @@
     opacity: 0.3;
 
     &::after {
-      background-image: url("../img/svg/stack.svg#arrow-right-hover");
+      background-image: url("../img/svg/sprite/stack.svg#arrow-right-hover");
       width: 32px;
       transition: all 0.2s ease;
     }
