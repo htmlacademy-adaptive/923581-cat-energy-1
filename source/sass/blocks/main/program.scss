@@ -214,14 +214,26 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
 
-  &:hover {
-    &::before {
-      width: 25px;
-    }
+// .program__link:hover
+.program__link:hover {
+  &::before {
+    width: 25px;
   }
+}
 
-  &:focus-visible {
+.program__link:focus-visible {
+  outline: none;
+  opacity: 0.3;
+
+  &::before {
+    width: 25px;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .program__link:focus {
     outline: none;
     opacity: 0.3;
 
@@ -229,19 +241,8 @@
       width: 25px;
     }
   }
+}
 
-  @supports not selector(:focus-visible) {
-    &:focus {
-      outline: none;
-      opacity: 0.3;
-
-      &::before {
-        width: 25px;
-      }
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.program__link:active {
+  opacity: 0.3;
 }
