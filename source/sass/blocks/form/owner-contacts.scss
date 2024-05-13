@@ -16,6 +16,10 @@
 .owner-contacts__title {
   margin-bottom: 35px;
 
+  @media (max-width: $tablet-width) {
+    max-width: 208px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
@@ -70,5 +74,6 @@
   top: 50%;
   transform: translateY(-50%);
   right: 15px;
+  fill: transparent;
   stroke: $txt_light;
 }

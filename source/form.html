@@ -9,9 +9,9 @@
   <link type="image/png" href="./favicon/favicon-32x32.png" rel="icon" sizes="32x32">
   <link type="image/png" href="./favicon/favicon-16x16.png" rel="icon" sizes="16x16">
   <link href="./favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="favicon.ico" rel="icon">
-  <link href="site.webmanifest" rel="manifest">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./favicon.ico" rel="icon">
+  <link href="./site.webmanifest" rel="manifest">
+  <link href="./css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт 0 энерджи</title>
 </head>
 
@@ -22,18 +22,12 @@
         <a class="header__logo" href="index.html" aria-current="page" aria-label="Интернет-магазин Cat Energy.">
           <div class="header__logo-image logo-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo/logo-desktop.webp 1x, ./img/logo/logo-desktop@2x.webp 2x" width="70" height="59">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo/logo-tablet.webp 1x, ./img/logo/logo-tablet@2x.webp 2x" width="60" height="50">
-              <source type="image/webp" srcset="./img/logo/logo-mobile.webp 1x, ./img/logo/logo-mobile@2x.webp 2x" width="33" height="38">
-              <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.png 1x, img/logo/logo-desktop@2x.png 2x" width="70" height="59">
-              <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet.png 1x, ./img/logo/logo-tablet@2x.png 2x" width="60" height="50">
-              <img src="./img/logo/logo-mobile.png" alt="Схематичный рисунок кота в образе супер-героя в плаще на фоне желтого круга." srcset="./img/logo/logo-mobile@2x.png 2x" width="33" height="38">
+              <source media="(min-width: 1440px)" srcset="./img/svg/logo-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="./img/svg/logo-tablet.svg" width="60" height="50">
+              <img src="./img/svg/logo-mobile.svg" alt="Схематичный рисунок кота в образе супер-героя в плаще на фоне желтого круга." width="33" height="38">
             </picture>
           </div>
-          <svg class="header__logo-text logo-text" role="img" aria-hidden="true" focusable="false" width="101" height="18" aria-label="Магазин Кэт энерджи.">
-            <use href="./img/sprite.svg#logo-text"></use>
-          </svg>
-
+          <img class="header__logo-text logo-text" src="./img/svg/logo-text.svg" alt="Магазин Кэт энерджи." width="101" height="18">
         </a>
         <div class="header__menu menu menu--closed">
           <!-- бургер -->
@@ -115,7 +109,7 @@
             </ul>
           </fieldset>
           <fieldset class="profile__owner-contacts owner-contacts">
-            <legend class="owner-contacts__title title-string">Контактные данные <br> (владельца кота)</legend>
+            <legend class="owner-contacts__title title-string">Контактные данные (владельца кота)</legend>
             <ul class="owner-contacts__list list-reset">
               <li class="owner-contacts__item">
                 <label class="owner-contacts__label" for="email">
@@ -123,7 +117,7 @@
                   <input class="owner-contacts__input field" id="email" name="email" type="email" placeholder="kuklachev@gmail.com" required="required">
                   <span class="owner-contacts__icon">
                     <svg aria-hidden="true" focusable="false" width="18" height="14">
-                      <use href="./img/sprite.svg#email"></use>
+                      <use href="../img/sprite.svg#email"></use>
                     </svg>
                   </span>
                 </label>
@@ -134,7 +128,7 @@
                   <input class="owner-contacts__input field" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90" required="required">
                   <span class="owner-contacts__icon">
                     <svg aria-hidden="true" focusable="false" width="16" height="16">
-                      <use href="./img/sprite.svg#phone"></use>
+                      <use href="../img/sprite.svg#phone"></use>
                     </svg>
                   </span>
                 </label>
@@ -177,7 +171,7 @@
                 </li>
               </ul>
               <button class="profile__button button button--xl" type="submit">отправить заявку</button>
-              <p class="profile__required">* &ndash; Обязательные поля</p>
+              <p class="profile__required">&#42; &#8211; Обязательные поля</p>
             </div>
           </fieldset>
         </form>

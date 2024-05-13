@@ -9,6 +9,7 @@
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/cat-case.jpg");
   background-repeat: no-repeat;
+  height: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
@@ -50,7 +51,7 @@
 
   &::before {
     content: "";
-    background-image: url("../img/svg/icon_gift.svg");
+    background-image: url("../img/stack.svg#icon_gift");
     background-size: 100% 100%;
     display: block;
     width: 78px;

@@ -68,6 +68,7 @@
     height: 100%;
     flex-wrap: wrap;
     gap: 34px;
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {

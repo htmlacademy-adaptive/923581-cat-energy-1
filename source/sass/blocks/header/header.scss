@@ -116,6 +116,9 @@
 
 // .header__logo-text
 .header__logo-text {
+  width: 101px;
+  height: 18px;
+
   @media (min-width: $tablet-width) {
     // margin-bottom: 4px;
   }

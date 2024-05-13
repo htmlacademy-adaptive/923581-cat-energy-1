@@ -37,64 +37,64 @@
     width: 100px;
     height: 100px;
   }
+}
 
-  //program__icon--slim
-  &--slim {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 36px;
-      height: 50px;
-      bottom: 3px;
-      left: 7px;
-      background-image: url("../img/svg/cat-slim.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      z-index: 5;
+//program__icon--slim
+.program__icon--slim {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    bottom: 3px;
+    left: 7px;
+    background-image: url("../img/stack.svg#cat-slim");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
 
-      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        width: 140px;
-        height: 194px;
-        bottom: 17px;
-        left: 30px;
-      }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 140px;
+      height: 194px;
+      bottom: 17px;
+      left: 30px;
+    }
 
-      @media (min-width: $desktop-width) {
-        width: 70px;
-        height: 97px;
-        bottom: 9px;
-        left: 15px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      bottom: 9px;
+      left: 15px;
     }
   }
+}
 
-  // program__icon--pro
-  &--pro {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 67px;
-      height: 28px;
-      top: 12px;
-      left: -8px;
-      background-image: url("../img/svg/cat-pro2.svg");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      z-index: 5;
+// program__icon--pro
+.program__icon--pro {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 12px;
+    left: -8px;
+    background-image: url("../img/stack.svg#cat-pro");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
 
-      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-        width: 268px;
-        height: 112px;
-        top: 44px;
-        left: -34px;
-      }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      width: 268px;
+      height: 112px;
+      top: 44px;
+      left: -34px;
+    }
 
-      @media (min-width: $desktop-width) {
-        width: 134px;
-        height: 56px;
-        top: 20px;
-        left: -19px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 20px;
+      left: -19px;
     }
   }
 }
@@ -151,11 +151,9 @@
 .program__link {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   min-height: 24px;
-  padding: 0 20px 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -180,48 +178,55 @@
     margin-top: 7px;
   }
 
-  &::before {
-    content: "";
-    width: 18px;
-    height: 2px;
-    background-color: $txt_basic;
-    display: block;
-    margin-left: 17px;
-    transition: 0.2s linear;
-
-    @media (min-width: $tablet-width) {
-      margin-left: 25px;
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-left: 26px;
-    }
-  }
-
   &::after {
     content: "";
-    position: absolute;
-    background-image: url("../img/svg/polygon.svg");
+    background-image: url("../img/stack.svg#arrow-right");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 7px;
+    width: 24px;
     height: 12px;
-    top: 6px;
-    right: 13px;
-    display: block;
+    top: 50%;
+    margin-left: 27px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
 
-  &:hover {
-    &::before {
-      width: 25px;
+// .program__link:hover
+.program__link:hover {
+  &::after {
+    background-image: url("../img/stack.svg#arrow-right-hover");
+    width: 32px;
+    transition: all 0.2s ease;
+  }
+}
+
+.program__link:focus-visible {
+  outline: none;
+  opacity: 0.3;
+
+  &::after {
+    background-image: url("../img/stack.svg#arrow-right-hover");
+    width: 32px;
+    transition: all 0.2s ease;
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .program__link:focus {
+    outline: none;
+    opacity: 0.3;
+
+    &::after {
+      background-image: url("../img/stack.svg#arrow-right-hover");
+      width: 32px;
+      transition: all 0.2s ease;
     }
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.program__link:active {
+  opacity: 0.3;
 }
