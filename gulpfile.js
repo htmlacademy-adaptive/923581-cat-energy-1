@@ -5,6 +5,7 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import minify from 'gulp-minify.js';
 import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
@@ -15,17 +16,45 @@ import del from 'del';
 import browser from 'browser-sync';
 
 
-// Styles
+// Style-index
 
-export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+export const stylesIndex = () => {
+  return gulp.src('source/sass/style-index.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
+    .pipe(rename('style-index.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
+}
+// Style-catalog
+
+export const stylesCatalog = () => {
+  return gulp.src('source/sass/style-catalog.scss', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename('style-catalog.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
+}
+// Style-form
+
+export const stylesForm = () => {
+  return gulp.src('source/sass/style-form.scss', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename('style-form.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -42,6 +71,8 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(terser())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -140,8 +171,10 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/sass/**/*.scss', gulp.series(stylesIndex,
+    stylesCatalog,
+    stylesForm));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -152,7 +185,9 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-    styles,
+    stylesIndex,
+    stylesCatalog,
+    stylesForm,
     html,
     scripts,
     createWebp,
@@ -169,7 +204,9 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    styles,
+    stylesIndex,
+    stylesCatalog,
+    stylesForm,
     html,
     scripts,
     createWebp,

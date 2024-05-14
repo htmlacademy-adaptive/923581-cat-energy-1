@@ -21,7 +21,7 @@
       content: "";
       position: absolute;
       background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-        url("../img/index-background-desktop.jpg");
+        url("../img/index-background-desktop.webp");
       width: 50%;
       height: 694px;
       top: 0;
@@ -33,7 +33,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-          url("../img/index-background-desktop@2x.jpg");
+          url("../img/index-background-desktop@2x.webp");
       }
     }
   }

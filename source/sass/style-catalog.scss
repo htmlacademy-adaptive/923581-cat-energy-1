@@ -1,0 +1,55 @@
+// Подключение переменных
+@import "./base/variables.scss";
+
+// Подключение миксинов
+@import "./base/mixins.scss";
+
+// Подключение шрифтов
+@import "./base/fonts.scss";
+
+// Обнуление браузерных стилей и скрытые элементы
+@import "./base/hull.scss";
+
+// Стили кнопок
+@import "./base/buttons.scss";
+
+// Стили инпутов
+@import "./base/field.scss";
+
+// Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
+@import "./base/bace.scss";
+
+// Стили общих блоков для страниц
+@import "./blocks/general/wrapper.scss";
+@import "./blocks/general/container.scss";
+@import "./blocks/general/map-container.scss";
+@import "./blocks/general/page.scss";
+@import "./blocks/general/partnership.scss";
+@import "./blocks/general/title-string.scss";
+
+// Логотип
+@import "./blocks/logo/logo.scss";
+@import "./blocks/logo/logo-image.scss";
+@import "./blocks/logo/logo-text.scss";
+
+// Стили Хедера
+@import "./blocks/header/header.scss";
+@import "./blocks/header/icon-menu.scss";
+@import "./blocks/header/menu.scss";
+
+// Стили страницы каталога
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/complementary-card.scss";
+@import "./blocks/catalog/complementary.scss";
+@import "./blocks/catalog/product-card.scss";
+@import "./blocks/catalog/products.scss";
+@import "./blocks/catalog/promotion.scss";
+
+// Стили подвала
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/copyright.scss";
+
+// Подключение файлов через @use "./mixins.scss";
+// подключать в каждый файл где они будут использоваться.
+// @include mixins.font(""); указать адрес миксина перед именем миксина
