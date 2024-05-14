@@ -5,7 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import minify from 'gulp-minify.js';
 import terser from 'gulp-terser';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
