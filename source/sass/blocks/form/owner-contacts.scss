@@ -38,11 +38,6 @@
   }
 }
 
-// .owner-contacts__item
-.owner-contacts__item {
-  /* foo */
-}
-
 .owner-contacts__item:not(:last-child) {
   @media (max-width: $tablet-width) {
     margin-bottom: 14px;
