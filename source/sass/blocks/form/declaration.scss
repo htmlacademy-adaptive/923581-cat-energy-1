@@ -19,11 +19,6 @@
   }
 }
 
-// .declaration__item
-.declaration__item {
-  /* foo */
-}
-
 .declaration__item:not(:last-child) {
   margin-bottom: 14px;
 
@@ -43,9 +38,4 @@
 .declaration__text {
   margin-right: 13px;
   white-space: nowrap;
-}
-
-// .declaration__input
-.declaration__input {
-  /* foo */
 }

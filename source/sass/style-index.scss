@@ -1,0 +1,55 @@
+// Подключение переменных
+@import "./base/variables.scss";
+
+// Подключение миксинов
+@import "./base/mixins.scss";
+
+// Подключение шрифтов
+@import "./base/fonts.scss";
+
+// Обнуление браузерных стилей и скрытые элементы
+@import "./base/hull.scss";
+
+// Стили кнопок
+@import "./base/buttons.scss";
+
+// Стили инпутов
+@import "./base/field.scss";
+
+// Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
+@import "./base/bace.scss";
+
+// Стили общих блоков для страниц
+@import "./blocks/general/wrapper.scss";
+@import "./blocks/general/container.scss";
+@import "./blocks/general/map-container.scss";
+@import "./blocks/general/page.scss";
+@import "./blocks/general/partnership.scss";
+@import "./blocks/general/title-string.scss";
+
+// Логотип
+@import "./blocks/logo/logo.scss";
+@import "./blocks/logo/logo-image.scss";
+
+// Стили Хедера
+@import "./blocks/header/header.scss";
+@import "./blocks/header/icon-menu.scss";
+@import "./blocks/header/menu.scss";
+
+// Стили главной страницы
+@import "./blocks/main/main.scss";
+@import "./blocks/general/comparison-slider.scss";
+@import "./blocks/main/description.scss";
+@import "./blocks/main/example.scss";
+@import "./blocks/main/program-types.scss";
+@import "./blocks/main/program.scss";
+@import "./blocks/main/promo.scss";
+
+// Стили подвала
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/copyright.scss";
+
+// Подключение файлов через @use "./mixins.scss";
+// подключать в каждый файл где они будут использоваться.
+// @include mixins.font(""); указать адрес миксина перед именем миксина
