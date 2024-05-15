@@ -37,5 +37,6 @@
 // .declaration__text
 .declaration__text {
   margin-right: 13px;
-  white-space: nowrap;
+  flex-shrink: 0;
+  max-width: 50%;
 }

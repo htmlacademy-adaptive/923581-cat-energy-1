@@ -186,8 +186,12 @@
     width: 24px;
     height: 12px;
     top: 50%;
-    margin-left: 27px;
+    margin-left: 17px;
     transition: all 0.2s ease;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 27px;
+    }
   }
 
   @media (min-width: $tablet-width) {

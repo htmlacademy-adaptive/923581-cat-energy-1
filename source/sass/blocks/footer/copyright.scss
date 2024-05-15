@@ -6,6 +6,7 @@
   svg {
     color: $txt_fill;
     fill: currentColor;
+    flex-shrink: 0;
   }
 
   &:hover {

@@ -38,7 +38,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 140px;
     padding-right: 80px;
   }
 
@@ -74,6 +74,10 @@
 
     @media (max-width: $tablet-width) {
       display: none;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      right: -4px;
     }
   }
 
@@ -152,12 +156,6 @@
 .description__text {
   margin: 0;
   padding: 2px 0 4px;
-
-  @media (max-width: $tablet-width) {
-    br {
-      display: none;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     padding: 31px 0 57px;

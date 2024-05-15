@@ -59,7 +59,8 @@
 // .owner-contacts__text
 .owner-contacts__text {
   margin-right: 13px;
-  white-space: nowrap;
+  flex-shrink: 0;
+  max-width: 50%;
 }
 
 // .owner-contacts__icon
@@ -71,4 +72,12 @@
   right: 15px;
   fill: transparent;
   stroke: $txt_light;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }
