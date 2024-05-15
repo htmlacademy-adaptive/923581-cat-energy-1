@@ -6,13 +6,13 @@
     @media (max-width: $tablet-width) {
       content: "";
       position: absolute;
-      width: 320px;
+      width: 100%;
       height: 302px;
       background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
         url("../img/index-background-mobile.webp");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 320px auto;
+      background-size: 100% auto;
       display: block;
 
       @media (min-resolution: 2dppx) {
