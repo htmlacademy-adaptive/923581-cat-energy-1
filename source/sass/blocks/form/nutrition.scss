@@ -54,6 +54,7 @@
   appearance: none;
   margin: 0;
   padding: 0;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     width: 40px;
