@@ -30,7 +30,7 @@
 .example__content {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     display: grid;
     grid-template-columns: 367px 1fr;
     margin-bottom: 90px;
@@ -51,7 +51,7 @@
   margin: 0;
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-column: 1/-1;
   }
 
@@ -70,7 +70,7 @@
 .example__text {
   margin: 0 0 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-column: 1/-1;
   }
 
@@ -89,7 +89,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-column: 1/2;
   }
 
@@ -173,7 +173,7 @@
       }
     }
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
       font-size: 20px;
       text-align: end;
 
@@ -227,7 +227,7 @@
     margin: 0;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     flex-direction: column;
     align-items: flex-end;
   }

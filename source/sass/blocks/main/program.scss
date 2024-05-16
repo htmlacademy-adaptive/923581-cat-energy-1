@@ -6,7 +6,7 @@
   grid-template-columns: 70px 1fr;
   align-items: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-template-columns: 1fr 268px;
     padding: 77px 29px 60px 52px;
     column-gap: 19px;
@@ -18,8 +18,6 @@
   }
 }
 
-
-
 //.program__icon
 .program__icon {
   position: relative;
@@ -28,7 +26,7 @@
   background-color: $bg_basic;
   border-radius: 50%;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-area: 1 / 2/ 4 / 3;
     justify-self: center;
     width: 200px;
@@ -56,7 +54,7 @@
     background-repeat: no-repeat;
     z-index: 5;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
       width: 140px;
       height: 194px;
       bottom: 17px;
@@ -86,7 +84,7 @@
     background-repeat: no-repeat;
     z-index: 5;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
       width: 268px;
       height: 112px;
       top: 44px;
@@ -112,7 +110,7 @@
   color: $txt_basic;
   margin: 0;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-area: 1 / 1 / 2 / 2;
     font-size: 36px;
     line-height: 36px;
@@ -136,7 +134,7 @@
     border-bottom: 2px solid $line_main;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-column: 1 / 2;
     padding: 24px 0 41px;
     font-size: 16px;
@@ -166,7 +164,7 @@
   margin-right: auto;
   margin-top: 19px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     grid-column: 1 / 2;
     font-size: 20px;
     line-height: 24px;

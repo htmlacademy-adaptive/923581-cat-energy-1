@@ -21,7 +21,7 @@
     border: 1px solid $brd_minor;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     margin: 0 40px;
   }
 

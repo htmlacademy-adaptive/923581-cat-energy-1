@@ -14,7 +14,7 @@
 
 // .declaration__list
 .declaration__list {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding: 0 40px;
   }
 }

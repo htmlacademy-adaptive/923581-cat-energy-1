@@ -74,7 +74,7 @@
   margin-bottom: 20px;
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     padding: 20px 0 19px;
     border-top: 1px solid $line_main;
     border-bottom: 1px solid $line_main;
