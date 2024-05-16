@@ -34,6 +34,7 @@
 .field:focus-visible {
   outline: none;
   border: 2px solid $txt_main;
+  padding-left: 19px;
 }
 
 .field:focus-visible + .owner-contacts__icon {
@@ -44,6 +45,7 @@
   .field:focus {
     outline: none;
     border: 2px solid $txt_main;
+    padding-left: 19px;
   }
 }
 
