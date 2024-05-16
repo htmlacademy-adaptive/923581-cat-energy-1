@@ -53,9 +53,9 @@
   }
 }
 
-.field:focus-visible:not(:placeholder-shown) {
-  border: 2px solid $txt_main;
-}
+// .field:focus-visible:not(:placeholder-shown) {
+//   border: 2px solid $txt_main;
+// }
 
 // отменяет браузерные стили фона на полях почты и телефона
 .field:autofill,
