@@ -1,0 +1,14 @@
+// .cat-image
+.cat-image {
+  position: absolute;
+  background-color: $bg_minor-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg_main;
+    box-shadow: inset 0 -359px 0 0 $bg_minor-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: inset 0 -377px 0 0 $bg_minor-light;
+  }
+}
