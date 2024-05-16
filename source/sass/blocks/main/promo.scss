@@ -71,7 +71,7 @@
   line-height: 36px;
   margin: 0;
 
-  @media (max-width: $tablet-widthmax) {
+  @media (max-width: $tablet-width-max) {
     margin-bottom: 25px;
   }
 
@@ -83,7 +83,7 @@
     max-width: 515px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-widthmax) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding-left: 90px;
   }
 }
