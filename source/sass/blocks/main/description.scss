@@ -1,13 +1,13 @@
 .description {
   padding: 20px 0 50px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 45px 0 47px;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+    padding: 45px 0 7px;
     border-bottom: 1px solid $line_light;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0 70px;
+    padding: 71px 0 30px;
   }
 }
 
@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 
@@ -61,8 +61,7 @@
     counter-increment: num;
     display: inline-block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 88px;
     right: 0;
     width: 134px;
     color: $bg_minor;
@@ -72,92 +71,100 @@
     font-weight: 400;
     z-index: -1;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $tablet-width-max) {
       display: none;
     }
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-      right: -4px;
+    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+      right: -2px;
     }
   }
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 40px;
 
     &:first-child::before {
-      right: 7px;
-    }
-  }
-}
-
-//.description__icon
-.description__icon {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background-color: $bg_basic;
-  flex-shrink: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  // .description__icon--leaf
-  &--leaf {
-    &::after {
-      background-image: url("../img/stack.svg#icon_leaf");
-      width: 30px;
-      height: 32px;
-    }
-  }
-
-  // .description__icon--bowl
-  &--bowl {
-    &::after {
-      background-image: url("../img/stack.svg#icon-bowl");
-      width: 27px;
-      height: 29px;
-    }
-  }
-
-  // .description__icon--eat
-  &--eat {
-    &::after {
-      background-image: url("../img/stack.svg#icon_eat");
-      width: 26px;
-      height: 30px;
-    }
-  }
-
-  // .description__icon--weigh
-  &--weigh {
-    &::after {
-      background-image: url("../img/stack.svg#icon-weigh");
-      width: 27px;
-      height: 31px;
+      right: 5px;
     }
   }
 }
 
 // .description__text
 .description__text {
+  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0;
-  padding: 2px 0 4px;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 0 57px;
+    min-height: 280px;
+    display: block;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: $bg_basic;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+      left: 25px;
+    }
+  }
+}
+
+// ..description__text--leaf
+.description__text--leaf {
+  &::after {
+    background-image: url("../img/stack.svg#icon_leaf");
+    width: 30px;
+    height: 32px;
+  }
+}
+
+// ..description__text--bowl
+.description__text--bowl {
+  &::after {
+    background-image: url("../img/stack.svg#icon-bowl");
+    width: 27px;
+    height: 29px;
+  }
+}
+
+// ..description__text--eat
+.description__text--eat {
+  &::after {
+    background-image: url("../img/stack.svg#icon_eat");
+    width: 26px;
+    height: 30px;
+  }
+}
+
+// ..description__text--weigh
+.description__text--weigh {
+  &::after {
+    background-image: url("../img/stack.svg#icon-weigh");
+    width: 27px;
+    height: 31px;
   }
 }

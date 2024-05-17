@@ -16,7 +16,7 @@
 .owner-contacts__title {
   margin-bottom: 35px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     max-width: 208px;
   }
 
@@ -27,7 +27,7 @@
 
 // .owner-contacts__list
 .owner-contacts__list {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding: 0 40px;
   }
 
@@ -39,11 +39,11 @@
 }
 
 .owner-contacts__item:not(:last-child) {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     margin-bottom: 14px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     margin-bottom: 20px;
   }
 }

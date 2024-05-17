@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_light;
+  color: $txt_main;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -21,7 +21,7 @@
     border: 1px solid $brd_minor;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     margin: 0 40px;
   }
 

@@ -3,7 +3,7 @@
   // justify-content: center;
 
   &::before {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $tablet-width-max) {
       content: "";
       position: absolute;
       width: 100%;
@@ -27,7 +27,7 @@
 .promo__wrapper {
   position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     padding: 27px 0 20px;
     position: relative;
   }
@@ -47,7 +47,7 @@
   // z-index: 2;
   // position: relative;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     color: $txt_contrast;
     text-align: center;
   }
@@ -71,7 +71,7 @@
   line-height: 36px;
   margin: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     margin-bottom: 25px;
   }
 
@@ -83,7 +83,7 @@
     max-width: 515px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding-left: 90px;
   }
 }
@@ -102,7 +102,7 @@
     margin-bottom: 21px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding-left: 90px;
   }
 
@@ -116,18 +116,13 @@
   position: relative;
   display: block;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     position: relative;
     margin-bottom: 3px;
-    // top: 167px;
-    // left: 50%;
-    // transform: translateX(-50%);
     width: 280px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    // margin-top: -83px;
-
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     img {
       width: 709px;
       height: 609px;
@@ -149,12 +144,11 @@
 
 // .promo__button
 .promo__button {
-  @media (max-width: $tablet-width) {
-    // margin-top: 302px;
+  @media (max-width: $tablet-width-max) {
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     position: relative;
     padding: 14px 28px;
     top: -580px;

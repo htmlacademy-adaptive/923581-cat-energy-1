@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $txt_basic;
+  color: $txt_main;
   padding: 0 0 32px;
 
   @media (min-width: $tablet-width) {
@@ -48,7 +48,7 @@
   display: grid;
   gap: 13px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width-max) {
     margin-bottom: 32px;
   }
 
