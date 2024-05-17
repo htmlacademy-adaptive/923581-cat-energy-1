@@ -7,6 +7,44 @@
   margin-left: -20px;
   background-color: transparent;
   outline: none;
+
+  &:hover::-webkit-slider-thumb {
+    background-image: url("../img/stack.svg#curtain-hover");
+  }
+
+  &:focus-visible::-webkit-slider-thumb {
+    background-image: url("../img/stack.svg#curtain-hover");
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus::-webkit-slider-thumb {
+      background-image: url("../img/stack.svg#curtain-hover");
+    }
+  }
+
+  &:active::-webkit-slider-thumb {
+    background-image: url("../img/stack.svg#curtain-active");
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover::-webkit-slider-thumb {
+      background-image: url("../img/stack.svg#curtain256hover");
+    }
+
+    &:focus-visible::-webkit-slider-thumb {
+      background-image: url("../img/stack.svg#curtain256hover");
+    }
+
+    @supports not selector(:focus-visible) {
+      &:focus::-webkit-slider-thumb {
+        background-image: url("../img/stack.svg#curtain256hover");
+      }
+    }
+
+    &:active::-webkit-slider-thumb {
+      background-image: url("../img/stack.svg#curtain256active");
+    }
+  }
 }
 
 .divider::-webkit-slider-thumb {
@@ -14,7 +52,6 @@
   height: 256px;
   width: 40px;
   background-image: url("../img/stack.svg#curtain");
-
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
@@ -33,6 +70,16 @@
 
     &:hover {
       background-image: url("../img/stack.svg#curtain256hover");
+    }
+
+    &:focus-visible {
+      background-image: url("../img/stack.svg#curtain256hover");
+    }
+
+    @supports not selector(:focus-visible) {
+      &:focus {
+        background-image: url("../img/stack.svg#curtain256hover");
+      }
     }
 
     &:active {
