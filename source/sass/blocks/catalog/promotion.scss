@@ -12,7 +12,7 @@
       url("../img/cat-case@2x.jpg");
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/cat-case-tablet.jpg");
 
@@ -39,7 +39,7 @@
     text-align: center;
     color: $txt_contrast;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+    @media (min-width: $tablet-width) {
       margin: 0;
       text-align: left;
     }
@@ -54,7 +54,7 @@
     height: 80px;
     margin: 0 auto 48px;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+    @media (min-width: $tablet-width) {
       width: 80px;
       height: 83px;
       margin: 0;
@@ -67,7 +67,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;

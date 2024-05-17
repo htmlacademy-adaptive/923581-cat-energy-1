@@ -21,7 +21,7 @@
   margin: 0;
   margin-bottom: 37px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     padding-left: 40px;
   }
 
@@ -42,7 +42,7 @@
   color: $txt_basic;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     padding-left: 40px;
   }
 

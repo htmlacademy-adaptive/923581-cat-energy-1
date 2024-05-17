@@ -27,9 +27,14 @@
 
 // .complementary__list
 .complementary__list {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     border-right: 1px solid $line_minor;
     border-left: 1px solid $line_minor;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-right: none;
+    border-left: none;
   }
 }
 

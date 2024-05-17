@@ -2,13 +2,12 @@
   display: flex;
   position: relative;
   z-index: 10;
-
-  @media (max-width: $tablet-width-max) {
-    border-bottom: 1px solid $line_main;
-    padding: 13px 0;
-  }
+  border-bottom: 1px solid $line_main;
+  padding: 13px 0;
 
   @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
     padding-top: 25px;
   }
 
@@ -22,7 +21,7 @@
   padding: 0;
   border: none;
 
-  @media (max-width: $tablet-width-max) {
+  @media (max-width: $tablet-width) {
     .header__header-wrapper {
       flex-direction: column;
       width: 100%;

@@ -1,24 +1,23 @@
 .promo {
-  // display: flex;
-  // justify-content: center;
-
   &::before {
-    @media (max-width: $tablet-width-max) {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 302px;
-      background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-        url("../img/index-background-mobile.webp");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100% auto;
-      display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
+      url("../img/index-background-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    display: block;
 
-      @media (min-resolution: 2dppx) {
-        background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
-          url("../img/index-background-mobile@2x.webp");
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, $bg_basic-light, $bg_basic-light),
+        url("../img/index-background-mobile@2x.webp");
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
     }
   }
 }
@@ -26,11 +25,7 @@
 // .promo__wrapper
 .promo__wrapper {
   position: relative;
-
-  @media (max-width: $tablet-width-max) {
-    padding: 27px 0 20px;
-    position: relative;
-  }
+  padding: 27px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
@@ -44,16 +39,11 @@
 
 // .promo__content
 .promo__content {
-  // z-index: 2;
-  // position: relative;
-
-  @media (max-width: $tablet-width-max) {
-    color: $txt_contrast;
-    text-align: center;
-  }
+  color: $txt_contrast;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    // padding-left: 90px;
+    text-align: left;
     margin-bottom: -54px;
     color: $txt_basic;
   }
@@ -70,10 +60,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 25px;
-  }
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -83,8 +70,12 @@
     max-width: 515px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -100,13 +91,12 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 21px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     padding-left: 90px;
+    max-width: 515px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0;
     margin-bottom: 52px;
   }
 }
@@ -115,14 +105,13 @@
 .promo__banner {
   position: relative;
   display: block;
+  margin-bottom: 3px;
+  width: 280px;
 
-  @media (max-width: $tablet-width-max) {
-    position: relative;
-    margin-bottom: 3px;
-    width: 280px;
-  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 709px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
     img {
       width: 709px;
       height: 609px;
@@ -131,6 +120,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
     position: absolute;
     top: 30px;
     left: 447px;
@@ -144,20 +134,23 @@
 
 // .promo__button
 .promo__button {
-  @media (max-width: $tablet-width-max) {
-    width: 100%;
-  }
+  width: 100%;
+  position: relative;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
-    position: relative;
+  @media (min-width: $tablet-width) {
     padding: 14px 28px;
     top: -580px;
     left: 90px;
+    width: auto;
+    max-width: 260px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 26px;
     min-width: 244px;
+    padding: 14px 26px;
+    top: 0;
+    left: 0;
   }
 }
