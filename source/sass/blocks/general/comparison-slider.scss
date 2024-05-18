@@ -49,63 +49,18 @@
   -webkit-appearance: none; /* Переопределяем вид по умолчанию */
   appearance: none;
   width: 40px;
-  height: 256px;
-  background-image: url("../img/stack.svg#curtain");
+  height: 512px;
+  background-image: url("../img/stack.svg#curtain256");
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    height: 512px;
-    background-image: url("../img/stack.svg#curtain256");
-  }
 }
 
-// ======================================================
-
-.divider[type="range"]:hover {
-  background-image: url("../img/stack.svg#curtain-hover");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/stack.svg#curtain256hover");
-  }
+.divider[type="range"]:hover::-webkit-slider-thumb {
+  background-image: url("../img/stack.svg#curtain256hover");
 }
-
-.divider[type="range"]:focus-visible {
-  background-image: url("../img/stack.svg#curtain-hover");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/stack.svg#curtain256hover");
-  }
-}
-
-@supports not selector(:focus-visible) {
-  .divider[type="range"]:focus {
-    background-image: url("../img/stack.svg#curtain-hover");
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/stack.svg#curtain256hover");
-    }
-  }
-}
-
-// =========Chrome, Safari, Opera=========
-.divider[type="range"]:focus-visible::-webkit-slider-thumb {
-  background-image: url("../img/stack.svg#curtain-hover");
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/stack.svg#curtain256hover");
-  }
-}
-
-@supports not selector(:focus-visible) {
-  .divider[type="range"]:focus::-webkit-slider-thumb {
-    background-image: url("../img/stack.svg#curtain-hover");
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/stack.svg#curtain256hover");
-    }
-  }
+.divider[type="range"]:focus::-webkit-slider-thumb {
+  background-image: url("../img/stack.svg#curtain256hover");
 }
 
 /******** Стили для Firefox ********/
@@ -136,12 +91,6 @@
   z-index: 5;
 }
 
-.divider[type="range"]:focus-visible::-moz-range-thumb {
+.divider[type="range"]:focus::-moz-range-thumb {
   background-image: url("../img/stack.svg#curtain256hover");
-}
-
-@supports not selector(:focus-visible) {
-  .divider[type="range"]:focus::-moz-range-thumb {
-    background-image: url("../img/stack.svg#curtain256hover");
-  }
 }
