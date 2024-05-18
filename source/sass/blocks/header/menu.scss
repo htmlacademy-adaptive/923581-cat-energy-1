@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   // .menu--opened
   .menu--opened {
     .menu__body {
@@ -39,7 +39,7 @@
 
 // .menu__body
 .menu__body {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     position: absolute;
     display: none;
     top: 65px;
@@ -57,7 +57,7 @@
 
 // .menu__list
 .menu__list {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     background-color: $bg_main;
@@ -79,7 +79,7 @@
 
 // .menu__item
 .menu__item {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     text-align: center;
     border-bottom: 1px solid $line_main;
   }
@@ -94,7 +94,7 @@
 }
 
 .menu__item:first-child {
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     border-top: 1px solid $line_main;
   }
 }
@@ -109,7 +109,7 @@
   text-transform: uppercase;
   display: block;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     padding: 22px 0 23px;
   }
 
@@ -138,7 +138,6 @@
     line-height: 24px;
     height: 100%;
     padding-top: 14px;
-    // padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {

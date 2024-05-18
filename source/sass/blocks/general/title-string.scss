@@ -37,13 +37,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    // white-space: nowrap;
     padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
-
-    br {
-      display: none;
-    }
   }
 }

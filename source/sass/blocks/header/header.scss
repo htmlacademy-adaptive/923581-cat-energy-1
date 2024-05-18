@@ -21,7 +21,7 @@
   padding: 0;
   border: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     .header__header-wrapper {
       flex-direction: column;
       width: 100%;
