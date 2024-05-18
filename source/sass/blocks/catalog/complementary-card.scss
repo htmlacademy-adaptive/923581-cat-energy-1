@@ -40,6 +40,7 @@
 // .complementary-card__inform
 .complementary-card__inform {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 13px 0 15px;
 
@@ -60,6 +61,13 @@
   }
 }
 
+// .complementary-card__quantity
+.complementary-card__quantity {
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
 // .complementary-card__price
 .complementary-card__price {
   text-align: right;
@@ -72,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    padding: 0;
+    padding-right: 40px;
     min-width: 83px;
   }
 }

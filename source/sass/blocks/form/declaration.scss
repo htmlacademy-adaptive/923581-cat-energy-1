@@ -34,13 +34,12 @@
 // .declaration__label
 .declaration__label {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  column-gap: 13px;
 }
 
-// .declaration__text
-.declaration__text {
-  margin-right: 13px;
-  flex-shrink: 0;
-  max-width: 50%;
+// .declaration__input
+.declaration__input {
+  flex-grow: 1;
 }

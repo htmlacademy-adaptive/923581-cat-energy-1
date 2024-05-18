@@ -52,16 +52,28 @@
 // .owner-contacts__label
 .owner-contacts__label {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
+  column-gap: 13px;
 }
 
-// .owner-contacts__text
-.owner-contacts__text {
-  margin-right: 13px;
-  flex-shrink: 0;
-  max-width: 50%;
+// .owner-contacts__input
+.owner-contacts__input {
+  padding: 13px 40px 13px 15px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 40px 13px 20px;
+  }
+}
+
+// защита при переполнении заголовка
+.owner-contacts__input[type="email"] {
+  min-width: 210px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 260px;
+  }
 }
 
 // .owner-contacts__icon
