@@ -275,6 +275,7 @@
 // .product-card__text
 .product-card__text {
   margin: 0 0 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
