@@ -12,63 +12,63 @@
   }
 }
 
-@media (max-width: 767px) {
-  // .menu--opened
-  .menu--opened {
-    .menu__body {
-      display: block;
+// .menu--opened
+.menu--opened {
+  .menu__body {
+    display: block;
+  }
+
+  .icon-menu {
+    span {
+      transform: scale(0);
     }
 
-    .icon-menu {
-      span {
-        transform: scale(0);
-      }
+    &::before {
+      transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
 
-      &::before {
-        transform: rotate(-45deg);
-        top: calc(50% - 1px);
-      }
-
-      &::after {
-        transform: rotate(45deg);
-        bottom: calc(50% - 1px);
-      }
+    &::after {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1px);
     }
   }
 }
 
 // .menu__body
 .menu__body {
-  @media (max-width: 767px) {
-    position: absolute;
-    display: none;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background-color: $bg_main;
-    transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
-    transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
-  }
+  position: absolute;
+  display: none;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  background-color: $bg_main;
+  transition-duration: 0.2s; /* Добавляем анимацию 0.3 сек. */
+  transition-delay: 0.15s; /* Добавляем задержку в 0.15 сек. */
 
   @media (min-width: $tablet-width) {
+    background-color: transparent;
     height: 100%;
+    display: block;
+    position: relative;
+    top: 0;
   }
 }
 
 // .menu__list
 .menu__list {
-  @media (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    background-color: $bg_main;
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: $bg_main;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    background-color: transparent;
+    flex-direction: row;
     height: 100%;
-    flex-wrap: wrap;
     gap: 34px;
     max-width: 460px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,13 +79,12 @@
 
 // .menu__item
 .menu__item {
-  @media (max-width: 767px) {
-    text-align: center;
-    border-bottom: 1px solid $line_main;
-  }
+  text-align: center;
+  border-bottom: 1px solid $line_main;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,8 +93,10 @@
 }
 
 .menu__item:first-child {
-  @media (max-width: 767px) {
-    border-top: 1px solid $line_main;
+  border-top: 1px solid $line_main;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 
@@ -108,10 +109,7 @@
   color: $txt_basic;
   text-transform: uppercase;
   display: block;
-
-  @media (max-width: 767px) {
-    padding: 22px 0 23px;
-  }
+  padding: 22px 0 23px;
 
   &:hover {
     opacity: 0.6;
@@ -137,7 +135,7 @@
     font-size: 18px;
     line-height: 24px;
     height: 100%;
-    padding-top: 14px;
+    padding: 14px 0 0;
   }
 
   @media (min-width: $desktop-width) {
