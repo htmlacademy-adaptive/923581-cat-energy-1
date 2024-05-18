@@ -43,6 +43,11 @@
       margin: 0;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   &::before {
@@ -76,7 +81,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     margin: 0;
+    padding: 59px 0 43px;
     padding-top: 56px;
   }
 }
