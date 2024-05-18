@@ -1,13 +1,14 @@
 .description {
   padding: 20px 0 50px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     padding: 45px 0 7px;
     border-bottom: 1px solid $line_light;
   }
 
   @media (min-width: $desktop-width) {
     padding: 71px 0 30px;
+    border: none;
   }
 }
 
@@ -57,34 +58,27 @@
   position: relative;
 
   &::before {
-    content: counter(num);
-    counter-increment: num;
-    display: inline-block;
-    position: absolute;
-    top: 88px;
-    right: 0;
-    width: 134px;
-    color: $bg_minor;
-    text-align: center;
-    font-family: $oswald;
-    font-size: 280px;
-    font-weight: 400;
-    z-index: -1;
-
-    @media (max-width: $tablet-width-max) {
-      display: none;
-    }
-
-    @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
-      right: -2px;
+    @media (min-width: $tablet-width) {
+      content: counter(num);
+      counter-increment: num;
+      display: inline-block;
+      position: absolute;
+      top: 88px;
+      right: -4px;
+      width: 134px;
+      color: $bg_minor;
+      text-align: right;
+      font-family: $oswald;
+      font-size: 280px;
+      font-weight: 400;
+      z-index: -1;
+      width: 100%;
     }
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
-
     &:first-child::before {
-      right: 5px;
+      right: 20px;
     }
   }
 }
@@ -121,13 +115,15 @@
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       top: 25px;
+      transform: translateY(0);
       left: 25px;
     }
   }

@@ -11,13 +11,6 @@
   }
 }
 
-// Обнуление списков (@include list-reset;)
-@mixin list-reset {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 // Характиристики основного шрифта
 @mixin fontMain {
   font-family: $lato;

@@ -21,12 +21,13 @@
     border: 1px solid $brd_minor;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
+  @media (min-width: $tablet-width) {
     margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 25px 28px;
+    margin: 0;
   }
 }
 

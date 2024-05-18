@@ -39,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    gap: 61px 80px;
+    gap: 60px 80px;
   }
 }
 
@@ -47,12 +47,10 @@
 .additionally__list {
   display: grid;
   gap: 13px;
-
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 32px;
-  }
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     grid-template-columns: 1fr 1fr;
     gap: 32px 60px;
     grid-column: 1/-1;

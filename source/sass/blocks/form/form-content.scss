@@ -21,14 +21,15 @@
   margin: 0;
   margin-bottom: 37px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
-    padding-left: 40px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-left: 40px;
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -42,13 +43,14 @@
   color: $txt_basic;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width-max) {
-    padding-left: 40px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 

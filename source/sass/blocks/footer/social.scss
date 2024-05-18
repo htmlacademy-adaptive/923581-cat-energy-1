@@ -1,7 +1,12 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 40px;
+  }
 }
 // .social__item
 .social__item {

@@ -73,19 +73,13 @@
   width: 100%;
   margin-bottom: 20px;
   position: relative;
-
-  @media (max-width: $tablet-width-max) {
-    padding: 20px 0 19px;
-    border-top: 1px solid $line_main;
-    border-bottom: 1px solid $line_main;
-  }
+  padding: 20px 0 19px;
+  border-top: 1px solid $line_main;
+  border-bottom: 1px solid $line_main;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 50%;
-    left: 0;
     margin: 0;
-    transform: translateY(-50%);
+    border: none;
   }
 }
 
