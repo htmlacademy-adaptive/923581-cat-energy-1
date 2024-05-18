@@ -56,13 +56,15 @@
   cursor: pointer;
 }
 
-.divider[type="range"]:hover::-webkit-slider-thumb {
+.divider[type="range"]::-webkit-slider-thumb:hover {
   background-image: url("../img/stack.svg#curtain256hover");
 }
-.divider[type="range"]:focus::-webkit-slider-thumb {
-  background-image: url("../img/stack.svg#curtain256hover");
+// .divider[type="range"]:focus::-webkit-slider-thumb {
+//   background-image: url("../img/stack.svg#curtain256hover");
+// }
+.divider[type="range"]::-webkit-slider-thumb:active {
+  background-image: url("../img/stack.svg#curtain256active");
 }
-
 /******** Стили для Firefox ********/
 /* дорожка слайдера */
 .divider[type="range"]::-moz-range-track {
