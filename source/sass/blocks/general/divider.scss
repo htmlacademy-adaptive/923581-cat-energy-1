@@ -1,121 +1,145 @@
-.divider {
+/********** Стили диапазонного элемента ввода (слайдера) **********/
+/* Сбрасываем стили по умолчанию */
+.divider[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: transparent;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  height: 100%;
+}
+
+/* Удаляем фокусировку по умолчанию */
+.divider[type="range"]:focus {
+  outline: none;
+}
+.divider[type="range"]:focus-visible {
+  outline: none;
+  border: none;
+}
+
+/***** Стили для Chrome, Safari, Opera и Edge Chromium *****/
+/* дорожка слайдера */
+.divider[type="range"]::-webkit-slider-runnable-track {
   margin: 0;
   position: relative;
   -webkit-appearance: none;
   width: calc(100% + 40px);
   height: 100%;
-  margin-left: -20px;
   background-color: transparent;
   outline: none;
-
-  &:hover::-webkit-slider-thumb {
-    background-image: url("../img/stack.svg#curtain-hover");
-  }
-
-  &:focus-visible::-webkit-slider-thumb {
-    background-image: url("../img/stack.svg#curtain-hover");
-  }
-
-  @supports not selector(:focus-visible) {
-    &:focus::-webkit-slider-thumb {
-      background-image: url("../img/stack.svg#curtain-hover");
-    }
-  }
-
-  &:active::-webkit-slider-thumb {
-    background-image: url("../img/stack.svg#curtain-active");
-  }
-
-  @media (min-width: $tablet-width) {
-    &:hover::-webkit-slider-thumb {
-      background-image: url("../img/stack.svg#curtain256hover");
-    }
-
-    &:focus-visible::-webkit-slider-thumb {
-      background-image: url("../img/stack.svg#curtain256hover");
-    }
-
-    @supports not selector(:focus-visible) {
-      &:focus::-webkit-slider-thumb {
-        background-image: url("../img/stack.svg#curtain256hover");
-      }
-    }
-
-    &:active::-webkit-slider-thumb {
-      background-image: url("../img/stack.svg#curtain256active");
-    }
-  }
 }
 
-.divider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 256px;
+/* ползунок слайдера */
+.divider[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Переопределяем вид по умолчанию */
+  appearance: none;
   width: 40px;
+  height: 256px;
   background-image: url("../img/stack.svg#curtain");
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 
-  &:hover {
-    background-image: url("../img/stack.svg#curtain-hover");
-  }
-
-  &:active {
-    background-image: url("../img/stack.svg#curtain-active");
-  }
-
   @media (min-width: $tablet-width) {
     height: 512px;
     background-image: url("../img/stack.svg#curtain256");
+  }
+}
 
-    &:hover {
+.divider[type="range"]:hover::-webkit-slider-thumb {
+  background-image: url("../img/stack.svg#curtain-hover");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256hover");
+  }
+}
+
+.divider[type="range"]:focus-visible::-webkit-slider-thumb {
+  background-image: url("../img/stack.svg#curtain-hover");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256hover");
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .divider[type="range"]:focus::-webkit-slider-thumb {
+    background-image: url("../img/stack.svg#curtain-hover");
+
+    @media (min-width: $tablet-width) {
       background-image: url("../img/stack.svg#curtain256hover");
-    }
-
-    &:focus-visible {
-      background-image: url("../img/stack.svg#curtain256hover");
-    }
-
-    @supports not selector(:focus-visible) {
-      &:focus {
-        background-image: url("../img/stack.svg#curtain256hover");
-      }
-    }
-
-    &:active {
-      background-image: url("../img/stack.svg#curtain256active");
     }
   }
 }
 
-.divider::-moz-range-thumb {
-  height: 256px;
-  width: 40px;
-  background-image: url("../img/stack.svg#curtain");
+.divider[type="range"]:active::-webkit-slider-thumb {
+  background-image: url("../img/stack.svg#curtain-active");
+  opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256active");
+  }
+}
+/******** Стили для Firefox ********/
+/* дорожка слайдера */
+.divider[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  margin: 0;
+  position: relative;
   background-color: transparent;
+}
+
+/* ползунок слайдера */
+.divider[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 40px;
+  height: 256px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/stack.svg#curtain");
   background-repeat: no-repeat;
   background-size: contain;
-  border: none;
   cursor: pointer;
 
-  &:hover {
-    background-image: url("../img/stack.svg#curtain-hover");
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256");
+    height: 512px;
   }
+}
 
-  &:active {
-    background-image: url("../img/stack.svg#curtain-active");
-  }
+.divider[type="range"]:hover::-moz-range-thumb {
+  background-image: url("../img/stack.svg#curtain-hover");
 
   @media (min-width: $tablet-width) {
-    height: 512px;
-    background-image: url("../img/stack.svg#curtain256");
+    background-image: url("../img/stack.svg#curtain256hover");
+  }
+}
 
-    &:hover {
+.divider[type="range"]:focus-visible::-moz-range-thumb {
+  background-image: url("../img/stack.svg#curtain-hover");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256hover");
+  }
+}
+
+@supports not selector(:focus-visible) {
+  .divider[type="range"]:focus::-moz-range-thumb {
+    background-image: url("../img/stack.svg#curtain-hover");
+
+    @media (min-width: $tablet-width) {
       background-image: url("../img/stack.svg#curtain256hover");
     }
+  }
+}
 
-    &:active {
-      background-image: url("../img/stack.svg#curtain256active");
-    }
+.divider[type="range"]:active::-moz-range-thumb {
+  background-image: url("../img/stack.svg#curtain-active");
+  opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/stack.svg#curtain256active");
   }
 }
